@@ -57,11 +57,11 @@
           <div class="footer-block">
             <h5 class="footer-block-title"><?php _e( 'What We Do', 'bernskioldmedia' ); ?></h5>
             <ul>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>">Web Development</a></li>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>">e-Commerce</a></li>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>">Web Analysis</a></li>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>">Web Strategy</a></li>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>">Mobile Solutions</a></li>
+              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'Web Development', 'bernskioldmedia' ); ?></a></li>
+              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'e-Commerce', 'bernskioldmedia' ); ?></a></li>
+              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'Web Analysis', 'bernskioldmedia' ); ?></a></li>
+              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'Web Strategy', 'bernskioldmedia' ); ?></a></li>
+              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'Mobile Solutions', 'bernskioldmedia' ); ?></a></li>
             </ul>
           </div>
         </div>
@@ -72,7 +72,7 @@
             <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="name">Bernskiold Media AB</span><br/>
             <span itemprop="streetAddress">Storgatan 53</span><br/>
             <span itemprop="postalCode">411 38</span> <span itemprop="addressLocality"><?php _e( 'Gothenburg', 'bernskioldmedia' ); ?></span></p>
-            <p><?php _e( 'Phone:', 'bernskioldmedia' ); ?> <a href="tel://+4631102010" class="no-link" itemprop="telephone"><?php _e( '+46 (0) 31 - 10 20 10', 'bernskioldmedia' ); ?></a><br/>
+            <p><?php _e( 'Phone:', 'bernskioldmedia' ); ?> <a href="tel://+4631102010" class="no-link" itemprop="telephone"><?php _e( '+46 31 - 10 20 10', 'bernskioldmedia' ); ?></a><br/>
             <a href="mailto:<?php _e( 'info@bernskioldmedia.com', 'bernskioldmedia' ); ?>" class="no-link" itemprop="email"><?php _e( 'info@bernskioldmedia.com', 'bernskioldmedia' ); ?></a></p>
           </div>
         </div>

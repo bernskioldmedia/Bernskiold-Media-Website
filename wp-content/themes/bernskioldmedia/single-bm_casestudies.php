@@ -71,7 +71,7 @@ get_header(); ?>
 				<div class="small-24 medium-8 medium-centered columns text-center">
 					<p class="case-study-contact-text"><?php _e( 'Get started with your project', 'bernskioldmedia' ); ?></p>
 					<p><a href="<?php echo home_url( _x( '/contact-us/', 'contact us page slug', 'bernskioldmedia' ) ); ?>" class="button expand large case-study-contact-button"><?php _e( 'Contact Us', 'bernskioldmedia' ); ?></a></p>
-					<p class="case-study-contact-text"><?php _e( 'Or call us +46 (0) 31 - 313 81 40', 'bernskioldmedia' ); ?></p>
+					<p class="case-study-contact-text"><?php _e( 'Or call us +46 31 - 10 20 10', 'bernskioldmedia' ); ?></p>
 				</div>
 			</div>
 
