@@ -1,0 +1,374 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bernskiold Media\n"
+"POT-Creation-Date: 2014-05-25 18:13+0100\n"
+"PO-Revision-Date: 2014-05-25 18:14+0100\n"
+"Last-Translator: Erik Bernskiold <erik@xldstudios.com>\n"
+"Language-Team: Erik Bernskiold <erik@xldstudios.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17 content-404.php:16
+msgid "404 - Content Cannot Be Found"
+msgstr "Inhalt können nicht gefunden werden"
+
+#: 404.php:20 content-404.php:19
+msgid ""
+"Unfortunately the content you were looking for could not be found. Please "
+"check that the URL is correct or do a search using the form below."
+msgstr ""
+"Leider können wir nicht den Inhalt den Sie suchen nicht finden. Bitte "
+"kontrollieren Sie, dass das URL korrekt ist oder stellen Sie bitte eine "
+"frage mit der Sucheformulare unten."
+
+#: archive-bm_casestudies.php:18
+msgid "Case Studies"
+msgstr "Portfolio"
+
+#: archive-bm_casestudies.php:19
+msgid ""
+"We have done a lot of work that we are proud of for many different "
+"organizations around the globe. Here we've collected some of our case "
+"studies for you to look at."
+msgstr ""
+"Für Kunden in der ganzen Welt haben wir viele Projekte durchgeführt. Hier "
+"haben wir einige diese Projekte für Sie zu schauen zusammengestellt."
+
+#: archive-bm_casestudies.php:28
+msgid "Sort:"
+msgstr "Sortieren:"
+
+#: archive-bm_casestudies.php:29
+msgid "All"
+msgstr "Alle"
+
+#: archive-bm_casestudies.php:30 page-templates/template-frontpage.php:31
+msgid "Web Strategy"
+msgstr "Webbstrategie"
+
+#: archive-bm_casestudies.php:31
+msgid "Web Design & Development"
+msgstr "Webdesign & entwicklung"
+
+#: archive-bm_casestudies.php:32
+msgid "E-Commerce"
+msgstr "E-Commerce"
+
+#: archive-bm_casestudies.php:33
+msgid "Mobile Solutions"
+msgstr "Mobile lösungen"
+
+#: comments.php:15
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Dieser Artikel ist mit einem Passwort geschützt. Bitte geben Sie den "
+"Passwort ein um Kommentaren zu lesen."
+
+#: comments.php:25
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Kommentar auf &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Kommentaren &ldquo;%2$s&rdquo;"
+
+#: comments.php:32 comments.php:46
+msgid "Comment navigation"
+msgstr "Navigation für Kommentaren"
+
+#: comments.php:33 comments.php:47
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentaren"
+
+#: comments.php:34 comments.php:48
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommenaren &rarr;"
+
+#: comments.php:58
+msgid "Comments are closed."
+msgstr "Kommentaren sind geschlossen."
+
+#: content-single.php:28 content.php:28
+msgid "Continue Reading &raquo;"
+msgstr "Weiter lesen &raquo;"
+
+#: core/dashboard-widgets/xld-blog-rss.php:19
+msgid "From the XLD Studios Blog"
+msgstr "Auf dem XLD Studios Blog"
+
+#: core/dashboard-widgets/xld-blog-rss.php:25
+msgid "http://www.xldstudios.com/feed"
+msgstr "http://www.xldstudios.com/feed/"
+
+#: core/dashboard-widgets/xld-blog-rss.php:26
+msgid "The Latest from XLD Studios"
+msgstr "Das Neueste auf XLD Studios"
+
+#: core/functions/ui.php:143
+msgid "Blog"
+msgstr "Blog"
+
+#: core/theme.php:119
+msgid "Main Navigation"
+msgstr "Hauptnavigation"
+
+#: core/theme.php:120
+msgid "Top Navigation"
+msgstr "Toppnavigation"
+
+#: core/theme.php:121
+msgid "Blog Topics Menu"
+msgstr "Kategorienavigation"
+
+#: core/theme.php:143
+msgid "Sidebar"
+msgstr "Seitenleiste"
+
+#: footer.php:31
+#, php-format
+msgid ""
+"<span>Bernskiold Media</span> is a web and digital agency based out of "
+"Gothenburg, Sweden. <a href=\"%s\">Read More</a>"
+msgstr ""
+"<span>Bernskiold Media</span> ist ein Web- und Digitalagentur in Frankfurt "
+"am Main. <a href=\"%s\">Weiter lesen</a>"
+
+#: footer.php:31
+msgctxt "about us page slug"
+msgid "/about-us/"
+msgstr "/um-uns/"
+
+#: footer.php:36
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: footer.php:38
+msgid "Your email address"
+msgstr "Ihre E-mail-Adresse"
+
+#: footer.php:39
+msgid "Subscribe for Free"
+msgstr "Für Frei Anmelden"
+
+#: footer.php:43
+msgid "On Social Media"
+msgstr "Auf soziale Medien"
+
+#: footer.php:58
+msgid "What We Do"
+msgstr "Was wir machen"
+
+#: footer.php:71
+msgid "Contact"
+msgstr "Kontakt"
+
+#: footer.php:74
+msgid "Gothenburg"
+msgstr "Göteborg"
+
+#: footer.php:75
+msgid "Phone:"
+msgstr "Tel:"
+
+#: footer.php:75
+msgid "+46 (0) 31 - 313 81 40"
+msgstr "+46 (0) 31 - 313 81 40"
+
+#: footer.php:76
+msgid "info@bernskioldmedia.com"
+msgstr "info@bernskioldmedia.de"
+
+#: footer.php:84
+#, php-format
+msgid "Copyright &copy; %s Bernskiold Media AB. All Rights Reserved."
+msgstr "Copyright &copy; %s Bernskiold Media AB. Alle Rechte vorbehalten."
+
+#: header.php:47 searchform.php:27
+msgid "Search"
+msgstr "Suchen"
+
+#: header.php:48
+msgid "Find what you are looking for by using the search form."
+msgstr "Finde was Sie suchen mit der Sucheformulare."
+
+#: header.php:100
+msgid "Navigation"
+msgstr "Navigation"
+
+#: page-templates/template-frontpage.php:23
+msgid "Grasp the Web"
+msgstr "Das Web verstehen"
+
+#: page-templates/template-frontpage.php:24
+msgid ""
+"The web is a magical place and we help to use it better, whether it is "
+"outlining strategies, creating effective websites, developing web apps or "
+"helping you learn what is new."
+msgstr ""
+"Das Web ist einen magischen Platz und wir möchten Sie helfen um er besser zu "
+"benutzen, unabhängig davon, ob es strategien zu formulieren, effektive "
+"Webplätze zu entwickeln oder Sie helfen was neu ist zu lernen."
+
+#: page-templates/template-frontpage.php:25
+msgctxt "contact page slug"
+msgid "contact"
+msgstr "kontakt"
+
+#: page-templates/template-frontpage.php:25
+msgid "Get In Touch"
+msgstr "Kontaktieren Sie uns"
+
+#: page-templates/template-frontpage.php:32
+msgid "Design & Development"
+msgstr "Design & Entwicklung"
+
+#: page-templates/template-frontpage.php:33
+msgid "e-Commerce"
+msgstr "E-Commerce"
+
+#: page-templates/template-frontpage.php:34
+#: page-templates/template-frontpage.php:58
+msgid "Education"
+msgstr "Ausbildung"
+
+#: page-templates/template-frontpage.php:44
+msgid "Three Focus Areas"
+msgstr "Drei Hauptbereiche"
+
+#: page-templates/template-frontpage.php:45
+msgid ""
+"Our services are built around these three focus areas, which we work around "
+"on all projects."
+msgstr ""
+"Unsere Dienste sind alle um diese drei Hauptberiechen fokussiert, mit der "
+"wir in alle Projekte arbeten."
+
+#: page-templates/template-frontpage.php:48
+msgid "Strategy"
+msgstr "Staregie"
+
+#: page-templates/template-frontpage.php:49
+msgid ""
+"Before setting out to create something, a strategy helps you deliver and "
+"secure the long term results. Many web projects aren't successful before "
+"they lack a long term plan. Let yours be better."
+msgstr ""
+"Bevor wir etwas erstellen, eine Strategie helfen Sie langfristige Resultate "
+"zu liefern. Viele Webprojekte sind nicht erfolgreich, weil die einen "
+"langfristigen Plan fehlen. Lasst Ihre besser sein."
+
+#: page-templates/template-frontpage.php:50
+msgid "More Web Strategy"
+msgstr "Weiter um Webstrategie"
+
+#: page-templates/template-frontpage.php:53
+msgid "Development"
+msgstr "Entwicklung"
+
+#: page-templates/template-frontpage.php:54
+msgid ""
+"Turning a strategy, vision or idea into a well-functioning product is an art "
+"form in itself. You want your web project to succeed, right? Let us help you "
+"make it successful both in the short and long term."
+msgstr ""
+"Eine Strategie, Vision oder Idee in einen funktionierenden Produkt zu "
+"umsetzen ist eine Kunstform an sich. Sie wollen Ihre Webprojekt zu gelingen, "
+"nicht war? Lass uns Sie helfen es erfolgreich zu machen sowohl kurzfristig "
+"als auch langfristig."
+
+#: page-templates/template-frontpage.php:55
+msgid "More Design & Development"
+msgstr "Weiter um Design & Entwicklung"
+
+#: page-templates/template-frontpage.php:59
+msgid ""
+"A vital component is education. If nobody knows how to use something, how do "
+"you expect it to succeed? Let us help you with your internal education in a "
+"clear and pedagocial way."
+msgstr ""
+"Eine große Komponent sind Ausbildung. Wenn niemand kennt wie man etwas "
+"machen soll, wie können Sie erwarten das es erfolgreich sein soll? Lass uns "
+"Sie helfen mit Ihrer internen Ausbildung in eine pädagogische Weise."
+
+#: page-templates/template-frontpage.php:60
+msgid "More Education"
+msgstr "Mehr um Ausbildungen"
+
+#: page-templates/template-frontpage.php:116
+msgid "Trusted by Clients Worldwide"
+msgstr "Vertraut von Kunden aus Aller Welt"
+
+#: page-templates/template-frontpage.php:117
+msgid ""
+"From small businesses to big organizations, clients around the world entrust "
+"us with their web projects."
+msgstr ""
+"Von kleinere Unternehmen zu große Organisationen vertrauen sich Kunden aus "
+"aller Welt an uns mit seine Webprojekte."
+
+#: page-templates/template-frontpage.php:144
+msgid "From Our Blog"
+msgstr "Auf dem Blog"
+
+#: page-templates/template-frontpage.php:145
+msgid ""
+"In our blog we write about all aspects of a successful web. Read about "
+"strategy, analysis, business, marketing and much more."
+msgstr ""
+"In unser Blog schreiben wir um alle Aspekte eines guten Webs. Lesen Sie um "
+"Strategie, Analyse, Business, Marketing und viel mehr."
+
+#: page-templates/template-service-page.php:14
+msgid "Service Page"
+msgstr "Diestseite"
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchresultaten für: %s"
+
+#: searchform.php:24
+msgid "What are you looking for?"
+msgstr "Was suchen Sie?"
+
+#: single-bm_casestudies.php:31
+msgid "Launched"
+msgstr "Lansiert"
+
+#: single-bm_casestudies.php:72
+msgid "Get started with your project"
+msgstr "Mit Ihrem Projekt Anfangen"
+
+#: single-bm_casestudies.php:73
+msgctxt "contact us page slug"
+msgid "/contact-us/"
+msgstr "/kontakt/"
+
+#: single-bm_casestudies.php:73
+msgid "Contact Us"
+msgstr "Kontaktiere uns"
+
+#: single-bm_casestudies.php:74
+msgid "Or call us +46 (0) 31 - 313 81 40"
+msgstr "Oder anrufen +46 (0) 31 - 313 81 40"
+
+#: tag.php:16
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Etikettarchiv: %s"
+
+#~ msgid "About %s"
+#~ msgstr "Um %s"
+
+#~ msgid "Services"
+#~ msgstr "Dienste"

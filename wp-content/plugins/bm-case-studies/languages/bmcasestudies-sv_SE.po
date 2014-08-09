@@ -1,0 +1,166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: [Bernskiold Media] Case Studies\n"
+"POT-Creation-Date: 2014-05-24 20:44+0100\n"
+"PO-Revision-Date: 2014-05-24 20:46+0100\n"
+"Last-Translator: Erik Bernskiold <erik@xldstudios.com>\n"
+"Language-Team: Erik Bernskiold <erik@xldstudios.com>\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/class-bm-casestudies-post-types.php:24
+msgctxt "A plural descriptive name for the post type marked for translation."
+msgid "Case Studies"
+msgstr "Kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:26
+msgctxt "general name for the post type, usually plural"
+msgid "Case Studies"
+msgstr "Kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:27
+msgctxt "name for one object of this post type"
+msgid "Case Study"
+msgstr "Kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:28
+msgctxt "the menu name text"
+msgid "Case Studies"
+msgstr "Kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:29
+msgctxt "the all items text used in the menu"
+msgid "All Case Studies"
+msgstr "Alla kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:30
+msgctxt "the add new text"
+msgid "Add New"
+msgstr "Lägg till"
+
+#: inc/class-bm-casestudies-post-types.php:31
+msgctxt "the add new item text"
+msgid "Add New Case Study"
+msgstr "Lägg till nytt kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:32
+msgctxt "the edit item text"
+msgid "Edit Case Study"
+msgstr "Redigera kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:33
+msgctxt "the new item text"
+msgid "New Case Study"
+msgstr "Nytt kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:34
+msgctxt "the view item text"
+msgid "View Case Study"
+msgstr "Visa kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:35
+msgctxt "the search items text"
+msgid "Search Case Studies"
+msgstr "Sök kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:36
+msgctxt "the not found text"
+msgid "No case studies found"
+msgstr "Inga kundcase hittades"
+
+#: inc/class-bm-casestudies-post-types.php:37
+msgctxt " not found in trash text"
+msgid "No case studies found in Trash"
+msgstr "Inga kundcase hittades i papperskorgen."
+
+#: inc/class-bm-casestudies-post-types.php:38
+msgctxt "the parent text"
+msgid "Parent Case Study"
+msgstr "Överliggande kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:40
+msgctxt "gone camping post type description"
+msgid "Contains all the case studies"
+msgstr "Innehåller alla kundcase."
+
+#: inc/class-bm-casestudies-post-types.php:55
+msgctxt "gone camping post type archive slug"
+msgid "case-studies"
+msgstr "kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:57
+msgctxt "gone camping post type single slug"
+msgid "case-studies"
+msgstr "kundcase"
+
+#: inc/class-bm-casestudies-post-types.php:71
+msgctxt "Taxonomy General Name"
+msgid "Services"
+msgstr "Tjänster"
+
+#: inc/class-bm-casestudies-post-types.php:72
+msgctxt "Taxonomy Singular Name"
+msgid "Service"
+msgstr "Tjänst"
+
+#: inc/class-bm-casestudies-post-types.php:73
+msgid "Services"
+msgstr "Tjänster"
+
+#: inc/class-bm-casestudies-post-types.php:74
+msgid "All Services"
+msgstr "Alla tjänster"
+
+#: inc/class-bm-casestudies-post-types.php:75
+msgid "Parent Service"
+msgstr "Överliggande tjänst"
+
+#: inc/class-bm-casestudies-post-types.php:76
+msgid "Parent Service:"
+msgstr "Överliggande tjänst:"
+
+#: inc/class-bm-casestudies-post-types.php:77
+msgid "New Service Name"
+msgstr "Nytt tjänstenamn"
+
+#: inc/class-bm-casestudies-post-types.php:78
+msgid "Add New Service"
+msgstr "Lägg till tjänst"
+
+#: inc/class-bm-casestudies-post-types.php:79
+msgid "Edit Service"
+msgstr "Redigera tjänst"
+
+#: inc/class-bm-casestudies-post-types.php:80
+msgid "Update Service"
+msgstr "Uppdatera tjänst"
+
+#: inc/class-bm-casestudies-post-types.php:81
+msgid "Separate services with commas"
+msgstr "Separera tjänster med komman"
+
+#: inc/class-bm-casestudies-post-types.php:82
+msgid "Search Services"
+msgstr "Sök tjänter"
+
+#: inc/class-bm-casestudies-post-types.php:83
+msgid "Add or remove services"
+msgstr "Lägg till eller ta bort tjänster"
+
+#: inc/class-bm-casestudies-post-types.php:84
+msgid "Choose from the most used services"
+msgstr "Välj bland de mest använda tjänsterna"
+
+#: inc/class-bm-casestudies-post-types.php:85
+msgid "Not Found"
+msgstr "Ej funnen"
