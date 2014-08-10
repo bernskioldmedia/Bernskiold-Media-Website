@@ -18,18 +18,6 @@ module.exports = function(grunt) {
          }
       },
 
-		sass: {
-			dist: {
-				options: {
-					style: 'compressed',
-					sourcemap: true,
-				},
-				files: {
-					'stylesheets/layout.css': 'sass/layout.scss'
-				}
-			}
-		},
-
 		compass: {
 			dist: {
 			  options: {
@@ -39,12 +27,9 @@ module.exports = function(grunt) {
 			    outputStyle: 'compressed'
 			  }
 			},
-	   }
+	   },
 
 		watch: {
-			options: {
-				livereload: true,
-			},
 			scripts: {
 				files: ['javascripts/*.js'],
 				tasks: ['uglify'],
@@ -68,7 +53,6 @@ module.exports = function(grunt) {
 	// Load Plugins
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 
