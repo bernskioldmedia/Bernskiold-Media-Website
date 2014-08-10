@@ -30,6 +30,17 @@ module.exports = function(grunt) {
 			}
 		},
 
+		compass: {
+			dist: {
+			  options: {
+			    sassDir: 'sass',
+			    cssDir: 'stylesheets',
+			    environment: 'production',
+			    outputStyle: 'compressed'
+			  }
+			},
+	   }
+
 		watch: {
 			options: {
 				livereload: true,
@@ -45,7 +56,7 @@ module.exports = function(grunt) {
 				files: [
 					'sass/*.scss',
 				],
-				tasks: [ 'sass', 'autoprefixer' ],
+				tasks: [ 'compass', 'autoprefixer' ],
 				options : {
 					spawn: false,
 				}
@@ -59,8 +70,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-contrib-compass');
 
 	// Run!
-	grunt.registerTask('default', ['sass', 'uglify', 'watch']);
+	grunt.registerTask('default', ['compass', 'uglify', 'watch']);
 
 }
