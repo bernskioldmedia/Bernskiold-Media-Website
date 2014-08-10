@@ -42,11 +42,11 @@
             <div class="small-12 columns footer-social-media">
               <h5 class="footer-block-title"><?php _e( 'On Social Media', 'bernskioldmedia' ); ?></h5>
               <ul>
-                <li class="facebook"><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                <li class="twitter"><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-                <li class="linkedin"><a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-                <li class="youtube"><a href="#"><i class="fa fa-youtube-square"></i> YouTube</a></li>
-                <li class="github"><a href="#"><i class="fa fa-github-square"></i> Github</a></li>
+                <li class="facebook"><a href="http://www.facebook.com/bernskioldmedia"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                <li class="twitter"><a href="http://twitter.com/bernskioldmedia"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/company/bernskiold-media"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                <li class="youtube"><a href="https://www.youtube.com/user/ErikBernskiold"><i class="fa fa-youtube-square"></i> YouTube</a></li>
+                <li class="github"><a href="https://github.com/bernskioldmedia"><i class="fa fa-github-square"></i> Github</a></li>
               </ul>
             </div>
           </div>
