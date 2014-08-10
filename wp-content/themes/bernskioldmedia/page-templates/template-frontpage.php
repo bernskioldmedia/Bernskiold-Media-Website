@@ -141,8 +141,8 @@ get_header(); ?>
         <div class="page-section-light">
           <div class="row page-section-2x">
             <div class="small-24 medium-24 large-9 columns">
-              <h2><?php _e( 'From Our Blog', 'bernskioldmedia' ); ?></h2>
-              <p class="sub-heading"><?php _e( 'In our blog we write about all aspects of a successful web. Read about strategy, analysis, business, marketing and much more.', 'bernskioldmedia' ); ?></p>
+              <h2><?php _e( 'From The Academy', 'bernskioldmedia' ); ?></h2>
+              <p class="sub-heading"><?php _e( 'In our academy we publish article about all aspects of a successful web. Read about strategy, analysis, business, marketing and much more.', 'bernskioldmedia' ); ?></p>
             </div>
 
             <?php while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bernskiold Media\n"
-"POT-Creation-Date: 2014-08-09 21:10+0100\n"
-"PO-Revision-Date: 2014-08-09 21:10+0100\n"
+"POT-Creation-Date: 2014-08-10 19:42+0100\n"
+"PO-Revision-Date: 2014-08-10 19:42+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@xldstudios.com>\n"
 "Language: sv_SE\n"
@@ -136,8 +136,8 @@ msgid "The Latest from XLD Studios"
 msgstr "Senaste nytt från XLD Studios"
 
 #: core/functions/ui.php:143
-msgid "Blog"
-msgstr "Blogg"
+msgid "Academy"
+msgstr "Akademi"
 
 #: core/theme.php:119
 msgid "Main Navigation"
@@ -345,16 +345,16 @@ msgstr ""
 "anförtror oss med sina webbprojekt. "
 
 #: page-templates/template-frontpage.php:144
-msgid "From Our Blog"
-msgstr "Från bloggen"
+msgid "From The Academy"
+msgstr "Från akademin"
 
 #: page-templates/template-frontpage.php:145
 msgid ""
-"In our blog we write about all aspects of a successful web. Read about "
-"strategy, analysis, business, marketing and much more."
+"In our academy we publish article about all aspects of a successful web. "
+"Read about strategy, analysis, business, marketing and much more."
 msgstr ""
-"I vår blogg skriver vi om alla aspekter kring en framgångsrik webb. Läs om "
-"strategi, analys, företagande, marknadsföring och mer."
+"I akademin hittar du artiklar om alla aspekter kring en framgångsrik webb. "
+"Läs om strategi, analys, företagande, marknadsföring och mycket mer."
 
 #: page-templates/template-service-page.php:14
 msgid "Service Page"
@@ -394,6 +394,12 @@ msgstr "Eller ring, 031 - 10 20 10"
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Etikettarkiv: %s"
+
+#~ msgid "Blog"
+#~ msgstr "Blogg"
+
+#~ msgid "From Our Blog"
+#~ msgstr "Från bloggen"
 
 #~ msgid "About %s"
 #~ msgstr "Om %s"
