@@ -219,7 +219,9 @@
       margin-left: 0.5em;
       border: 1px solid transparent;
 
-      &:hover {
+      &:hover,
+      .current-menu-item,
+      .current_page_item {
         border: 1px solid $border-color;
       }
     }
