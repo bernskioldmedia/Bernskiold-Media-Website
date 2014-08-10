@@ -140,7 +140,7 @@ if ( ! function_exists( 'bm_blog_heading' ) ) :
      */
     function bm_blog_heading() {
 
-        $title    = __( 'Blog', 'bernskioldmedia' );
+        $title    = __( 'Academy', 'bernskioldmedia' );
         $subtitle = false;
 
         if ( is_category() ) {
