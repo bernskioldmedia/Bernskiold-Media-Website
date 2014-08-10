@@ -16,6 +16,7 @@
 !.gitignore
 !wp-content/
 !language-redirect.php
+!README.md
 
 # Ignore everything in the "content" directory, except the "plugins"
 # and "themes" directories.
