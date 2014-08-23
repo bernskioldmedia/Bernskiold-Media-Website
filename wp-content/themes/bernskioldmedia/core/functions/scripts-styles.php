@@ -74,3 +74,50 @@ function bernskioldmedia_favicon() {
 
 add_action('wp_head', 'bernskioldmedia_favicon'); // Adds the favicon to frontend
 add_action('admin_head', 'bernskioldmedia_favicon'); // Adds the favicon to backend
+
+/**
+ * Adds the Google Analytics Tracking Code
+ *
+ * Uses universal tracking. Loops through and adds a different tracking code depending on the language.
+ */
+function bernskioldmedia_google_analytics() {
+
+	$language = ICL_LANGUAGE_CODE;
+
+	switch ( $language ) {
+
+		case 'en':
+			$property_id = 'UA-19733539-1';
+			break;
+
+		case 'sv':
+			$property_id = 'UA-19733539-4';
+			break;
+
+		case 'de':
+			$property_id = 'UA-19733539-5';
+			break;
+
+		default:
+			$property_id = 'UA-19733539-1'; // fallback to english
+			break;
+	}
+
+	ob_start(); ?>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-19733539-4', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<?php
+	$output = ob_get_clean();
+
+	echo $output;
+
+}
+
+add_action( 'wp_head', 'bernskioldmedia_google_analytics' );
