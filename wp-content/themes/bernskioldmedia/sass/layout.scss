@@ -199,7 +199,12 @@
     box-shadow: 0 2px 0 0 rgba(53, 58, 61, 0.05);
   }
 
-  .logo {}
+  .logo {
+
+    @media #{$small-only} {
+      text-align: center;
+    }
+  }
 
 /**
  * Navigation
