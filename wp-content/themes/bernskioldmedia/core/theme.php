@@ -118,6 +118,7 @@ class Ilmenite_Framework {
 			register_nav_menus(array(
 				'primary-menu'     => __('Main Navigation', 'bernskioldmedia'),
 				'company-menu'     => __('Company Menu', 'bernskioldmedia'),
+				'services-menu'     => __('Services Menu', 'bernskioldmedia'),
 				'top-menu'         => __('Top Navigation', 'bernskioldmedia'),
 				'blog-topics-menu' => __( 'Blog Topics Menu', 'bernskioldmedia' ),
 			));

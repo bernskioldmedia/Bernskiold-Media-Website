@@ -66,13 +66,12 @@
         <div class="small-10 medium-8 large-6 columns footer-services">
           <div class="footer-block">
             <h5 class="footer-block-title"><?php _e( 'What We Do', 'bernskioldmedia' ); ?></h5>
-            <ul>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'Web Development', 'bernskioldmedia' ); ?></a></li>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'e-Commerce', 'bernskioldmedia' ); ?></a></li>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'Web Analysis', 'bernskioldmedia' ); ?></a></li>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'Web Strategy', 'bernskioldmedia' ); ?></a></li>
-              <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/' ); ?>"><?php _e( 'Mobile Solutions', 'bernskioldmedia' ); ?></a></li>
-            </ul>
+            <?php wp_nav_menu(array(
+              'theme_location'  => 'services-menu',
+              'container'       => 'nav',
+              'container_class' => 'services-menu',
+              'depth'           => 1,
+            )); ?>
           </div>
         </div>
 
