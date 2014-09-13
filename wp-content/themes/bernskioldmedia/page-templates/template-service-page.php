@@ -18,7 +18,9 @@ get_header(); ?>
 <div class="service-image">
 	<div class="row">
 		<div class="small-24 columns">
-			<img src="http://cdn.xldstudios.com/wp-content/uploads/2014/07/ofwermanimports-main-image.png" alt="">
+			<?php if ( get_field( 'service_image' ) ) : ?>
+				<img src="<?php the_field( 'service_image' ); ?>" alt="<?php the_title(); ?>">
+			<?php endif; ?>
 		</div>
 	</div>
 </div>
