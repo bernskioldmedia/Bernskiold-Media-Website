@@ -8,46 +8,70 @@
  * @package Bernskiold Media Framework
  **/
 
-/**
- * Custom Pagination
- *
- * @since Bernskiold Media Framework 1.0
- **/
-function bernskioldmedia_pagination($pages = '', $range = 2) {
-     $showitems = ($range * 2)+1;
+if ( ! function_exists( 'bernskioldmedia_pagination' ) ) :
 
-     global $paged;
-     if(empty($paged)) $paged = 1;
+    /**
+     * Pagination
+     *
+     * Creates a pagination markup based on the Foundation
+     * framework pagination markup.
+     *
+     * @author  Erik Bernskiold
+     */
 
-     if($pages == '')
-     {
-         global $wp_query;
-         $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
-             $pages = 1;
-         }
-     }
+    function bernskioldmedia_pagination( $arrows = true, $ends = true, $pages = 2 ) {
 
-     if(1 != $pages)
-     {
-         echo "<div class='pagination'>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+        if (is_singular()) return;
 
-         for ($i=1; $i <= $pages; $i++)
-         {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             {
-                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
-             }
-         }
+        global $wp_query, $paged;
+        $pagination = '';
 
-         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
-         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
-         echo "</div>\n";
-     }
-}
+        $max_page = $wp_query->max_num_pages;
+        if ($max_page == 1) return;
+        if (empty($paged)) $paged = 1;
+
+        if ($arrows) $pagination .= bernskioldmedia_pagination_link($paged - 1, 'arrow' . (($paged <= 1) ? ' unavailable' : ''), '&laquo;', 'Previous Page');
+        if ($ends && $paged > $pages + 1) $pagination .= bernskioldmedia_pagination_link(1);
+        if ($ends && $paged > $pages + 2) $pagination .= bernskioldmedia_pagination_link(1, 'unavailable', '&hellip;');
+        for ($i = $paged - $pages; $i <= $paged + $pages; $i++) {
+            if ($i > 0 && $i <= $max_page)
+                $pagination .= bernskioldmedia_pagination_link($i, ($i == $paged) ? 'current' : '');
+        }
+        if ($ends && $paged < $max_page - $pages - 1) $pagination .= bernskioldmedia_pagination_link($max_page, 'unavailable', '&hellip;');
+        if ($ends && $paged < $max_page - $pages) $pagination .= bernskioldmedia_pagination_link($max_page);
+
+        if ($arrows) $pagination .= bernskioldmedia_pagination_link($paged + 1, 'arrow' . (($paged >= $max_page) ? ' unavailable' : ''), '&raquo;', 'Next Page');
+
+        $pagination = '<ul class="pagination">' . $pagination . '</ul>';
+        $pagination = '<div class="pagination-centered">' . $pagination . '</div>';
+
+        echo $pagination;
+    }
+
+endif;
+
+if ( ! function_exists( 'bernskioldmedia_pagination_link' ) ) :
+
+    /**
+     * Pagination Link
+     *
+     * Creates the special pagination link that is then used in the
+     * main pagination function above.
+     *
+     * @author  Erik Bernskiold
+     */
+    function bernskioldmedia_pagination_link( $page, $class = '', $content = '', $title = '' ) {
+        $id = sanitize_title_with_dashes('pagination-page-' . $page . ' ' . $class);
+        $href = (strrpos($class, 'unavailable') === false && strrpos($class, 'current') === false) ? get_pagenum_link($page) : "#$id";
+
+        $class = empty($class) ? $class : " class=\"$class\"";
+        $content = !empty($content) ? $content : $page;
+        $title = !empty($title) ? $title : 'Page ' . $page;
+
+        return "<li$class><a id=\"$id\" href=\"$href\" title=\"$title\">$content</a></li>\n";
+    }
+
+endif;
 
 if ( ! function_exists( 'bm_author_box' ) ) :
     /**
