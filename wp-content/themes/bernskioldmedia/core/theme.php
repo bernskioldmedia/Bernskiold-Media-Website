@@ -117,6 +117,7 @@ class Ilmenite_Framework {
 			// Register one default navigation menu
 			register_nav_menus(array(
 				'primary-menu'     => __('Main Navigation', 'bernskioldmedia'),
+				'company-menu'     => __('Company Menu', 'bernskioldmedia'),
 				'top-menu'         => __('Top Navigation', 'bernskioldmedia'),
 				'blog-topics-menu' => __( 'Blog Topics Menu', 'bernskioldmedia' ),
 			));
@@ -146,8 +147,6 @@ class Ilmenite_Framework {
 			 	'before_title' => '<h5 class="sidebar-block-title">',
 			 	'after_title' => '</h5>',
 			));
-
-			// More sidebars can be added here!
 
 		}
 	}
