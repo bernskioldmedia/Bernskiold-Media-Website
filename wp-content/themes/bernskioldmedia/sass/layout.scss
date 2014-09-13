@@ -821,6 +821,13 @@ blockquote {
       &:first-child {
         border-left: 1px solid $border-color;
       }
+
+      @media #{$small-only} {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid $border-color;
+        text-align: left;
+      }
     }
 
     .current-menu-item a,
@@ -829,11 +836,11 @@ blockquote {
     }
 
     a {
-      padding: 0.8rem 2.5rem;
+      padding: 0.6rem 2rem;
       display: block;
       text-transform: uppercase;
       color: darken( $secondary-color, 50% );
-      font-size: 1.2rem;
+      font-size: 1.1rem;
 
       &:hover {
         background: darken( $secondary-color, 2% );
