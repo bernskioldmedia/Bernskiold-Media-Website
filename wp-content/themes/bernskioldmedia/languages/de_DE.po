@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bernskiold Media\n"
-"POT-Creation-Date: 2014-08-10 19:41+0100\n"
-"PO-Revision-Date: 2014-08-10 19:42+0100\n"
+"POT-Creation-Date: 2014-09-13 17:06+0100\n"
+"PO-Revision-Date: 2014-09-13 17:10+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@xldstudios.com>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -60,8 +60,7 @@ msgstr "Alle"
 msgid "web-strategy"
 msgstr "webstrategie"
 
-#: archive-bm_casestudies.php:30 footer.php:63
-#: page-templates/template-frontpage.php:31
+#: archive-bm_casestudies.php:30 page-templates/template-frontpage.php:31
 msgid "Web Strategy"
 msgstr "Webbstrategie"
 
@@ -85,7 +84,7 @@ msgstr "E-Commerce"
 msgid "mobile-solutions"
 msgstr "mobile-losungen"
 
-#: archive-bm_casestudies.php:33 footer.php:64
+#: archive-bm_casestudies.php:33
 msgid "Mobile Solutions"
 msgstr "Mobile lösungen"
 
@@ -119,6 +118,20 @@ msgstr "Neuere Kommenaren &rarr;"
 msgid "Comments are closed."
 msgstr "Kommentaren sind geschlossen."
 
+#: content-no-content.php:9
+msgid "No Content Found"
+msgstr "Kein Inhalt gefunden"
+
+#: content-no-content.php:12
+msgid ""
+"No content could be found for this request. You are in the right place, it "
+"is just that we don't have anything to display here yet. Try another page "
+"for now, or use the search below to find something else."
+msgstr ""
+"Leider konnten wir keinen Inhalt hier finden. Sie sind auf dem richtigen "
+"Platz, aber wir haben trotzdem nichts hier für Sie zu lesen. Versuchen Sie "
+"bitten mit einer anderen Seite, oder suchen Sie unten für etwas anderes."
+
 #: content-single.php:28 content.php:28
 msgid "Continue Reading &raquo;"
 msgstr "Weiter lesen &raquo;"
@@ -135,7 +148,7 @@ msgstr "http://www.xldstudios.com/feed/"
 msgid "The Latest from XLD Studios"
 msgstr "Das Neueste auf XLD Studios"
 
-#: core/functions/ui.php:143
+#: core/functions/ui.php:167
 msgid "Academy"
 msgstr "Akademie"
 
@@ -144,16 +157,28 @@ msgid "Main Navigation"
 msgstr "Hauptnavigation"
 
 #: core/theme.php:120
+msgid "Company Menu"
+msgstr "Geschäftsnavigation"
+
+#: core/theme.php:121
+msgid "Services Menu"
+msgstr "Leistungsnavigation"
+
+#: core/theme.php:122
 msgid "Top Navigation"
 msgstr "Toppnavigation"
 
-#: core/theme.php:121
+#: core/theme.php:123
 msgid "Blog Topics Menu"
 msgstr "Kategorienavigation"
 
-#: core/theme.php:143
+#: core/theme.php:145
 msgid "Sidebar"
 msgstr "Seitenleiste"
+
+#: core/theme.php:155
+msgid "Service Page Sidebar"
+msgstr "Leistungsseite"
 
 #: footer.php:31
 #, php-format
@@ -170,58 +195,62 @@ msgid "/about-us/"
 msgstr "/um-uns/"
 
 #: footer.php:36
-msgid "Newsletter"
-msgstr "Newsletter"
+msgid "Bernskiold Media"
+msgstr "Bernskiold Media"
 
-#: footer.php:38
-msgid "Your email address"
-msgstr "Ihre E-mail-Adresse"
-
-#: footer.php:39
-msgid "Subscribe for Free"
-msgstr "Für Frei Anmelden"
-
-#: footer.php:43
+#: footer.php:45
 msgid "On Social Media"
 msgstr "Auf soziale Medien"
 
-#: footer.php:58
+#: footer.php:59
+msgid "Receive Insights, News and Tips for Free"
+msgstr "Nachrichten, Analysen und Tips bekommen"
+
+#: footer.php:61
+msgid "Your email address"
+msgstr "Ihre E-mail-Adresse"
+
+#: footer.php:62
+msgid "Subscribe for Free"
+msgstr "Für Frei Anmelden"
+
+#: footer.php:68
 msgid "What We Do"
 msgstr "Was wir machen"
 
-#: footer.php:60
-msgid "Web Development"
-msgstr "Webentwicklung"
-
-#: footer.php:61 page-templates/template-frontpage.php:33
-msgid "e-Commerce"
-msgstr "E-Commerce"
-
-#: footer.php:62
-msgid "Web Analysis"
-msgstr "Webanalyse"
-
-#: footer.php:71
+#: footer.php:80
 msgid "Contact"
 msgstr "Kontakt"
 
-#: footer.php:74
-msgid "Gothenburg"
-msgstr "Göteborg"
+#: footer.php:81
+msgid "Bernskiold Media AB"
+msgstr "Bernskiold Media AB"
 
-#: footer.php:75
+#: footer.php:82
+msgid "Aschebergsgatan 55 A"
+msgstr "Eysseneckstraße 57"
+
+#: footer.php:83
+msgid "411 33"
+msgstr "60322"
+
+#: footer.php:83
+msgid "Gothenburg"
+msgstr "Frankfurt"
+
+#: footer.php:84
 msgid "Phone:"
 msgstr "Tel:"
 
-#: footer.php:75
+#: footer.php:84
 msgid "+46 31 - 10 20 10"
-msgstr "+46 31 - 10 20 10"
+msgstr "+49 (0) 69 133 968 43"
 
-#: footer.php:76
+#: footer.php:85
 msgid "info@bernskioldmedia.com"
 msgstr "info@bernskioldmedia.de"
 
-#: footer.php:84
+#: footer.php:93
 #, php-format
 msgid "Copyright &copy; %s Bernskiold Media AB. All Rights Reserved."
 msgstr "Copyright &copy; %s Bernskiold Media AB. Alle Rechte vorbehalten."
@@ -233,10 +262,6 @@ msgstr "Suchen"
 #: header.php:48
 msgid "Find what you are looking for by using the search form."
 msgstr "Finde was Sie suchen mit der Sucheformulare."
-
-#: header.php:100
-msgid "Navigation"
-msgstr "Navigation"
 
 #: page-templates/template-frontpage.php:23
 msgid "Grasp the Web"
@@ -264,6 +289,10 @@ msgstr "Kontaktieren Sie uns"
 #: page-templates/template-frontpage.php:32
 msgid "Design & Development"
 msgstr "Design & Entwicklung"
+
+#: page-templates/template-frontpage.php:33
+msgid "e-Commerce"
+msgstr "E-Commerce"
 
 #: page-templates/template-frontpage.php:34
 #: page-templates/template-frontpage.php:58
@@ -390,12 +419,24 @@ msgstr "Kontaktiere uns"
 
 #: single-bm_casestudies.php:74
 msgid "Or call us +46 31 - 10 20 10"
-msgstr "Oder anrufen +46 31 - 10 20 10"
+msgstr "Oder anrufen +49 (0) 69 133 968 43"
 
 #: tag.php:16
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Etikettarchiv: %s"
+
+#~ msgid "Newsletter"
+#~ msgstr "Newsletter"
+
+#~ msgid "Web Development"
+#~ msgstr "Webentwicklung"
+
+#~ msgid "Web Analysis"
+#~ msgstr "Webanalyse"
+
+#~ msgid "Navigation"
+#~ msgstr "Navigation"
 
 #~ msgid "From Our Blog"
 #~ msgstr "Auf dem Blog"
@@ -405,6 +446,3 @@ msgstr "Etikettarchiv: %s"
 
 #~ msgid "About %s"
 #~ msgstr "Um %s"
-
-#~ msgid "Services"
-#~ msgstr "Dienste"

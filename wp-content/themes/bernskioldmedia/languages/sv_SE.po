@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bernskiold Media\n"
-"POT-Creation-Date: 2014-08-10 19:42+0100\n"
-"PO-Revision-Date: 2014-08-10 19:42+0100\n"
+"POT-Creation-Date: 2014-09-13 17:05+0100\n"
+"PO-Revision-Date: 2014-09-13 17:06+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@xldstudios.com>\n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -60,8 +60,7 @@ msgstr "Alla"
 msgid "web-strategy"
 msgstr "webbstrategi"
 
-#: archive-bm_casestudies.php:30 footer.php:63
-#: page-templates/template-frontpage.php:31
+#: archive-bm_casestudies.php:30 page-templates/template-frontpage.php:31
 msgid "Web Strategy"
 msgstr "Webbstrategi"
 
@@ -85,7 +84,7 @@ msgstr "E-handel"
 msgid "mobile-solutions"
 msgstr "mobila-losningar"
 
-#: archive-bm_casestudies.php:33 footer.php:64
+#: archive-bm_casestudies.php:33
 msgid "Mobile Solutions"
 msgstr "Mobila lösningar"
 
@@ -119,6 +118,20 @@ msgstr "Nyare kommentarer &rarr;"
 msgid "Comments are closed."
 msgstr "Kommentarerna är stängda."
 
+#: content-no-content.php:9
+msgid "No Content Found"
+msgstr "Inget innehåll hittades"
+
+#: content-no-content.php:12
+msgid ""
+"No content could be found for this request. You are in the right place, it "
+"is just that we don't have anything to display here yet. Try another page "
+"for now, or use the search below to find something else."
+msgstr ""
+"Vi kunde inte hitta något innehåll här. Du är dock på rätt ställe, det är "
+"bara det att vi ännu inte har något att visa här. Försök med en annan sida "
+"eller använd sökrutan nedan för att hitta någonting annat."
+
 #: content-single.php:28 content.php:28
 msgid "Continue Reading &raquo;"
 msgstr "Läs vidare &raquo;"
@@ -135,7 +148,7 @@ msgstr "http://www.xldstudios.se/feed"
 msgid "The Latest from XLD Studios"
 msgstr "Senaste nytt från XLD Studios"
 
-#: core/functions/ui.php:143
+#: core/functions/ui.php:167
 msgid "Academy"
 msgstr "Akademi"
 
@@ -144,16 +157,28 @@ msgid "Main Navigation"
 msgstr "Huvudmeny"
 
 #: core/theme.php:120
+msgid "Company Menu"
+msgstr "Företagsmeny"
+
+#: core/theme.php:121
+msgid "Services Menu"
+msgstr "Tjänstemeny"
+
+#: core/theme.php:122
 msgid "Top Navigation"
 msgstr "Toppmeny"
 
-#: core/theme.php:121
+#: core/theme.php:123
 msgid "Blog Topics Menu"
 msgstr "Bloggämnesmeny"
 
-#: core/theme.php:143
+#: core/theme.php:145
 msgid "Sidebar"
 msgstr "Sidomeny"
+
+#: core/theme.php:155
+msgid "Service Page Sidebar"
+msgstr "Sidebar för tjänstesida"
 
 #: footer.php:31
 #, php-format
@@ -170,58 +195,62 @@ msgid "/about-us/"
 msgstr "/om-oss/"
 
 #: footer.php:36
-msgid "Newsletter"
-msgstr "Nyhetsbrev"
+msgid "Bernskiold Media"
+msgstr "Bernskiold Media"
 
-#: footer.php:38
-msgid "Your email address"
-msgstr "Din e-postadress"
-
-#: footer.php:39
-msgid "Subscribe for Free"
-msgstr "Prenumerera gratis"
-
-#: footer.php:43
+#: footer.php:45
 msgid "On Social Media"
 msgstr "På sociala medier"
 
-#: footer.php:58
+#: footer.php:59
+msgid "Receive Insights, News and Tips for Free"
+msgstr "Få insikter, nyheter och tips gratis"
+
+#: footer.php:61
+msgid "Your email address"
+msgstr "Din e-postadress"
+
+#: footer.php:62
+msgid "Subscribe for Free"
+msgstr "Prenumerera gratis"
+
+#: footer.php:68
 msgid "What We Do"
 msgstr "Vad vi gör"
 
-#: footer.php:60
-msgid "Web Development"
-msgstr "Webbutveckling"
-
-#: footer.php:61 page-templates/template-frontpage.php:33
-msgid "e-Commerce"
-msgstr "E-handel"
-
-#: footer.php:62
-msgid "Web Analysis"
-msgstr "Webbanalys"
-
-#: footer.php:71
+#: footer.php:80
 msgid "Contact"
 msgstr "Kontakt"
 
-#: footer.php:74
+#: footer.php:81
+msgid "Bernskiold Media AB"
+msgstr "Bernskiold Media AB"
+
+#: footer.php:82
+msgid "Aschebergsgatan 55 A"
+msgstr "Aschebergsgatan 55 A"
+
+#: footer.php:83
+msgid "411 33"
+msgstr "411 33"
+
+#: footer.php:83
 msgid "Gothenburg"
 msgstr "Göteborg"
 
-#: footer.php:75
+#: footer.php:84
 msgid "Phone:"
 msgstr "Tel:"
 
-#: footer.php:75
+#: footer.php:84
 msgid "+46 31 - 10 20 10"
 msgstr "031 - 10 20 10"
 
-#: footer.php:76
+#: footer.php:85
 msgid "info@bernskioldmedia.com"
 msgstr "info@bernskioldmedia.com"
 
-#: footer.php:84
+#: footer.php:93
 #, php-format
 msgid "Copyright &copy; %s Bernskiold Media AB. All Rights Reserved."
 msgstr "Copyright &copy; %s Bernskiold Media AB. Alla rättigheter reserveras."
@@ -233,10 +262,6 @@ msgstr "Sök"
 #: header.php:48
 msgid "Find what you are looking for by using the search form."
 msgstr "Hitta vad du letar efter genom att använda sökformuläret."
-
-#: header.php:100
-msgid "Navigation"
-msgstr "Navigation"
 
 #: page-templates/template-frontpage.php:23
 msgid "Grasp the Web"
@@ -264,6 +289,10 @@ msgstr "Kom i kontakt"
 #: page-templates/template-frontpage.php:32
 msgid "Design & Development"
 msgstr "Design & utveckling"
+
+#: page-templates/template-frontpage.php:33
+msgid "e-Commerce"
+msgstr "E-handel"
 
 #: page-templates/template-frontpage.php:34
 #: page-templates/template-frontpage.php:58
@@ -395,6 +424,18 @@ msgstr "Eller ring, 031 - 10 20 10"
 msgid "Tag Archives: %s"
 msgstr "Etikettarkiv: %s"
 
+#~ msgid "Newsletter"
+#~ msgstr "Nyhetsbrev"
+
+#~ msgid "Web Development"
+#~ msgstr "Webbutveckling"
+
+#~ msgid "Web Analysis"
+#~ msgstr "Webbanalys"
+
+#~ msgid "Navigation"
+#~ msgstr "Navigation"
+
 #~ msgid "Blog"
 #~ msgstr "Blogg"
 
@@ -403,6 +444,3 @@ msgstr "Etikettarkiv: %s"
 
 #~ msgid "About %s"
 #~ msgstr "Om %s"
-
-#~ msgid "Services"
-#~ msgstr "Tjänster"
