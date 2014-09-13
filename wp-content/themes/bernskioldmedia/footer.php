@@ -58,8 +58,14 @@
         <div class="small-24 medium-8 large-12 columns">
           <h5 class="footer-block-title"><?php _e( 'Receive Insights, News and Tips for Free', 'bernskioldmedia' ); ?></h5>
               <form action="//bernskioldmedia.us1.list-manage.com/subscribe/post?u=692fa400bc84329b1d105c071&amp;id=3806350390" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input type="email" placeholder="<?php _e( 'Your email address', 'bernskioldmedia' ); ?>">
-                <input type="submit" value="<?php _e( 'Subscribe for Free', 'bernskioldmedia' ); ?>" class="button outline expand light">
+                <div class="row">
+                  <div class="small-14 medium-24 large-16 columns">
+                    <input type="email" placeholder="<?php _e( 'Your email address', 'bernskioldmedia' ); ?>">
+                  </div>
+                  <div class="small-10 medium-24 large-8 columns">
+                    <input type="submit" value="<?php _e( 'Subscribe', 'bernskioldmedia' ); ?>" class="button outline expand light" id="newsletter-submission">
+                  </div>
+                </div>
               </form>
         </div>
 
