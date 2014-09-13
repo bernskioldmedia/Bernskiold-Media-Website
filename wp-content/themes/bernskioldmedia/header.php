@@ -21,7 +21,7 @@
 		<script type="text/javascript" src="//use.typekit.net/cnt5jqj.js"></script>
     	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 		<?php wp_head(); ?>
 

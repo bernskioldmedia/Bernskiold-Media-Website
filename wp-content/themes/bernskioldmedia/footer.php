@@ -34,7 +34,7 @@
           <div class="row">
             <div class="small-12 columns footer-case-study">
               <h5 class="footer-block-title"><?php _e( 'Newsletter', 'bernskioldmedia' ); ?></h5>
-              <form action="http://bernskioldmedia.us1.list-manage.com/subscribe/post?u=692fa400bc84329b1d105c071&amp;id=3806350390" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <form action="//bernskioldmedia.us1.list-manage.com/subscribe/post?u=692fa400bc84329b1d105c071&amp;id=3806350390" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <input type="email" placeholder="<?php _e( 'Your email address', 'bernskioldmedia' ); ?>">
                 <input type="submit" value="<?php _e( 'Subscribe for Free', 'bernskioldmedia' ); ?>" class="button outline expand light">
               </form>
@@ -42,8 +42,8 @@
             <div class="small-12 columns footer-social-media">
               <h5 class="footer-block-title"><?php _e( 'On Social Media', 'bernskioldmedia' ); ?></h5>
               <ul>
-                <li class="facebook"><a href="http://www.facebook.com/bernskioldmedia"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                <li class="twitter"><a href="http://twitter.com/bernskioldmedia"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li class="facebook"><a href="https://www.facebook.com/bernskioldmedia"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                <li class="twitter"><a href="https://twitter.com/bernskioldmedia"><i class="fa fa-twitter-square"></i> Twitter</a></li>
                 <li class="linkedin"><a href="https://www.linkedin.com/company/bernskiold-media"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
                 <li class="youtube"><a href="https://www.youtube.com/user/ErikBernskiold"><i class="fa fa-youtube-square"></i> YouTube</a></li>
                 <li class="github"><a href="https://github.com/bernskioldmedia"><i class="fa fa-github-square"></i> Github</a></li>
@@ -67,9 +67,9 @@
         </div>
 
         <div class="small-24 medium-12 large-6 columns">
-          <div class="footer-block" itemscope itemtype="http://schema.org/Organization">
+          <div class="footer-block" itemscope itemtype="//schema.org/Organization">
             <h5 class="footer-block-title"><?php _e( 'Contact', 'bernskioldmedia' ); ?></h5>
-            <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="name">Bernskiold Media AB</span><br/>
+            <p itemprop="address" itemscope itemtype="//schema.org/PostalAddress"><span itemprop="name">Bernskiold Media AB</span><br/>
             <span itemprop="streetAddress">Storgatan 53</span><br/>
             <span itemprop="postalCode">411 38</span> <span itemprop="addressLocality"><?php _e( 'Gothenburg', 'bernskioldmedia' ); ?></span></p>
             <p><?php _e( 'Phone:', 'bernskioldmedia' ); ?> <a href="tel://+4631102010" class="no-link" itemprop="telephone"><?php _e( '+46 31 - 10 20 10', 'bernskioldmedia' ); ?></a><br/>
