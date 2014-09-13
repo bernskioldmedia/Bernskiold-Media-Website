@@ -59,20 +59,15 @@ get_header(); ?>
 
 		<div class="small-24 medium-8 large-7 columns service-sidebar sidebar">
 
+			<?php wp_nav_menu(array(
+	        'theme_location'  => 'services-menu',
+	        'container'       => 'nav',
+	        'container_class' => 'menu',
+	        'depth'           => 1,
+			)); ?>
+
 			<?php dynamic_sidebar('service-sidebar'); ?>
 
-			<nav class="menu">
-				<ul>
-					<li><a href="#">Testing</a></li>
-					<li><a href="#">Testing</a></li>
-					<li><a href="#">Testing</a></li>
-				</ul>
-			</nav>
-
-			<div class="sidebar-block">
-				<h5 class="sidebar-block-title">Contact</h5>
-				<img src="http://www.bernskioldmedia.com/wp-content/uploads/2014/01/erik-1000x1000-150x150.jpg" alt="" class="round-photo">
-			</div>
 		</div>
 
 	<?php else : ?>
