@@ -40,7 +40,7 @@ get_header(); ?>
 
 	<?php else : ?>
 
-	    <?php get_template_part('content', '404'); // Streamline and get the 404 content from a unified file. ?>
+	    <?php get_template_part('content', 'no-content'); // Streamline and get the 404 content from a unified file. ?>
 
 	<?php endif; ?>
 

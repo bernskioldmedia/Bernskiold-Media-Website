@@ -834,6 +834,10 @@ blockquote {
         border-left: 1px solid $border-color;
       }
 
+      &:hover {
+        background: darken( $secondary-color, 2% );
+      }
+
       @media #{$small-only} {
         width: 100%;
         border-right: none;
@@ -842,26 +846,27 @@ blockquote {
       }
     }
 
-    .current-menu-item a,
-    .current-menu-parent a {
-      border-bottom: 4px solid $highlight-color;
-    }
-
     a {
       padding: 0.6rem 2rem;
       display: block;
       text-transform: uppercase;
       color: darken( $secondary-color, 50% );
       font-size: 1.1rem;
+    }
 
-      &:hover {
-        background: darken( $secondary-color, 2% );
-      }
+    .current-menu-item a,
+    .current-menu-parent a {
+      border-bottom: 4px solid $highlight-color;
+      padding-bottom: 0.4rem;
     }
 }
 
+.blog-index {
+  margin-top: -8.4rem;
+}
+
 .blog-title-block {
-  padding-top: 1.5rem;
+  padding-top: 9rem;
 }
 
 .post-item {}

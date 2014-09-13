@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div class="main">
+<div class="main blog-index">
 
 	<?php bm_blog_heading(); ?>
 
