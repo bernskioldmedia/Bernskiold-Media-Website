@@ -78,6 +78,9 @@
       <div class="row">
 
         <div class="logo small-24 medium-24 large-7 columns">
+
+          <a href="#" class="responsive-navigation-toggle"><i class="fa fa-bars"></i></a>
+
           <a href="<?php echo bm_home_url(); ?>">
             <?php if ( is_front_page() ) : ?>
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-light.png" alt="">
@@ -97,8 +100,6 @@
       </div>
 
       <div class="responsive-navigation show-for-small">
-        <a href="#" class="responsive-navigation-toggle"><i class="fa fa-bars"></i> <?php _e( 'Navigation', 'bernskioldmedia' ); ?></a>
-
         <?php wp_nav_menu(array(
           'theme_location'  => 'primary-menu',
           'container'       => 'nav',
