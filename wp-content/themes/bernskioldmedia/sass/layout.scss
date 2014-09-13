@@ -695,6 +695,17 @@
   }
 
 /**
+ * Service Page
+ */
+.service-image {
+  border-bottom: 1px solid $border-color;
+
+  img {
+    margin-top: 2rem;
+  }
+}
+
+/**
  * Frontpage
  */
 .frontpage-testimonial {

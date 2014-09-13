@@ -15,16 +15,15 @@ __( 'Service Page', 'bernskioldmedia' );
 
 get_header(); ?>
 
-<div class="main">
-
-	<div class="page-title-block">
-		<div class="row">
-			<div class="small-24 columns">
-				<h1 class="page-title"><?php the_title(); ?></h1>
-				<p class="page-subtitle"><?php the_field( 'page_subtitle' ); ?></p>
-			</div>
+<div class="service-image">
+	<div class="row">
+		<div class="small-24 columns">
+			<img src="http://cdn.xldstudios.com/wp-content/uploads/2014/07/ofwermanimports-main-image.png" alt="">
 		</div>
 	</div>
+</div>
+
+<div class="main service-page">
 
 	<div class="row page-section">
 
@@ -35,6 +34,10 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 		    <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+				<h1 class="page-title"><?php the_title(); ?></h1>
+
+				<p class="intro"><?php the_field( 'page_subtitle' ); ?></p>
 
 				<div class="page-body">
 					<?php the_content(); ?>
@@ -56,6 +59,8 @@ get_header(); ?>
 
 		<div class="small-24 medium-8 large-7 columns service-sidebar sidebar">
 
+			<?php dynamic_sidebar('service-sidebar'); ?>
+
 			<nav class="menu">
 				<ul>
 					<li><a href="#">Testing</a></li>
@@ -66,6 +71,7 @@ get_header(); ?>
 
 			<div class="sidebar-block">
 				<h5 class="sidebar-block-title">Contact</h5>
+				<img src="http://www.bernskioldmedia.com/wp-content/uploads/2014/01/erik-1000x1000-150x150.jpg" alt="" class="round-photo">
 			</div>
 		</div>
 

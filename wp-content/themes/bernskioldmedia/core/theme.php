@@ -149,6 +149,16 @@ class Ilmenite_Framework {
 			 	'after_title' => '</h5>',
 			));
 
+			// Service Sidebar
+			register_sidebar(array(
+				'id' => 'service-sidebar',
+				'name' => __('Service Page Sidebar', 'bernskioldmedia'),
+				'before_widget' => '<div class="sidebar-block">',
+			 	'after_widget' => '</div>',
+			 	'before_title' => '<h5 class="sidebar-block-title">',
+			 	'after_title' => '</h5>',
+			));
+
 		}
 	}
 
