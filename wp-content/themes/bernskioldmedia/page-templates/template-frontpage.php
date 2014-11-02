@@ -117,11 +117,12 @@ get_header(); ?>
             <p class="sub-heading text-center"><?php _e( 'From small businesses to big organizations, clients around the world entrust us with their web projects.', 'bernskioldmedia' ); ?></p>
 
             <ul class="inline-block-list spacing-2x text-center client-logo-list">
-              <li><a href="http://www.audiovisionsf.com"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/audiovisionsf.png" alt="AudioVision SF"></a></li>
-              <li><a href="http://www.hellotruth.se"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/truth.png" alt="Truth"></a></li>
               <li><a href="http://www.ssrs.se/"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/srss.png" alt="Swedish Sea Rescue Society"></a></li>
-              <li><a href="http://www.businessclass.se"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/businessclass.png" alt="BusinessClass"></a></li>
+               <li><a href="http://www.campingkey.com"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/campingkey.png" alt="Camping Key Europe"></a></li>
               <li><a href="http://www.vimlewebb.se"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/vimlewebb.png" alt="VimleWebb"></a></li>
+              <li><a href="http://www.miami.se"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/miami.png" alt="Miami Advertising Agency"></a></li>
+              <li><a href="http://www.highheaven.com"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/highheaven.png" alt="HighHeaven"></a></li>
+              <li><a href="http://www.hellotruth.se"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/truth.png" alt="Truth"></a></li>
             </ul>
 
             <blockquote class="frontpage-testimonial">Bernskiold Media has been the only company that we have worked with and have searched for (for years) that has met our demands and proven to be our one-stop shop for everything related to our internet presence and communication savvy. <cite>Sheree Kearns, Kearns Brothers</cite> </blockquote>
