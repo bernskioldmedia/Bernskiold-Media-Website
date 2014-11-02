@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bernskiold Media\n"
-"POT-Creation-Date: 2014-09-13 17:05+0100\n"
-"PO-Revision-Date: 2014-09-13 17:06+0100\n"
+"POT-Creation-Date: 2014-11-02 12:49+0100\n"
+"PO-Revision-Date: 2014-11-02 12:50+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@xldstudios.com>\n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -49,42 +49,51 @@ msgid "Sort:"
 msgstr "Sortera:"
 
 #: archive-bm_casestudies.php:29
-msgid "all"
-msgstr "alla"
-
-#: archive-bm_casestudies.php:29
 msgid "All"
 msgstr "Alla"
 
 #: archive-bm_casestudies.php:30
+msgctxt "filter slug"
 msgid "web-strategy"
-msgstr "webbstrategi"
+msgstr "webbstrategi-sv"
 
 #: archive-bm_casestudies.php:30 page-templates/template-frontpage.php:31
 msgid "Web Strategy"
 msgstr "Webbstrategi"
 
 #: archive-bm_casestudies.php:31
-msgid "design-development"
-msgstr "design-utveckling"
+msgctxt "filter slug"
+msgid "design"
+msgstr "design-sv"
 
 #: archive-bm_casestudies.php:31
-msgid "Web Design & Development"
-msgstr "Webbdesign & utveckling"
+msgid "Web Design"
+msgstr "Webbdesign"
 
 #: archive-bm_casestudies.php:32
+msgctxt "filter slug"
+msgid "development"
+msgstr "webbutveckling"
+
+#: archive-bm_casestudies.php:32
+msgid "Web Development"
+msgstr "Webbutveckling"
+
+#: archive-bm_casestudies.php:33
+msgctxt "filter slug"
 msgid "e-commerce"
-msgstr "e-handel"
+msgstr "e-handel-sv"
 
-#: archive-bm_casestudies.php:32
+#: archive-bm_casestudies.php:33
 msgid "E-Commerce"
 msgstr "E-handel"
 
-#: archive-bm_casestudies.php:33
+#: archive-bm_casestudies.php:34
+msgctxt "filter slug"
 msgid "mobile-solutions"
 msgstr "mobila-losningar"
 
-#: archive-bm_casestudies.php:33
+#: archive-bm_casestudies.php:34
 msgid "Mobile Solutions"
 msgstr "Mobila lösningar"
 
@@ -206,51 +215,51 @@ msgstr "På sociala medier"
 msgid "Receive Insights, News and Tips for Free"
 msgstr "Få insikter, nyheter och tips gratis"
 
-#: footer.php:61
+#: footer.php:63
 msgid "Your email address"
 msgstr "Din e-postadress"
 
-#: footer.php:62
-msgid "Subscribe for Free"
-msgstr "Prenumerera gratis"
+#: footer.php:66
+msgid "Subscribe"
+msgstr "Prenumerera"
 
-#: footer.php:68
+#: footer.php:74
 msgid "What We Do"
 msgstr "Vad vi gör"
 
-#: footer.php:80
+#: footer.php:86
 msgid "Contact"
 msgstr "Kontakt"
 
-#: footer.php:81
+#: footer.php:87
 msgid "Bernskiold Media AB"
 msgstr "Bernskiold Media AB"
 
-#: footer.php:82
+#: footer.php:88
 msgid "Aschebergsgatan 55 A"
 msgstr "Aschebergsgatan 55 A"
 
-#: footer.php:83
+#: footer.php:89
 msgid "411 33"
 msgstr "411 33"
 
-#: footer.php:83
+#: footer.php:89
 msgid "Gothenburg"
 msgstr "Göteborg"
 
-#: footer.php:84
+#: footer.php:90
 msgid "Phone:"
 msgstr "Tel:"
 
-#: footer.php:84
+#: footer.php:90
 msgid "+46 31 - 10 20 10"
 msgstr "031 - 10 20 10"
 
-#: footer.php:85
+#: footer.php:91
 msgid "info@bernskioldmedia.com"
 msgstr "info@bernskioldmedia.com"
 
-#: footer.php:93
+#: footer.php:99
 #, php-format
 msgid "Copyright &copy; %s Bernskiold Media AB. All Rights Reserved."
 msgstr "Copyright &copy; %s Bernskiold Media AB. Alla rättigheter reserveras."
@@ -373,11 +382,11 @@ msgstr ""
 "Från småföretag till stora organisationer. Kunder från hela världen "
 "anförtror oss med sina webbprojekt. "
 
-#: page-templates/template-frontpage.php:144
+#: page-templates/template-frontpage.php:145
 msgid "From The Academy"
 msgstr "Från akademin"
 
-#: page-templates/template-frontpage.php:145
+#: page-templates/template-frontpage.php:146
 msgid ""
 "In our academy we publish article about all aspects of a successful web. "
 "Read about strategy, analysis, business, marketing and much more."
@@ -424,11 +433,17 @@ msgstr "Eller ring, 031 - 10 20 10"
 msgid "Tag Archives: %s"
 msgstr "Etikettarkiv: %s"
 
+#~ msgid "all"
+#~ msgstr "alla"
+
+#~ msgid "design-development"
+#~ msgstr "design-utveckling"
+
+#~ msgid "Web Design & Development"
+#~ msgstr "Webbdesign & utveckling"
+
 #~ msgid "Newsletter"
 #~ msgstr "Nyhetsbrev"
-
-#~ msgid "Web Development"
-#~ msgstr "Webbutveckling"
 
 #~ msgid "Web Analysis"
 #~ msgstr "Webbanalys"

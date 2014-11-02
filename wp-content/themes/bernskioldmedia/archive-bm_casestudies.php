@@ -26,11 +26,12 @@ get_header(); ?>
 			<div class="small-24 columns">
 				<ul class="case-study-filter">
 					<li class="case-study-filter-title"><?php _e( 'Sort:', 'bernskioldmedia' ); ?></li>
-					<li class="filter" data-filter="<?php _e( 'all', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'All', 'bernskioldmedia' ); ?></a></li>
-					<li class="filter" data-filter="<?php _e( 'web-strategy', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'Web Strategy', 'bernskioldmedia' ); ?></a></li>
-					<li class="filter" data-filter="<?php _e( 'design-development', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'Web Design & Development', 'bernskioldmedia' ); ?></a></li>
-					<li class="filter" data-filter="<?php _e( 'e-commerce', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'E-Commerce', 'bernskioldmedia' ); ?></a></li>
-					<li class="filter" data-filter="<?php _e( 'mobile-solutions', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'Mobile Solutions', 'bernskioldmedia' ); ?></a></li>
+					<li class="filter" data-filter="all"><a href="#"><?php _e( 'All', 'bernskioldmedia' ); ?></a></li>
+					<li class="filter" data-filter="<?php _ex( 'web-strategy', 'filter slug', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'Web Strategy', 'bernskioldmedia' ); ?></a></li>
+					<li class="filter" data-filter="<?php _ex( 'design', 'filter slug', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'Web Design', 'bernskioldmedia' ); ?></a></li>
+					<li class="filter" data-filter="<?php _ex( 'development', 'filter slug', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'Web Development', 'bernskioldmedia' ); ?></a></li>
+					<li class="filter" data-filter="<?php _ex( 'e-commerce', 'filter slug', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'E-Commerce', 'bernskioldmedia' ); ?></a></li>
+					<li class="filter" data-filter="<?php _ex( 'mobile-solutions', 'filter slug', 'bernskioldmedia' ); ?>"><a href="#"><?php _e( 'Mobile Solutions', 'bernskioldmedia' ); ?></a></li>
 				</ul>
 			</div>
 		</div>
