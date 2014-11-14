@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bernskiold Media\n"
-"POT-Creation-Date: 2014-11-02 12:49+0100\n"
-"PO-Revision-Date: 2014-11-02 12:50+0100\n"
+"POT-Creation-Date: 2014-11-14 20:50+0100\n"
+"PO-Revision-Date: 2014-11-14 20:53+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@xldstudios.com>\n"
 "Language: sv_SE\n"
@@ -145,6 +145,27 @@ msgstr ""
 msgid "Continue Reading &raquo;"
 msgstr "Läs vidare &raquo;"
 
+#: content-single.php:36
+msgid "Keep Improving Your Web. Exclusive Tips and Tricks Right to Your Inbox"
+msgstr "Förbättra din webbplats. Exklusiva tips och tricks direkt i din inkorg"
+
+#: content-single.php:37
+msgid ""
+"Leave your email below to sign up for our free newsletter where we monthly "
+"send you more useful articles to help you improve your site."
+msgstr ""
+"Lämna din e-postadress nedan för att prenumerera på vårt nyhetsbrev "
+"(gratis!) där vi varje månad skickar artiklar med nyttigt innehåll för att "
+"hjälpa dig förbättra din site."
+
+#: content-single.php:41 footer.php:64
+msgid "Your email address"
+msgstr "Din e-postadress"
+
+#: content-single.php:44 footer.php:67
+msgid "Subscribe"
+msgstr "Prenumerera"
+
 #: core/dashboard-widgets/xld-blog-rss.php:19
 msgid "From the XLD Studios Blog"
 msgstr "Från XLD Studios-bloggen"
@@ -211,55 +232,47 @@ msgstr "Bernskiold Media"
 msgid "On Social Media"
 msgstr "På sociala medier"
 
-#: footer.php:59
+#: footer.php:60
 msgid "Receive Insights, News and Tips for Free"
 msgstr "Få insikter, nyheter och tips gratis"
 
-#: footer.php:63
-msgid "Your email address"
-msgstr "Din e-postadress"
-
-#: footer.php:66
-msgid "Subscribe"
-msgstr "Prenumerera"
-
-#: footer.php:74
+#: footer.php:76
 msgid "What We Do"
 msgstr "Vad vi gör"
 
-#: footer.php:86
+#: footer.php:88
 msgid "Contact"
 msgstr "Kontakt"
 
-#: footer.php:87
+#: footer.php:89
 msgid "Bernskiold Media AB"
 msgstr "Bernskiold Media AB"
 
-#: footer.php:88
+#: footer.php:90
 msgid "Aschebergsgatan 55 A"
 msgstr "Aschebergsgatan 55 A"
 
-#: footer.php:89
+#: footer.php:91
 msgid "411 33"
 msgstr "411 33"
 
-#: footer.php:89
+#: footer.php:91
 msgid "Gothenburg"
 msgstr "Göteborg"
 
-#: footer.php:90
+#: footer.php:92
 msgid "Phone:"
 msgstr "Tel:"
 
-#: footer.php:90
+#: footer.php:92
 msgid "+46 31 - 10 20 10"
 msgstr "031 - 10 20 10"
 
-#: footer.php:91
+#: footer.php:93
 msgid "info@bernskioldmedia.com"
 msgstr "info@bernskioldmedia.com"
 
-#: footer.php:99
+#: footer.php:101
 #, php-format
 msgid "Copyright &copy; %s Bernskiold Media AB. All Rights Reserved."
 msgstr "Copyright &copy; %s Bernskiold Media AB. Alla rättigheter reserveras."
@@ -382,11 +395,21 @@ msgstr ""
 "Från småföretag till stora organisationer. Kunder från hela världen "
 "anförtror oss med sina webbprojekt. "
 
-#: page-templates/template-frontpage.php:145
+#: page-templates/template-frontpage.php:134
+msgid ""
+"We are very happy with the website that Bernskiold Media has built for us. "
+"With WordPress we have a modern and easily maintanable website that has been "
+"completely integrated with our warehouse management system."
+msgstr ""
+"Vi är mycket nöjda med den webbplats Bernskiold Media byggt åt oss. Med "
+"WordPress får vi en modern och lättuppdaterad sida som helt integrerats med "
+"vårt lagerhanteringssystem."
+
+#: page-templates/template-frontpage.php:151
 msgid "From The Academy"
 msgstr "Från akademin"
 
-#: page-templates/template-frontpage.php:146
+#: page-templates/template-frontpage.php:152
 msgid ""
 "In our academy we publish article about all aspects of a successful web. "
 "Read about strategy, analysis, business, marketing and much more."
@@ -397,6 +420,19 @@ msgstr ""
 #: page-templates/template-service-page.php:14
 msgid "Service Page"
 msgstr "TJänstesida"
+
+#: page-templates/template-service-page.php:99
+msgid "Related Case Studies"
+msgstr "Relaterade kundcase"
+
+#: page-templates/template-service-page.php:100
+msgid ""
+"What better than reading about projects we have done previously for other "
+"clients as well as read what they thought about working with us and the "
+"results."
+msgstr ""
+"Läs om projekt vi gjort tidigare för andra kunder och få reda på vad vi "
+"gjort och vad de tyckte om att arbeta med oss och om resultatet."
 
 #: search.php:17
 #, php-format

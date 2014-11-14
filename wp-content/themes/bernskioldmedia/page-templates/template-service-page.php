@@ -96,7 +96,7 @@ get_header(); ?>
 			<div class="row page-section">
 
 				<div class="small-24 medium-20 medium-centered columns text-center">
-					<h2><?php _e( 'Featured Case Studies', '￼textdomain' ); ?></h2>
+					<h2><?php _e( 'Related Case Studies', '￼textdomain' ); ?></h2>
 					<p class="intro"><?php _e( 'What better than reading about projects we have done previously for other clients as well as read what they thought about working with us and the results.', 'bernskioldmedia' ); ?></p>
 				</div>
 

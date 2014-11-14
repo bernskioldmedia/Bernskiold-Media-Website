@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2014-11-02 12:51+0100\n"
-"PO-Revision-Date: 2014-11-02 12:51+0100\n"
+"POT-Creation-Date: 2014-11-14 20:53+0100\n"
+"PO-Revision-Date: 2014-11-14 20:53+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -121,6 +121,24 @@ msgstr ""
 msgid "Continue Reading &raquo;"
 msgstr ""
 
+#: ../content-single.php:36
+msgid "Keep Improving Your Web. Exclusive Tips and Tricks Right to Your Inbox"
+msgstr ""
+
+#: ../content-single.php:37
+msgid ""
+"Leave your email below to sign up for our free newsletter where we monthly "
+"send you more useful articles to help you improve your site."
+msgstr ""
+
+#: ../content-single.php:41 ../footer.php:64
+msgid "Your email address"
+msgstr ""
+
+#: ../content-single.php:44 ../footer.php:67
+msgid "Subscribe"
+msgstr ""
+
 #: ../core/dashboard-widgets/xld-blog-rss.php:19
 msgid "From the XLD Studios Blog"
 msgstr ""
@@ -184,55 +202,47 @@ msgstr ""
 msgid "On Social Media"
 msgstr ""
 
-#: ../footer.php:59
+#: ../footer.php:60
 msgid "Receive Insights, News and Tips for Free"
 msgstr ""
 
-#: ../footer.php:63
-msgid "Your email address"
-msgstr ""
-
-#: ../footer.php:66
-msgid "Subscribe"
-msgstr ""
-
-#: ../footer.php:74
+#: ../footer.php:76
 msgid "What We Do"
 msgstr ""
 
-#: ../footer.php:86
+#: ../footer.php:88
 msgid "Contact"
 msgstr ""
 
-#: ../footer.php:87
+#: ../footer.php:89
 msgid "Bernskiold Media AB"
 msgstr ""
 
-#: ../footer.php:88
+#: ../footer.php:90
 msgid "Aschebergsgatan 55 A"
 msgstr ""
 
-#: ../footer.php:89
+#: ../footer.php:91
 msgid "411 33"
 msgstr ""
 
-#: ../footer.php:89
+#: ../footer.php:91
 msgid "Gothenburg"
 msgstr ""
 
-#: ../footer.php:90
+#: ../footer.php:92
 msgid "Phone:"
 msgstr ""
 
-#: ../footer.php:90
+#: ../footer.php:92
 msgid "+46 31 - 10 20 10"
 msgstr ""
 
-#: ../footer.php:91
+#: ../footer.php:93
 msgid "info@bernskioldmedia.com"
 msgstr ""
 
-#: ../footer.php:99
+#: ../footer.php:101
 #, php-format
 msgid "Copyright &copy; %s Bernskiold Media AB. All Rights Reserved."
 msgstr ""
@@ -338,11 +348,18 @@ msgid ""
 "us with their web projects."
 msgstr ""
 
-#: ../page-templates/template-frontpage.php:145
+#: ../page-templates/template-frontpage.php:134
+msgid ""
+"We are very happy with the website that Bernskiold Media has built for us. "
+"With WordPress we have a modern and easily maintanable website that has been "
+"completely integrated with our warehouse management system."
+msgstr ""
+
+#: ../page-templates/template-frontpage.php:151
 msgid "From The Academy"
 msgstr ""
 
-#: ../page-templates/template-frontpage.php:146
+#: ../page-templates/template-frontpage.php:152
 msgid ""
 "In our academy we publish article about all aspects of a successful web. "
 "Read about strategy, analysis, business, marketing and much more."
@@ -350,6 +367,17 @@ msgstr ""
 
 #: ../page-templates/template-service-page.php:14
 msgid "Service Page"
+msgstr ""
+
+#: ../page-templates/template-service-page.php:99
+msgid "Related Case Studies"
+msgstr ""
+
+#: ../page-templates/template-service-page.php:100
+msgid ""
+"What better than reading about projects we have done previously for other "
+"clients as well as read what they thought about working with us and the "
+"results."
 msgstr ""
 
 #: ../search.php:17
