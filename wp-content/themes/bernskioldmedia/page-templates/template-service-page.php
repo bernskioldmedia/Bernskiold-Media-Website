@@ -82,8 +82,9 @@ get_header(); ?>
 
 	<?php
 		$query_args = array(
-			'post_type' => 'bm_casestudies',
+			'post_type'      => 'bm_casestudies',
 			'posts_per_page' => 3,
+			'orderby'        => 'rand',
 		);
 
 		$query = new WP_Query( $query_args );
