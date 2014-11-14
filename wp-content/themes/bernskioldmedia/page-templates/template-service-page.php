@@ -79,6 +79,60 @@ get_header(); ?>
 	<?php endif; ?>
 
 	</div>
+
+	<?php
+		$query_args = array(
+			'post_type' => 'bm_casestudies',
+			'posts_per_page' => 3,
+		);
+
+		$query = new WP_Query( $query_args );
+	?>
+
+	<?php if ( $query->have_posts() ) : ?>
+
+		<div class="page-section-bordered-top">
+
+			<div class="row page-section">
+
+				<div class="small-24 medium-20 medium-centered columns text-center">
+					<h2><?php _e( 'Featured Case Studies', '￼textdomain' ); ?></h2>
+					<p class="intro"><?php _e( 'What better than reading about projects we have done previously for other clients as well as read what they thought about working with us and the results.', 'bernskioldmedia' ); ?></p>
+				</div>
+
+			</div>
+
+			<div class="row page-section">
+
+				<ul class="case-studies-grid">
+
+					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+					<li class="case-study-list-item <?php echo bm_get_filter_terms( get_the_ID(), 'bm_services' ); ?>" id="case-study-<?php the_ID(); ?>">
+						<a href="<?php the_permalink(); ?>">
+							<div class="case-study-list-item-thumbnail">
+								<img src="<?php the_field( 'casestudy_preview_thumbnail' ); ?>" alt="<?php the_title(); ?>">
+								<div class="case-study-list-item-content">
+									<div class="case-study-logo">
+										<img src="<?php the_field( 'casestudy_preview_logo' ); ?>" alt="<?php the_title(); ?>">
+									</div>
+								</div>
+							</div>
+							<div class="case-study-list-item-info">
+								<h2 class="case-study-list-item-title"><?php the_title(); ?></h2>
+								<p class="case-study-list-item-subtitle"><?php the_field( 'casestudy_intro' ); ?></p>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; ?>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	<?php endif; ?>
+
 </div>
 
 <?php get_footer(); ?>
