@@ -679,6 +679,10 @@
   border-bottom: 1px solid $border-color;
 }
 
+.page-section-bordered-top {
+  border-top: 1px solid $border-color;
+}
+
 // Breadcrumbs
 .breadcrumbs {
   border-top: 5px solid $primary-color;
