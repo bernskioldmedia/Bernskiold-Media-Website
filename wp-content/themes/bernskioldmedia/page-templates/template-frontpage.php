@@ -110,7 +110,7 @@ get_header(); ?>
       </section>
       */ ?>
 
-      <div class="gray-bg page-section-3x page-section-bordered">
+      <div class="page-section-3x page-section-bordered">
         <div class="row">
           <div class="small-24 columns text-center">
             <h2 class="text-center"><?php _e( 'Trusted by Clients Worldwide', 'bernskioldmedia' ); ?></h2>
@@ -124,8 +124,14 @@ get_header(); ?>
               <li><a href="http://www.highheaven.com"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/highheaven.png" alt="HighHeaven"></a></li>
               <li><a href="http://www.hellotruth.se"><img src="<?php echo get_template_directory_uri(); ?>/images/clients/truth.png" alt="Truth"></a></li>
             </ul>
+          </div>
+        </div>
+      </div>
 
-            <blockquote class="frontpage-testimonial">Bernskiold Media has been the only company that we have worked with and have searched for (for years) that has met our demands and proven to be our one-stop shop for everything related to our internet presence and communication savvy. <cite>Sheree Kearns, Kearns Brothers</cite> </blockquote>
+      <div class="page-section-3x page-section-bordered bg-gray">
+        <div class="row">
+          <div class="small-24 columns">
+            <blockquote class="frontpage-testimonial"><?php _e( 'We are very happy with the website that Bernskiold Media has built for us. With WordPress we have a modern and easily maintanable website that has been completely integrated with our warehouse management system.', 'bernskioldmedia' ); ?><cite>Kristofer Grahn, CEO, BoxBuddy</cite> </blockquote>
           </div>
         </div>
       </div>

@@ -718,7 +718,13 @@
  * Frontpage
  */
 .frontpage-testimonial {
-  padding: 2em 3em 0 3em;
+  text-align: center;
+  font-size: 1.4rem;
+
+  cite {
+    padding-top: 0.8rem;
+    font-size: 1rem;
+  }
 }
 
 .client-logo-list {
