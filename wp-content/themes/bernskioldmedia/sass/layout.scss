@@ -560,7 +560,8 @@
     .github i { color: black; }
   }
 
-  #newsletter-submission {
+  #newsletter-submission,
+  #mc-embedded-subscribe {
     padding: 0.5rem 0.7rem;
   }
 
@@ -936,6 +937,18 @@ blockquote {
     font-weight: bold;
     margin-top: 1.5em;
   }
+
+.post-author {
+  text-transform: uppercase;
+  color: #555;
+  padding-top: 0.2rem;
+  font-weight: bold;
+}
+
+.post-newsletter {
+  text-align: center;
+  padding-top: 3rem;
+}
 
 .post-author-box {
   padding: 1.5em 0 1.5em 0;

@@ -28,4 +28,27 @@
 		<?php the_content( __('Continue Reading &raquo;', 'bernskioldmedia') ); ?>
 	</div>
 
+	<div class="post-author">
+		<?php the_author(); ?>
+	</div>
+
+	<div class="post-newsletter">
+		<h3><?php _e( 'Keep Improving Your Web. Exclusive Tips and Tricks Right to Your Inbox', 'bernskioldmedia' ); ?></h3>
+		<p class="intro"><?php _e( 'Leave your email below to sign up for our free newsletter where we monthly send you more useful articles to help you improve your site.', 'bernskioldmedia' ); ?></p>
+		<form action="//bernskioldmedia.us1.list-manage.com/subscribe/post?u=692fa400bc84329b1d105c071&amp;id=3806350390" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="row">
+          <div class="small-14 medium-24 large-16 columns">
+          	<input type="email" name="b_692fa400bc84329b1d105c071_3806350390" tabindex="-1" value="" placeholder="<?php _e( 'Your email address', 'bernskioldmedia' ); ?>">
+          	<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>
+          </div>
+          <div class="small-10 medium-24 large-8 columns">
+            <input type="submit" value="<?php _e( 'Subscribe', 'bernskioldmedia' ); ?>" name="subscribe" id="mc-embedded-subscribe" class="button expand">
+          </div>
+        </div>
+      </form>
+	</div>
+
 </article>
