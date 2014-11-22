@@ -28,10 +28,10 @@ get_header(); ?>
     </div>
     <div class="hero-service-selector">
         <ul>
-          <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/web-strategy/' ); ?>"><i class="fa fa-2x fa-cogs"></i> <?php _e( 'Web Strategy', 'bernskioldmedia' ); ?></a></li>
-          <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/web-design-development/' ); ?>"><i class="fa fa-2x fa-code"></i> <?php _e( 'Design & Development', 'bernskioldmedia' ); ?></a></li>
-          <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/e-commerce/' ); ?>"><i class="fa fa-2x fa-shopping-cart"></i> <?php _e( 'e-Commerce', 'bernskioldmedia' ); ?></a></li>
-          <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/education/' ); ?>"><i class="fa fa-2x fa-users"></i> <?php _e( 'Education', 'bernskioldmedia' ); ?></a></li>
+          <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . __( '/services/web-strategy/', 'bernskioldmedia' ) ); ?>"><i class="fa fa-2x fa-cogs"></i> <?php _e( 'Web Strategy', 'bernskioldmedia' ); ?></a></li>
+          <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . __( '/services/web-design-development/', 'bernskioldmedia' ) ); ?>"><i class="fa fa-2x fa-code"></i> <?php _e( 'Design & Development', 'bernskioldmedia' ); ?></a></li>
+          <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . __( '/services/e-commerce/', 'bernskioldmedia' ) ); ?>"><i class="fa fa-2x fa-shopping-cart"></i> <?php _e( 'e-Commerce', 'bernskioldmedia' ); ?></a></li>
+          <li><a href="<?php echo home_url( ICL_LANGUAGE_CODE . __( '/services/education/', 'bernskioldmedia' ) ); ?>"><i class="fa fa-2x fa-users"></i> <?php _e( 'Education', 'bernskioldmedia' ); ?></a></li>
         </ul>
       </div>
 
@@ -47,17 +47,17 @@ get_header(); ?>
           <div class="small-24 medium-24 large-8 columns text-center">
             <h3><?php _e( 'Strategy', 'bernskioldmedia' ); ?></h3>
             <p><?php _e( 'Before setting out to create something, a strategy helps you deliver and secure the long term results. Many web projects aren\'t successful before they lack a long term plan. Let yours be better.', 'bernskioldmedia' ); ?></p>
-            <p><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/web-strategy/' ); ?>" class="button"><?php _e( 'More Web Strategy', 'bernskioldmedia' ); ?></a></p>
+            <p><a href="<?php echo home_url( ICL_LANGUAGE_CODE . __( '/services/web-strategy/', 'bernskioldmedia' ) ); ?>" class="button"><?php _e( 'More Web Strategy', 'bernskioldmedia' ); ?></a></p>
           </div>
           <div class="small-24 medium-12 large-8 columns text-center">
             <h3><?php _e( 'Development', 'bernskioldmedia' ); ?></h3>
             <p><?php _e( 'Turning a strategy, vision or idea into a well-functioning product is an art form in itself. You want your web project to succeed, right? Let us help you make it successful both in the short and long term.', 'bernskioldmedia' ); ?></p>
-            <p><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/web-design-development/' ); ?>" class="button"><?php _e( 'More Design & Development', 'bernskioldmedia' ); ?></a></p>
+            <p><a href="<?php echo home_url( ICL_LANGUAGE_CODE . __( '/services/web-design-development/', 'bernskioldmedia' ) ); ?>" class="button"><?php _e( 'More Design & Development', 'bernskioldmedia' ); ?></a></p>
           </div>
           <div class="small-24 medium-12 large-8 columns text-center">
             <h3><?php _e( 'Education', 'bernskioldmedia' ); ?></h3>
             <p><?php _e( 'A vital component is education. If nobody knows how to use something, how do you expect it to succeed? Let us help you with your internal education in a clear and pedagocial way.', 'bernskioldmedia' ); ?></p>
-            <p><a href="<?php echo home_url( ICL_LANGUAGE_CODE . '/services/education/' ); ?>" class="button"><?php _e( 'More Education', 'bernskioldmedia' ); ?></a></p>
+            <p><a href="<?php echo home_url( ICL_LANGUAGE_CODE . __( '/services/education/', 'bernskioldmedia' ) ); ?>" class="button"><?php _e( 'More Education', 'bernskioldmedia' ); ?></a></p>
           </div>
         </div>
 
