@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bernskiold Media\n"
-"POT-Creation-Date: 2014-11-14 20:50+0100\n"
-"PO-Revision-Date: 2014-11-14 20:53+0100\n"
+"POT-Creation-Date: 2014-11-22 11:32+0100\n"
+"PO-Revision-Date: 2014-11-22 11:33+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@xldstudios.com>\n"
 "Language: sv_SE\n"
@@ -308,13 +308,32 @@ msgstr "kontakt"
 msgid "Get In Touch"
 msgstr "Kom i kontakt"
 
+#: page-templates/template-frontpage.php:31
+#: page-templates/template-frontpage.php:50
+msgid "/services/web-strategy/"
+msgstr "/tjanster/webbstrategi/"
+
+#: page-templates/template-frontpage.php:32
+#: page-templates/template-frontpage.php:55
+msgid "/services/web-design-development/"
+msgstr "/tjanster/webbutveckling/"
+
 #: page-templates/template-frontpage.php:32
 msgid "Design & Development"
 msgstr "Design & utveckling"
 
 #: page-templates/template-frontpage.php:33
+msgid "/services/e-commerce/"
+msgstr "/tjanster/e-handel/"
+
+#: page-templates/template-frontpage.php:33
 msgid "e-Commerce"
 msgstr "E-handel"
+
+#: page-templates/template-frontpage.php:34
+#: page-templates/template-frontpage.php:60
+msgid "/services/education/"
+msgstr "/tjanster/utbildning/"
 
 #: page-templates/template-frontpage.php:34
 #: page-templates/template-frontpage.php:58
@@ -421,11 +440,11 @@ msgstr ""
 msgid "Service Page"
 msgstr "TJänstesida"
 
-#: page-templates/template-service-page.php:99
+#: page-templates/template-service-page.php:100
 msgid "Related Case Studies"
 msgstr "Relaterade kundcase"
 
-#: page-templates/template-service-page.php:100
+#: page-templates/template-service-page.php:101
 msgid ""
 "What better than reading about projects we have done previously for other "
 "clients as well as read what they thought about working with us and the "
@@ -471,9 +490,6 @@ msgstr "Etikettarkiv: %s"
 
 #~ msgid "all"
 #~ msgstr "alla"
-
-#~ msgid "design-development"
-#~ msgstr "design-utveckling"
 
 #~ msgid "Web Design & Development"
 #~ msgstr "Webbdesign & utveckling"
