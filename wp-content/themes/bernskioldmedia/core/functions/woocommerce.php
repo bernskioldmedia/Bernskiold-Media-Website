@@ -33,7 +33,7 @@ if ( ! function_exists( 'bmedia_woocommerce_start' ) ) :
 		?>
 
 		<div class="main store-page">
-			<div class="row">
+			<div class="row page-section-3x">
 
 		<?php
 		$output = ob_get_clean();
