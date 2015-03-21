@@ -28,7 +28,7 @@
 
           <div class="row">
             <div class="small-24 columns footer-about">
-              <p><?php printf( __( '<span>Bernskiold Media</span> is a web and digital agency based out of Gothenburg, Sweden. <a href="%s">Read More</a>', 'bernskioldmedia' ), home_url( ICL_LANGUAGE_CODE . _x( '/about-us/', 'about us page slug', 'bernskioldmedia' ) ) ); ?></p>
+              <p><?php printf( __( '<span>Bernskiold Media</span> is a web and digital agency based in Gothenburg, Sweden. <a href="%s">Read More</a>', 'bernskioldmedia' ), home_url( ICL_LANGUAGE_CODE . _x( '/about-us/', 'about us page slug', 'bernskioldmedia' ) ) ); ?></p>
             </div>
           </div>
           <div class="row">
