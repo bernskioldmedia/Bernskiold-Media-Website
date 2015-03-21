@@ -97,7 +97,7 @@
       </div>
 
       <div class="row">
-        <div class="small-24 columns colophon">
+        <div class="small-24 columns colophon text-center">
           <p><?php printf( __( 'Copyright &copy; %s Bernskiold Media AB. All Rights Reserved.', 'bernskioldmedia' ), date( 'Y' ) ); ?></p>
         </div>
       </div>
