@@ -586,6 +586,15 @@
     padding-top: 1rem;
   }
 
+  #footer-newsletter {
+
+    @media #{$small-only} {
+      border-top: 1px solid #354b60;
+      border-bottom: 1px solid #354b60;
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+
   .footer-social-media {
     padding-top: 1rem;
 

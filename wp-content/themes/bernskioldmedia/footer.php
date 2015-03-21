@@ -55,7 +55,7 @@
 
         </div>
 
-        <div class="small-24 medium-8 large-12 columns">
+        <div class="small-24 medium-8 large-12 columns" id="footer-newsletter">
 
           <h5 class="footer-block-title"><?php _e( 'Receive Insights, News and Tips for Free', 'bernskioldmedia' ); ?></h5>
               <form action="//bernskioldmedia.us1.list-manage.com/subscribe/post?u=692fa400bc84329b1d105c071&amp;id=3806350390" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
