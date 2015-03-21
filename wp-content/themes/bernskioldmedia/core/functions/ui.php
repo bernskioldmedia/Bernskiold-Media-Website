@@ -164,7 +164,7 @@ if ( ! function_exists( 'bm_blog_heading' ) ) :
      */
     function bm_blog_heading() {
 
-        $title    = __( 'Academy', 'bernskioldmedia' );
+        $title    = __( 'The Academy', 'bernskioldmedia' );
         $subtitle = false;
 
         if ( is_category() ) {
@@ -176,7 +176,7 @@ if ( ! function_exists( 'bm_blog_heading' ) ) :
 
         <section class="page-title-block blog-title-block">
             <div class="row">
-                <div class="small-24 columns">
+                <div class="small-24 columns text-center">
                     <h1><?php echo $title; ?></h1>
 
                     <?php if ( $subtitle ) : ?>
