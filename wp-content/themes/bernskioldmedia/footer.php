@@ -87,8 +87,8 @@
           <div class="footer-block" itemscope itemtype="//schema.org/Organization">
             <h5 class="footer-block-title"><?php _e( 'Contact', 'bernskioldmedia' ); ?></h5>
             <p itemprop="address" itemscope itemtype="//schema.org/PostalAddress"><span itemprop="name"><?php _e( 'Bernskiold Media AB', 'bernskioldmedia' ); ?></span><br/>
-            <span itemprop="streetAddress"><?php _e( 'Aschebergsgatan 55 A', 'bernskioldmedia' ); ?></span><br/>
-            <span itemprop="postalCode"><?php _e( '411 33', 'bernskioldmedia' ); ?></span> <span itemprop="addressLocality"><?php _e( 'Gothenburg', 'bernskioldmedia' ); ?></span></p>
+            <span itemprop="streetAddress"><?php _e( 'Ingenjörsgatan 9', 'bernskioldmedia' ); ?></span><br/>
+            <span itemprop="postalCode"><?php _e( '411 19', 'bernskioldmedia' ); ?></span> <span itemprop="addressLocality"><?php _e( 'Gothenburg', 'bernskioldmedia' ); ?></span></p>
             <p><?php _e( 'Phone:', 'bernskioldmedia' ); ?> <a href="tel://+4631102010" class="no-link" itemprop="telephone"><?php _e( '+46 31 - 10 20 10', 'bernskioldmedia' ); ?></a><br/>
             <a href="mailto:<?php _e( 'info@bernskioldmedia.com', 'bernskioldmedia' ); ?>" class="no-link" itemprop="email"><?php _e( 'info@bernskioldmedia.com', 'bernskioldmedia' ); ?></a></p>
           </div>
