@@ -26,6 +26,7 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 
 		jQuery('.responsive-menu').slideToggle();
+		jQuery('.hero').toggleClass('menu-active');
 	});
 
 });

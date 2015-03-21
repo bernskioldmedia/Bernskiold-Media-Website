@@ -19,7 +19,7 @@
 		<title><?php wp_title(''); ?></title>
 
 		<script type="text/javascript" src="//use.typekit.net/cnt5jqj.js"></script>
-    	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
@@ -45,7 +45,7 @@
       <div class="row">
         <div class="small-24 medium-8 columns">
           <h3><?php _e( 'Search', 'bernskioldmedia' ); ?></h3>
-          <p><?php _e( 'Find what you are looking for by using the search form.', 'bernskiold' ); ?></p>
+          <p><?php _e( 'Find what you are looking for by using the search form.', 'bernskioldmedia' ); ?></p>
         </div>
         <div class="small-24 medium-14 columns">
           <?php get_search_form(); ?>

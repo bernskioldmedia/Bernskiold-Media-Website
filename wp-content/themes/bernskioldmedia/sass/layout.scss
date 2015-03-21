@@ -39,6 +39,7 @@
   // "foundation/components/sub-nav",
   // "foundation/components/switch",
   "foundation/components/tables",
+  "foundation/components/type",
   // "foundation/components/tabs",
   // "foundation/components/thumbs",
   // "foundation/components/tooltips",
@@ -78,6 +79,7 @@
 }
 
   .home .top-row {
+    background: $key-color;
 
     a {
       color: #7594A8;
@@ -185,6 +187,7 @@
 }
 
   .home .site-header {
+    background: $key-color;
 
     a {
       color: #C0DAEB;
@@ -206,6 +209,10 @@
     @media #{$small-only} {
       text-align: center;
     }
+
+    @media #{$medium-only} {
+      text-align: center;
+    }
   }
 
 /**
@@ -214,6 +221,11 @@
 .primary-navigation {
   font-family: $header-font-family;
   text-align: right;
+
+  @media #{$medium-only} {
+    text-align: center;
+    margin: 1rem 0 0 0;
+  }
 
   ul {
     list-style: none;
@@ -358,6 +370,20 @@
   text-align: center;
   margin-top: -8.3rem;
   padding-top: 8.8rem;
+
+  @media #{$small-only} {
+    margin-top: -8.5rem;
+  }
+
+  @media #{$medium-only} {
+    margin-top: -11.3rem;
+    padding-top: 10.8rem;
+  }
+
+  &.menu-active {
+    margin-top: -20.2rem;
+    padding-top: 20rem;
+  }
 
   h1 {
     color: white;
