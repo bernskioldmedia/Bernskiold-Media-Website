@@ -929,10 +929,31 @@ blockquote {
 
 .blog-index {
   margin-top: -8.4rem;
+
+  &.menu-active {
+    margin-top: -20.3rem;
+
+    .blog-title-block {
+        padding-top: 20rem !important;
+    }
+  }
+
+  @media #{$small-only} {
+    margin-top: -8.5rem;
+  }
+
+  @media #{$medium-only} {
+    margin-top: -11.4rem;
+  }
+
 }
 
 .blog-title-block {
   padding-top: 9rem;
+
+  @media #{$medium-only} {
+    padding-top: 11rem;
+  }
 }
 
 .post-item {}
