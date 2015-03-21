@@ -33,8 +33,8 @@
 	</div>
 
 	<div class="post-newsletter">
-		<h3><?php _e( 'Keep Improving Your Web. Exclusive Tips and Tricks Right to Your Inbox', 'bernskioldmedia' ); ?></h3>
-		<p class="intro"><?php _e( 'Leave your email below to sign up for our free newsletter where we monthly send you more useful articles to help you improve your site.', 'bernskioldmedia' ); ?></p>
+		<h3><?php _e( 'Like What You\'ve Read? Keep Improving Your Website. Exclusive Insights Right to Your Inbox', 'bernskioldmedia' ); ?></h3>
+		<p class="intro"><?php _e( 'Leave your email below to sign up for our free newsletter where we send you more useful articles and insights to help you improve your site.', 'bernskioldmedia' ); ?></p>
 		<form action="//bernskioldmedia.us1.list-manage.com/subscribe/post?u=692fa400bc84329b1d105c071&amp;id=3806350390" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate onSubmit="ga('send','event','Newsletter','Subscribe','Post')">
         <div class="row">
           <div class="small-14 medium-24 large-16 columns">
