@@ -45,13 +45,14 @@ function bernskioldmedia_enqueue_scripts() {
 	wp_register_script( 'modernizr', THEME_JS . '/vendor/custom.modernizr.js', false, '2.6.2', false );
 	wp_register_script( 'scripts', THEME_JS . '/scripts.min.js', array( 'jquery', 'foundation' ), '2.6.2', true );
 	wp_register_script( 'mixitup', THEME_JS . '/jquery.mixitup.min.js', array( 'jquery' ), '1.5.5', true );
-
+	wp_register_script( 'bmedia', THEME_JS . '/bmedia.min.js', array( 'jquery', 'foundation' ), THEME_VERSION, true );
 
 	// Enqueue
 	wp_enqueue_script( 'modernizr' );
-	wp_enqueue_script( 'foundation' );
-	wp_enqueue_script( 'scripts' );
-	wp_enqueue_script( 'mixitup' );
+	// wp_enqueue_script( 'foundation' );
+	// wp_enqueue_script( 'scripts' );
+	// wp_enqueue_script( 'mixitup' );
+	wp_enqueue_script( 'bmedia' );
 
 }
 
