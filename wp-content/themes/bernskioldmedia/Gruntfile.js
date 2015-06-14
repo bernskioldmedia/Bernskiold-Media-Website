@@ -3,10 +3,20 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		concat: {
+		    options: {
+		      separator: ';',
+		    },
+		    dist: {
+		      src: ['javascripts/plugins/foundation/foundation.js', 'javascripts/jquery.mixitup.min.js', 'javascripts/main.js'],
+		      dest: 'javascripts/bmedia.js',
+		    },
+		},
+
 		uglify: {
 			build: {
-				src: 'javascripts/scripts.js',
-				dest: 'javascripts/scripts.min.js'
+				src: 'javascripts/bmedia.js',
+				dest: 'javascripts/bmedia.min.js'
 			}
 		},
 
@@ -55,8 +65,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
 	// Run!
-	grunt.registerTask('default', ['compass', 'uglify', 'watch']);
+	grunt.registerTask('default', ['compass', 'concat', 'uglify', 'watch']);
 
 }
