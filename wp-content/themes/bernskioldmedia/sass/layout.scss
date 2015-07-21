@@ -1315,7 +1315,9 @@ blockquote {
  .ginput_left,
  .ginput_right,
  .gf_left_half,
- .gf_right_half {
+ .gf_right_half,
+ .name_first,
+ .name_last {
   width: 48%;
   clear: none;
 
@@ -1325,12 +1327,14 @@ blockquote {
  }
 
 .ginput_left,
-.gf_left_half {
+.gf_left_half,
+.name_first {
   float: left;
 }
 
 .ginput_right,
-.gf_right_half {
+.gf_right_half,
+.name_last {
   float: right;
 }
 
@@ -1340,4 +1344,11 @@ textarea.medium {
 
 textarea.large {
   height: 150px;
+}
+
+.ginput_complex {
+  label {
+    font-style: italic;
+    font-size: 80%;
+  }
 }
