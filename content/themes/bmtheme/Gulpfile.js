@@ -1,5 +1,6 @@
 var gulp 			= require('gulp');
 var autoprefixer 	= require('gulp-autoprefixer');
+const babel         = require('gulp-babel');
 var concat 			= require('gulp-concat');
 var jshint 			= require('gulp-jshint');
 var livereload 		= require('gulp-livereload');
@@ -37,13 +38,15 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
 
 	return gulp.src([
-		'assets/js/src/plugins/iconic.min.js',
 		'assets/js/src/plugins/foundation/foundation.core.js',
 		'assets/js/src/plugins/foundation/foundation.util.*.js',
 		'assets/js/src/main.js'
 	])
 		.pipe(plumber(plumberErrorHandler))
 		.pipe(sourcemaps.init())
+		.pipe(babel({
+			presets: ['es2015']
+		}))
 		.pipe(concat("theme.js"))
 		.pipe(gulp.dest("assets/js"))
 		.pipe(rename("theme.min.js"))

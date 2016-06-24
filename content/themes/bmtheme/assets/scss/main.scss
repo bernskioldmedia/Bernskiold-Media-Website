@@ -6,7 +6,6 @@
  * included into this one. Thanks to SASS and the pre-processing power of
  * Gulp this is a very smooth process.
  */
-
 /**
  * Include and Load Foundation
  *
@@ -17,9 +16,8 @@
  * IMPORTANT: If you uncomment/comment a part here, don't forget to update the
  * corresponding one in foundation/foundation.scss too!
  */
-
 // Include Foundation Base
-@import "foundation/foundation.scss";
+@import "foundation/foundation";
 
 /**
  * Enable Foundation Components
