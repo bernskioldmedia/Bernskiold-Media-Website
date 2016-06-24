@@ -16,6 +16,8 @@ namespace BernskioldMedia\Theme;
 
 <body <?php body_class(); ?>>
 
+<?php do_action( 'bm_before_body' ); ?>
+
 <div id="page" class="hfeed site">
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bmtheme' ); ?></a>
