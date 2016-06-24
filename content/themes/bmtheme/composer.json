@@ -1,0 +1,22 @@
+{
+  "name": "bmtheme",
+  "description": "BMTheme is a bespoke WordPress theme for Bernskiold Media.",
+  "version": "1.0.0",
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "homepage": "https://www.bernskioldmedia.com",
+  "authors": [
+    {
+      "name": "Bernskiold Media AB",
+      "homepage": "https://www.bernskioldmedia.com",
+      "email": "info@bernskioldmedia.com"
+    }
+  ],
+  "support": {
+    "email": "support@bernskioldmedia.com",
+    "issues": "https://github.com/bernskioldmedia/Bernskiold-Media-Website/issues"
+  },
+  "license": "GPL"
+}

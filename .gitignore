@@ -1,0 +1,97 @@
+# This is a template .gitignore file for git-managed WordPress projects.
+#
+# Fact: you don't want WordPress core files, or your server-specific
+# configuration files etc., in your project's repository. You just don't.
+#
+# Solution: stick this file up your repository root (which it assumes is
+# also the WordPress root directory) and add exceptions for any plugins,
+# themes, and other directories that should be under version control.
+#
+# See the comments below for more info on how to add exceptions for your
+# content. Or see git's documentation for more info on .gitignore files:
+# http://kernel.org/pub/software/scm/git/docs/gitignore.html
+
+# We don't want to version control WP
+cms/*
+
+# We don't want to version control media either...
+media/*
+
+# The main directory has stuff we don't want to version either.
+wp-config.php
+local-config.php
+custom-config.php
+index.php
+
+# Ignore everything in the "content" directory, except the "plugins"
+# and "themes" directories.
+content/*
+!content/plugins/
+!content/themes/
+!content/mu-plugins/
+
+# Ignore everything in the "plugins" directory, except the plugins you
+# specify (see the commented-out examples for hints on how to do this.)
+content/plugins/*
+content/mu-plugins/*
+!content/mu-plugins/register-theme-directory.php
+!content/plugins/bm-acf-fields/
+!content/plugins/bm-case-studies/
+!content/plugins/bm-events/
+!content/plugins/bm-services/
+
+# Ignore everything in the "themes" directory, except the themes you
+# specify (see the commented-out example for a hint on how to do this.)
+content/themes/*
+!content/themes/bmtheme/
+
+# Ignore SASS cache files
+**.sass-cache**
+
+# Ignore IDEs
+.idea
+
+# Ignore .svn directories
+.svn*
+
+# Ignore node_modules
+node_modules/*
+content/themes/bmedia/node_modules/*
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
