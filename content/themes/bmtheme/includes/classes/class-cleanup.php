@@ -18,7 +18,7 @@ class Theme_Cleanup {
 		add_filter( 'embed_oembed_html', array( $this, 'wrap_oembed' ), 10, 4 );
 
 		// Remove WordPress Version from RSS Feeds.
-		add_filter('the_generator', '__return_false');
+		add_filter( 'the_generator', '__return_false' );
 
 		// Rewrites the search URL.
 		add_action( 'template_redirect', array( $this, 'nice_search_url' ) );
@@ -87,7 +87,7 @@ class Theme_Cleanup {
 		$search_base = $wp_rewrite->search_base;
 
 		if ( is_search() && ! is_admin() && strpos( $_SERVER['REQUEST_URI'], "/{$search_base}/" ) === false ) {
-			wp_redirect( home_url( "/{$search_base}/" . urlencode( get_query_var('s') ) ) );
+			wp_redirect( home_url( "/{$search_base}/" . urlencode( get_query_var( 's' ) ) ) );
 			exit();
 		}
 
@@ -102,7 +102,7 @@ class Theme_Cleanup {
 	 */
 	public function blank_search_fix( $query_vars ) {
 
-		if ( isset($_GET['s'] ) && empty( $_GET['s'] ) && ! is_admin() ) {
+		if ( isset( $_GET['s'] ) && empty( $_GET['s'] ) && ! is_admin() ) {
 			$query_vars['s'] = ' ';
 		}
 

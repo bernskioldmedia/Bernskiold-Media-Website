@@ -122,11 +122,8 @@ class Theme {
 		// Add WordPress default add_theme_support.
 		add_action( 'after_setup_theme', array( $this, 'theme_support' ) );
 
-		// Load functions.
-		add_action( 'init', array( $this, 'functions' ) );
-
-		// Load custom dashboard widgets.
-		add_action( 'admin_init', array( $this, 'dashboard_widgets' ) );
+		// Load classes.
+		add_action( 'init', array( $this, 'classes' ) );
 
 		// Remove non-necessary dashboard widgets.
 		add_action( 'wp_dashboard_setup', array( $this, 'remove_dashboard_widgets' ) );
@@ -257,22 +254,6 @@ class Theme {
 
 	}
 
-	/**
-	 * Loads admin dashboard widgets
-	 **/
-	public function dashboard_widgets() {
-
-		// Website Welcome Widget.
-		require_once( $this->theme_dir . '/includes/dashboard-widgets/class-bm-dashboard-welcome.php' );
-
-		// RSS Widget Showing Agency Blog Posts.
-		require_once( $this->theme_dir . '/includes/dashboard-widgets/class-bm-dashboard-rss.php' );
-
-		// Support Widget.
-		require_once( $this->theme_dir . '/includes/dashboard-widgets/class-bm-dashboard-support.php' );
-
-	}
-
 	public function remove_dashboard_widgets() {
 
 		global $wp_meta_boxes;
@@ -349,10 +330,10 @@ class Theme {
  * on this class without having to redefine the Theme class
  * over and over again in our theme code.
  */
-function bmtheme() {
+function theme() {
 	return Theme::instance();
 }
 
 // Initialize the class instance only once,
 // because we need it to run right away.
-bmtheme();
+theme();
