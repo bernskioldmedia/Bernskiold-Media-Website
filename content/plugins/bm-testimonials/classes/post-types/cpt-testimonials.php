@@ -58,13 +58,6 @@ class CPT_Testimonials {
 			'filter_items_list'     => __( 'Filter testimonials list', 'bm-testimonials' ),
 		);
 
-		$rewrite = array(
-			'slug'       => 'testimonials',
-			'with_front' => true,
-			'pages'      => true,
-			'feeds'      => true,
-		);
-
 		$args = array(
 			'label'               => __( 'Testimonials', 'bm-testimonials' ),
 			'description'         => __( 'Holds testimonials for the website.', 'bm-testimonials' ),
@@ -82,7 +75,7 @@ class CPT_Testimonials {
 			'has_archive'         => 'testimonials',
 			'exclude_from_search' => false,
 			'publicly_queryable'  => true,
-			'rewrite'             => $rewrite,
+			'rewrite'             => false,
 			'capability_type'     => 'page',
 		);
 
