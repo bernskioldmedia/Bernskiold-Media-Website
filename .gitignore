@@ -39,6 +39,7 @@ content/mu-plugins/*
 !content/plugins/bm-case-studies/
 !content/plugins/bm-events/
 !content/plugins/bm-services/
+!content/plugins/bm-testimonials/
 
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
