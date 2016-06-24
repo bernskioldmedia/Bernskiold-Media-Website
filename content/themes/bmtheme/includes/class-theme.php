@@ -214,7 +214,8 @@ class Theme {
 		if ( ! function_exists( 'register_navigation_menus' ) ) {
 
 			$locations = array(
-				'primary-menu' => esc_html__( 'Main Navigation', 'bmtheme' ),
+				'primary-menu' => esc_html__( 'Main Menu', 'bmtheme' ),
+				'top-menu'     => esc_html__( 'Top Menu', 'bmtheme' ),
 			);
 
 			register_nav_menus( $locations );
