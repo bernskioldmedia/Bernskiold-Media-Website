@@ -135,7 +135,7 @@ class Plugin {
 
 		// Load Custom Post Type "Press Releases".
 		require_once( 'classes/post-types/cpt-press-releases.php' );
-		new CPT_Press_Relases;
+		new CPT_Press_Releases;
 
 	}
 
