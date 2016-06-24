@@ -1,6 +1,6 @@
 <?php
 /**
- * Ilmenite Theme Class
+ * BMTheme Class
  *
  * This file is responsible for setting up the theme class, loading features,
  * functions and extensions which are typically placed in other classes and
