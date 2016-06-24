@@ -85,7 +85,7 @@ class CPT_Clients {
 			'capability_type'     => 'page',
 		);
 
-		register_post_type( 'bm_case_studies', $args );
+		register_post_type( 'bm_clients', $args );
 
 	}
 }
