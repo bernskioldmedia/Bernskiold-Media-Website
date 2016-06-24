@@ -12,13 +12,11 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'page' ); ?>
+			<?php theme()->templates->load_flex_page(); ?>
 
 		<?php endwhile; ?>
 
 	<?php endif; ?>
-
-	<?php get_sidebar(); ?>
 
 </main>
 
