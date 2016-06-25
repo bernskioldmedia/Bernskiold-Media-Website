@@ -25,6 +25,12 @@ class Theme_Scripts_Styles {
 		// Scripts
 		add_action( 'wp_enqueue_scripts', array( $this, 'scripts' ) );
 
+		// Typekit.
+		add_action( 'wp_head', array( $this, 'typekit' ) );
+
+		// GA Tracking.
+		add_action( 'wp_head', array( $this, 'google_analytics' ) );
+
 	}
 
 	/**
@@ -54,6 +60,60 @@ class Theme_Scripts_Styles {
 		// Enqueue
 		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'theme' );
+
+	}
+
+	/**
+	 * Typekit
+	 */
+	public function typekit() {
+
+		ob_start(); ?>
+		<script src="https://use.typekit.net/cnt5jqj.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<?php
+		echo ob_get_clean();
+
+	}
+
+	/**
+	 * Adds the Google Analytics Tracking Code
+	 *
+	 * Uses universal tracking. Loops through and adds a different tracking code depending on the language.
+	 */
+	function google_analytics() {
+
+		$language = ICL_LANGUAGE_CODE;
+
+		switch ( $language ) {
+
+			case 'en':
+				$property_id = 'UA-19733539-1';
+				break;
+
+			case 'sv':
+				$property_id = 'UA-19733539-4';
+				break;
+
+			default:
+				$property_id = 'UA-19733539-1'; // fallback to english
+				break;
+		}
+
+		ob_start(); ?>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', '<?php echo esc_html( $property_id ); ?>', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<?php
+		$output = ob_get_clean();
+
+		echo $output;
 
 	}
 }

@@ -1,0 +1,208 @@
+/**
+ * Header
+ */
+.site-header {
+	padding-bottom: 1.2rem;
+
+	a {
+		color: inherit;
+	}
+}
+
+.top-bar {
+	margin-top: 0.7rem;
+	margin-bottom: 1rem;
+
+	.iconic * {
+		stroke: white;
+		fill: white;
+		margin: 0;
+	}
+}
+
+.top-bar-search,
+.top-bar-cart {
+	margin-top: -0.7rem;
+
+	a {
+		display: block;
+		padding: 0.9rem 1rem 0.7rem 1rem;
+		line-height: 1;
+		transition: 0.2s all;
+	}
+}
+
+.top-bar-search {
+	padding-right: 0;
+
+	a {
+		background-color: lighten($primary-color, 10%);
+
+		&:hover {
+			background-color: lighten($primary-color, 20%);
+		}
+	}
+}
+
+.top-bar-cart {
+	padding-left: 0;
+
+	a {
+		background-color: rgba(231, 75, 59, 0.75);
+
+		&:hover {
+			background-color: $accent-color;
+		}
+	}
+}
+
+.top-bar-cart-icon {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.top-bar-cart-label {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	margin: -0.1em 0 0 0.3em;
+	font-weight: bold;
+	opacity: 0.85;
+}
+
+.top-bar-languages {
+	position: relative;
+
+	& > a {
+		padding-bottom: 1rem;
+
+		&:after {
+			border-style: solid;
+			border-width: 0.1em 0.1em 0 0;
+			content: '';
+			display: inline-block;
+			height: 0.45em;
+			left: 0.6em;
+			position: relative;
+			top: 0.5em;
+			transform: rotate(135deg);
+			vertical-align: top;
+			width: 0.45em;
+		}
+	}
+
+	&:hover .language-switcher {
+		display: block;
+	}
+}
+
+.language-switcher {
+	@extend .inline-block-list;
+	display: none;
+	position: absolute;
+	right: 0;
+	top: auto;
+	z-index: 9999;
+	background: white;
+	margin-top: 1rem;
+	width: 23em;
+	text-align: center;
+	border-bottom: 8px solid $accent-color;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+	a {
+		color: $body-font-color;
+		font-size: 1.25rem;
+		display: block;
+		padding: 0.8em 1.5em;
+		width: 9em;
+
+		&:hover {
+			background-color: $secondary-color;
+		}
+
+		img {
+			border-radius: 50%;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.header-logo {
+
+	svg,
+	img {
+		max-width: 17rem;
+	}
+}
+
+/**
+ * Top Menu
+ */
+.top-menu {
+	font-size: 0.95rem;
+
+	li {
+		margin: 0 0.5rem;
+	}
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+/**
+ * Primary Menu
+ */
+.primary-menu {
+	text-align: right;
+	font-family: $header-font-family;
+	font-size: 1.3rem;
+	padding-top: 0.8rem;
+
+	li {
+		margin-right: 1.5rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	a {
+		display: inline-block;
+		border-bottom: 3px solid transparent;
+
+		&:hover {
+			border-bottom-color: $primary-color;
+		}
+	}
+}
+
+/**
+ * Frontpage
+ */
+.page-template-frontpage {
+
+	.site-header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		color: white;
+	}
+
+	.header-logo .iconic * {
+		fill: white;
+	}
+
+	.hero {
+		padding-top: 8rem;
+	}
+
+	.primary-menu a:hover {
+		border-bottom-color: white;
+	}
+
+}

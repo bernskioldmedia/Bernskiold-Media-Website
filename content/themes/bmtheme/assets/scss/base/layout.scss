@@ -58,7 +58,39 @@
 .ml4 { margin-left: 4rem; }
 
 /**
+ * Background Image
+ */
+.is-background-image {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/**
  * Background Modules
  */
-.bg-primary   { background: $primary-color; }
-.bg-secondary { background: $secondary-color; }
+.dark-background {
+	color: white;
+
+	a {
+		color: inherit;
+	}
+
+	.button.hollow {
+		@extend .button.hollow.white;
+	}
+}
+
+.bg-primary {
+	@extend .dark-background;
+	background-color: $primary-color;
+}
+
+.bg-secondary {
+	background-color: $secondary-color;
+}
+
+.bg-accent {
+	background-color: $accent-color;
+	@extend .dark-background;
+}

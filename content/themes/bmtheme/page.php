@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php theme()->templates->load_flex_page(); ?>
+			<?php theme()->template->load_flex_page(); ?>
 
 		<?php endwhile; ?>
 

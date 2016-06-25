@@ -38,6 +38,7 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
 
 	return gulp.src([
+		'assets/js/src/plugins/iconic.min.js',
 		'assets/js/src/plugins/foundation/foundation.core.js',
 		'assets/js/src/plugins/foundation/foundation.util.*.js',
 		'assets/js/src/main.js'

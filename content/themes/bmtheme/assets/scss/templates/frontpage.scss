@@ -1,0 +1,53 @@
+/**
+ * Frontpage
+ */
+
+/**
+ * Hero
+ */
+.hero {
+	@extend .is-background-image;
+	background: $primary-color url('../images/hero-background.png');
+	background-size: contain;
+	color: #d8dfe8;
+
+	.row {
+		@include flex-align(center);
+		height: 35rem;
+		padding-top: 3rem;
+		padding-bottom: 4rem;
+	}
+}
+
+.hero-content {
+	@extend .small-24;
+	@extend .medium-20;
+	@extend .large-18;
+
+	@include flex-align-self(middle);
+}
+
+.hero-title {
+	font-size: 3.8rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 0.2em;
+	color: lighten(#d8dfe8, 10%);
+}
+
+.hero-subtitle {
+	font-size: 1.5rem;
+	margin-bottom: 1.5em;
+}
+
+.hero-actions {
+	@extend .inline-block-list;
+
+	li {
+		margin-right: 1rem;
+	}
+
+		a {
+			font-size: 1.15rem;
+		}
+}

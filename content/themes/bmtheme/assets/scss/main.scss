@@ -24,19 +24,10 @@
  *
  * Comment/uncomment those we do not want so that we keep
  * our CSS small and non-bloated.
- *
- * Note: Flexbox is enabled by default.
  */
-
-// Standard Grid
-// @include foundation-grid;
-
-// Flexbox Grid
-@include foundation-flex-grid;
-@include foundation-flex-classes;
-
 // Components
 @include foundation-global-styles;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -70,6 +61,7 @@
 // @include foundation-title-bar;
 // @include foundation-tooltip;
 // @include foundation-top-bar;
+@include foundation-flex-classes;
 
 /**
  * Global Styles
@@ -89,3 +81,14 @@
 @import "components/forms";
 @import "components/lists";
 @import "components/section";
+@import "components/block";
+
+/**
+ * Layouts
+ */
+@import "layout/header";
+
+/**
+ * Templates
+ */
+@import "templates/frontpage";

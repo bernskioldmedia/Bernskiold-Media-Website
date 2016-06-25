@@ -527,9 +527,7 @@
                                         "bg-white": "White",
                                         "bg-primary": "Blue",
                                         "bg-secondary": "Light Gray",
-                                        "bg-purple": "Purple",
-                                        "bg-red": "Red",
-                                        "bg-brown": "Brown"
+                                        "bg-accent": "Red"
                                     },
                                     "default_value": [
                                         "bg-white"
@@ -625,7 +623,7 @@
                                 "bg-white": "White",
                                 "bg-primary": "Blue",
                                 "bg-secondary": "Light Gray",
-                                "bg-key": "Green"
+                                "bg-accent": "Red"
                             },
                             "default_value": [
                                 "bg-white"
@@ -822,5 +820,5 @@
     ],
     "active": 1,
     "description": "Create and define page sections for content pages.",
-    "modified": 1466785890
+    "modified": 1466803459
 }

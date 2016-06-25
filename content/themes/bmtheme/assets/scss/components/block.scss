@@ -1,0 +1,102 @@
+/**
+ * Block Grid
+ */
+.block-grid {
+	@extend .row;
+
+	&.is-equal-height {
+
+		.block {
+			@include flex-align-self(stretch);
+		}
+	}
+
+	&.is-fullwidth {
+		max-width: 120rem;
+
+		.block {
+			@include breakpoint(xlarge up) {
+				padding: 3.5em;
+			}
+		}
+	}
+
+	&.is-bordered {
+
+		.block {
+			@extend .border-right;
+		}
+	}
+
+	&.col-2 {
+
+		.block {
+			@extend .small-24;
+			@extend .medium-12;
+		}
+	}
+
+	&.col-3 {
+
+		.block {
+			@extend .small-24;
+			@extend .medium-12;
+			@extend .large-8;
+
+			&:last-child,
+			&:nth-child(3n) {
+				@extend .medium-24;
+				@extend .large-8;
+			}
+		}
+
+	}
+
+	&.col-4 {
+		.block {
+			@extend .small-24;
+			@extend .medium-12;
+			@extend .large-6;
+		}
+	}
+}
+
+/**
+ * Block
+ */
+.block {
+	position: relative;
+	@extend .column;
+	padding: 2.5rem;
+}
+
+.block-icon {
+	margin-bottom: 0.6rem;
+}
+
+.block-title {
+	@extend .h3;
+}
+
+.col-4 .block-title {
+	@extend .block-title;
+	@extend .h4;
+}
+
+.block-content {
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.block-cta {
+
+	.button {
+		margin-bottom: 0;
+	}
+}
+
+.block-image-title {
+	@include absolute-center;
+}
