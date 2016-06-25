@@ -82,7 +82,7 @@ class WooCommerce {
 	public function theme_wrapper_start() {
 		?>
 
-		<main class="main" role="main">
+		<main class="main" role="main" id="content">
 
 		<section class="section woocommerce-wrapper">
 		<div class="row">

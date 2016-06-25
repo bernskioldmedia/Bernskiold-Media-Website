@@ -6,7 +6,7 @@ namespace BernskioldMedia\Theme;
 
 get_header(); ?>
 
-<main class="main" role="main">
+<main class="main" role="main" id="content">
 
 	<section id="error-404-page">
 
