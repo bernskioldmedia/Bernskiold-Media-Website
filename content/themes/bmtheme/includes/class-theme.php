@@ -256,6 +256,10 @@ class Theme {
 		require_once( $this->theme_dir . '/includes/classes/class-wp-login.php' );
 		new Theme_Login;
 
+		// WooCommerce
+		require_once( $this->theme_dir . '/includes/classes/class-woocommerce.php' );
+		new WooCommerce;
+
 	}
 
 	public function remove_dashboard_widgets() {

@@ -70,7 +70,7 @@ class Theme_Scripts_Styles {
 
 		ob_start(); ?>
 		<script src="https://use.typekit.net/cnt5jqj.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script>try{Typekit.load();}catch(e){}</script>
 		<?php
 		echo ob_get_clean();
 

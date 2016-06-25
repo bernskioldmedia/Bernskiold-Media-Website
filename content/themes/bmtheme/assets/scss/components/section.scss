@@ -2,3 +2,34 @@
  * Page Section Modules
  */
 .section {}
+
+/**
+ * Page Title Block
+ */
+.page-title-block {
+	padding: 7rem 0 7rem 0;
+
+	&.is-dark {
+		background-color: $primary-color;
+		color: white;
+	}
+
+	.row {
+		@extend .align-center;
+	}
+}
+
+.page-title-block-content {
+	@extend .small-24;
+	@extend .medium-20;
+	@extend .large-18;
+}
+
+.page-title {
+	font-weight: 500;
+	font-size: 4rem;
+}
+
+.page-subtitle {
+	font-size: $lead-font-size * 1.2;
+}

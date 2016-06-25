@@ -1,4 +1,46 @@
 /**
+ * Handle Typekit Loading
+ */
+/*
+.wf-loading {
+	background: $secondary-color;
+	transition: 0.4s all;
+
+	body {
+		display: none;
+	}
+
+	&:before {
+		content: 'Loading...';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 50px;
+		height: 50px;
+		margin-top: -25px;
+		margin-left: -25px;
+	}
+
+	&:not(:required):before {
+		content: '';
+		border-radius: 50%;
+		border-top: 2px solid #03ade0;
+		border-right: 2px solid transparent;
+		animation: spinner .6s linear infinite;
+		-webkit-animation: spinner .6s linear infinite;
+	}
+}
+
+@keyframes spinner {
+	to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spinner {
+	to {-webkit-transform: rotate(360deg);}
+}
+*/
+
+/**
  * Border Modules
  */
 .border-top    { border-top: 1px solid $border-color; }

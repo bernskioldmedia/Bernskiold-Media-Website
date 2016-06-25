@@ -40,13 +40,13 @@ namespace BernskioldMedia\Theme;
 
 				<div class="columns shrink top-bar-item top-bar-search">
 					<a href="#">
-						<img src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/magnifying-glass.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/magnifying-glass.svg' ); ?>" class="iconic iconic-sm" alt="Search">
+						<img src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/magnifying-glass.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/magnifying-glass.svg' ); ?>"  width="32" height="32" class="iconic iconic-sm" alt="Search">
 					</a>
 				</div>
 
 				<div class="columns shrink top-bar-item top-bar-cart">
 					<a href="<?php echo esc_url( wc_get_cart_url() ); ?>">
-						<span class="top-bar-cart-icon"><img src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/cart.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/cart.svg' ); ?>" class="iconic iconic-sm" alt="Search"></span>
+						<span class="top-bar-cart-icon"><img src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/cart.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/cart.svg' ); ?>"  width="32" height="32" class="iconic iconic-sm" alt="Search"></span>
 						<span class="top-bar-cart-label">1</span>
 					</a>
 				</div>
@@ -65,7 +65,7 @@ namespace BernskioldMedia\Theme;
 
 			<div class="column shrink header-logo">
 				<a href="<?php echo esc_url_raw( home_url() ); ?> ">
-					<img src="<?php echo esc_url_raw( theme()->get_theme_images_uri() . '/logo.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_images_uri() . '/logo.svg' ); ?>" alt="<?php esc_html_e( 'Bernskiold Media', 'bmtheme' ); ?>" class="iconic">
+					<img src="<?php echo esc_url_raw( theme()->get_theme_images_uri() . '/logo.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_images_uri() . '/logo.svg' ); ?>" alt="<?php esc_html_e( 'Bernskiold Media', 'bmtheme' ); ?>" class="iconic" width="272" height="36">
 				</a>
 			</div>
 
