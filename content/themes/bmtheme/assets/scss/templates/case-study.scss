@@ -1,0 +1,177 @@
+/**
+ * Single Case Study
+ */
+.case-item {}
+
+.case-item-header {
+	background: $primary-color;
+	color: white;
+	position: relative;
+
+	.row {
+		padding: 18rem 0 12rem 0;
+	}
+}
+
+.case-item-header-overlay {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@extend .is-background-image;
+	opacity: 0.2;
+}
+
+.case-item-header-content {
+	position: relative;
+	z-index: 1;
+	@extend .column;
+
+	@include breakpoint(medium up) {
+		padding-right: 20%;
+		padding-left: 5%;
+	}
+
+	.page-title {
+		color: white;
+		margin-bottom: 0;
+		font-weight: bold;
+		font-size: 3.7rem;
+	}
+
+	.page-subtitle {
+		color: rgba(255,255,255,0.85);
+	}
+}
+
+.case-item-services {
+	@extend .inline-block-list;
+	@extend .separated-list;
+	margin-top: 1rem;
+
+	li:after {
+		content: ', ';
+		font-size: 1em;
+		margin-left: 0;
+	}
+
+	a {
+		color: rgba(255,255,255,0.8);
+		text-transform: uppercase;
+		font-size: 0.9rem;
+		font-weight: bold;
+		transition: 0.2s color;
+
+		&:hover {
+			color: rgba(255,255,255,1);
+		}
+	}
+}
+
+.case-item-body {
+	@extend .small-24;
+	@extend .medium-14;
+	@extend .large-16;
+
+	padding: 3rem 5rem;
+
+	@include breakpoint(xlarge up) {
+		padding: 5rem 11rem 4rem 11rem;
+	}
+
+	@extend .body-text;
+
+	& > p:first-child:first-letter {
+		font-size: 5rem;
+		font-weight: bold;
+		float: left;
+		line-height: 0.5;
+		margin-right: 0.5rem;
+		padding-top: 0.8rem
+	}
+}
+
+.case-item-infobox {
+	@extend .small-24;
+	@extend .medium-10;
+	@extend .large-8;
+
+	padding: 3.5rem 4.5rem;
+	background: lighten($secondary-color, 2%);
+
+	@include breakpoint(xlarge up) {
+		padding: 5rem;
+	}
+
+	dl {}
+
+		dt {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			margin-bottom: 0.2em;
+		}
+
+	dd {
+		margin-bottom: 1.5em;
+		font-size: 1.25rem;
+	}
+}
+
+.case-item-client-logo {
+	text-align: center;
+	margin-top: -2rem;
+	margin-bottom: 3rem;
+
+	img {
+		max-height: 10rem;
+	}
+}
+
+.case-item-link {
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.case-item-gallery {
+	@extend .row;
+	@extend .small-up-2;
+	@extend .medium-up-3;
+	@extend .large-up-4;
+	@extend .is-fullwidth;
+}
+
+.case-item-gallery-item {
+	@extend .column;
+	@extend .is-background-image;
+	min-height: 20rem;
+}
+
+.case-item-cta {
+
+	.row {
+		padding: 4rem 0 2rem 0;
+		@extend .align-center;
+	}
+}
+
+.case-item-cta-content {
+	@extend .small-22;
+	@extend .medium-20;
+	@extend .large-18;
+
+	.section-title,
+	.section-subtitle {
+		text-align: center;
+	}
+}
+
+.case-item-cta-person {
+	@extend .column;
+}
+
+.case-item-cta-form {
+	@extend .column;
+}

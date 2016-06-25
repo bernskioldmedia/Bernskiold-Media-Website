@@ -6,9 +6,10 @@
  * Hero
  */
 .hero {
-	@extend .is-background-image;
 	background: $primary-color url('../images/hero-background.png');
 	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 	color: #d8dfe8;
 
 	.row {

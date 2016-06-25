@@ -33,3 +33,33 @@
 .page-subtitle {
 	font-size: $lead-font-size * 1.2;
 }
+
+/**
+ * Section Header
+ */
+.section-header {
+	padding-top: 3rem;
+	text-align: center;
+
+	& + .section {
+		padding-bottom: 3rem;
+	}
+
+	.row {
+		@extend .align-center;
+	}
+}
+
+.section-header-content {
+	@extend .small-22;
+	@extend .medium-20;
+	@extend .large-18;
+}
+
+.section-title {}
+
+.section-subtitle {
+	color: #777;
+	font-size: $lead-font-size;
+	margin-bottom: 0;
+}

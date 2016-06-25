@@ -12,10 +12,32 @@ p {
 	font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+.body-text {
+
+	h2 {
+		@extend .h3;
+	}
+
+	h3 {
+		@extend .h4;
+	}
+
+	h4 {
+		@extend .h5;
+		font-weight: bold;
+	}
+
+	& > p:first-child {
+		font-size: $lead-font-size;
+	}
+
+}
+
 // Intro Text
 .intro,
 .lead {
 	font-size: $lead-font-size;
+	margin-bottom: 0.45em;
 }
 
 // Font Heading

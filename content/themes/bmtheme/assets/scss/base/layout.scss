@@ -41,6 +41,28 @@
 */
 
 /**
+ * Page Wrapper
+ */
+body {
+	@include breakpoint(xlarge up) {
+		background: $secondary-color;
+	}
+}
+
+#page {
+	background: white;
+
+	@include breakpoint(xlarge up) {
+		max-width: 95rem;
+		margin: 0 auto;
+	}
+}
+
+.is-fullwidth {
+	max-width: none;
+}
+
+/**
  * Border Modules
  */
 .border-top    { border-top: 1px solid $border-color; }
@@ -103,7 +125,7 @@
  * Background Image
  */
 .is-background-image {
-	background-size: contain;
+	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
@@ -114,7 +136,7 @@
 .dark-background {
 	color: white;
 
-	a {
+	a,h1,h2,h3,h4,h5,h6 {
 		color: inherit;
 	}
 
@@ -135,4 +157,11 @@
 .bg-accent {
 	background-color: $accent-color;
 	@extend .dark-background;
+}
+
+/**
+ * Image Classes
+ */
+.image-rounded {
+	border-radius: 50%;
 }

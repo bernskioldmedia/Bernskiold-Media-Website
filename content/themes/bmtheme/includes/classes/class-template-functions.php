@@ -174,4 +174,64 @@ class Template_Functions {
 
 		}
 	}
+
+	/**
+	 * Page Title Block
+	 *
+	 * Outputs the page title block for a given page.
+	 * The function allows to explicitly set the title and/or the subtitle.
+	 * If none is explicitly set, it will use the global post (loop) values.
+	 *
+	 * @param bool|string $title    Page Title.
+	 * @param bool|string $subtitle Page Subtitle.
+	 */
+	public function the_page_title_block( $title = false, $subtitle = false ) {
+
+		// If we don't have an explicit title/subtitle,
+		// load from within the loop.
+		if ( ! $title || ! $subtitle ) {
+
+			global $post;
+
+			// Get the title.
+			if ( ! $title ) {
+
+				// Get the title form the post object.
+				$title = get_the_title();
+
+			}
+
+			// Get the subtitle.
+			if ( ! $subtitle ) {
+
+				// Get the subtitle from the field.
+				$subtitle = get_field( 'page_subtitle', $post );
+
+			}
+		}
+
+		ob_start(); ?>
+
+		<section class="page-title-block">
+			<div class="row">
+				<div class="page-title-block-content">
+
+					<h1 class="page-title"><?php echo esc_html( $title ); ?></h1>
+
+					<?php if ( ! empty( $subtitle ) ) : ?>
+						<p class="page-subtitle">
+							<?php echo wp_kses_post( $subtitle ); ?>
+						</p>
+					<?php endif; ?>
+
+				</div>
+			</div>
+		</section>
+
+		<?php
+		$output = ob_get_clean();
+
+		echo wp_kses_post( $output );
+
+	}
 }

@@ -46,7 +46,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1100);
+$global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
 	primary: #2f3e4f,
@@ -116,7 +116,7 @@ $header-sizes: (
 		'h6': 1rem,
 	),
 );
-$header-color: inherit;
+$header-color: #222;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
@@ -225,7 +225,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1.7em;
+$button-padding: 0.7em 1.5em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;

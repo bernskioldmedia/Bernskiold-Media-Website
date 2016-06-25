@@ -10,7 +10,7 @@
 }
 
 .top-bar {
-	margin-top: 0.7rem;
+	padding-top: 0.7rem;
 	margin-bottom: 1rem;
 
 	.iconic * {
@@ -195,13 +195,15 @@
 /**
  * Frontpage
  */
-.page-template-frontpage {
+.page-template-frontpage,
+.single-bm_case_studies {
 
 	.site-header {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
+		z-index: 9999;
 		color: white;
 	}
 

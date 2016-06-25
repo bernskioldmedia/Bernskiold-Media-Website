@@ -1,0 +1,77 @@
+/**
+ * Case Studies Grid
+ */
+.case-grid {
+	margin-top: 2rem;
+
+	.row {
+		max-width: none;
+		justify-content: space-around;
+	}
+}
+
+.case-grid-item {
+	background: $primary-color;
+	color: white;
+	display: block;
+	position: relative;
+	@extend .small-24;
+	@extend .medium-12;
+	@extend .large-8;
+	transition: 0.2s all;
+	padding: 0;
+
+	&:hover {
+		color: white;
+		background-color: $accent-color;
+		cursor: pointer;
+	}
+}
+
+.case-grid-item-overlay {
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	opacity: 0.15;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.case-grid-item-content {
+	position: relative;
+	z-index: 2;
+	padding: 5rem 3rem;
+}
+
+.case-grid-item-logo {
+	overflow: hidden;
+	margin-bottom: 0.8em;
+
+	img {
+		max-height: 3rem;
+	}
+}
+
+.case-grid-item-name {
+	@extend .h4;
+	color: inherit;
+	margin-bottom: 0.1em;
+}
+
+.case-grid-item-intro {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.4;
+	margin-bottom: 1em;
+}
+
+.case-grid-item-action {
+
+	&,
+	.button {
+		margin-bottom: 0;
+	}
+}

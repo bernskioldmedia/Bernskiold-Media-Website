@@ -72,7 +72,7 @@ class CPT_Case_Studies {
 		$args = array(
 			'label'               => __( 'Case Studies', 'bm-case-studies' ),
 			'labels'              => $labels,
-			'supports'            => array( 'title', 'editor' ),
+			'supports'            => array( 'title' ),
 			'hierarchical'        => false,
 			'public'              => true,
 			'show_ui'             => true,
