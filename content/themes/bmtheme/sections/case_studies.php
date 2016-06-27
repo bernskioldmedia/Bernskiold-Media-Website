@@ -5,87 +5,27 @@
  * @package BernskioldMedia\Theme
  */
 namespace BernskioldMedia\Theme;
-?>
-<div class="case-grid">
-	<div class="row">
 
-		<a href="" class="case-grid-item">
-			<div class="case-grid-item-overlay" style="background-image: url('https://www.bernskioldmedia.com/wp-content/uploads/2014/02/surtsey-grid-1.jpg');"></div>
-			<div class="case-grid-item-content">
-				<div class="case-grid-item-logo">
-					<img src="http://placehold.it/200x50" alt="">
-				</div>
-				<p class="case-grid-item-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, atque aut autem deleniti dolorum explicabo.</p>
-				<p class="case-grid-item-action">
-					<span href="#" class="small white hollow button">View Case Study</span>
-				</p>
-			</div>
-		</a>
+$case_studies_query_args = array(
+	'posts_per_page' => 6,
+	'post_type'      => 'bm_case_studies',
+	'orderby'        => 'rand',
+);
 
-		<a href="" class="case-grid-item">
-			<div class="case-grid-item-overlay" style="background-image: url('https://www.bernskioldmedia.com/wp-content/uploads/2014/02/surtsey-grid-1.jpg');"></div>
-			<div class="case-grid-item-content">
-				<div class="case-grid-item-logo">
-					<img src="http://placehold.it/200x50" alt="">
-				</div>
-				<p class="case-grid-item-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, atque aut autem deleniti dolorum explicabo.</p>
-				<p class="case-grid-item-action">
-					<span href="#" class="small white hollow button">View Case Study</span>
-				</p>
-			</div>
-		</a>
+$case_studies_query = new \WP_Query( $case_studies_query_args );
 
-		<a href="" class="case-grid-item">
-			<div class="case-grid-item-overlay" style="background-image: url('https://www.bernskioldmedia.com/wp-content/uploads/2014/02/surtsey-grid-1.jpg');"></div>
-			<div class="case-grid-item-content">
-				<div class="case-grid-item-logo">
-					<img src="http://placehold.it/200x50" alt="">
-				</div>
-				<p class="case-grid-item-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, atque aut autem deleniti dolorum explicabo.</p>
-				<p class="case-grid-item-action">
-					<span href="#" class="small white hollow button">View Case Study</span>
-				</p>
-			</div>
-		</a>
+if ( $case_studies_query->have_posts() ) : ?>
+	<div class="case-grid">
+		<div class="row">
 
-		<a href="" class="case-grid-item">
-			<div class="case-grid-item-overlay" style="background-image: url('https://www.bernskioldmedia.com/wp-content/uploads/2014/02/surtsey-grid-1.jpg');"></div>
-			<div class="case-grid-item-content">
-				<div class="case-grid-item-logo">
-					<img src="http://placehold.it/200x50" alt="">
-				</div>
-				<p class="case-grid-item-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, atque aut autem deleniti dolorum explicabo.</p>
-				<p class="case-grid-item-action">
-					<span href="#" class="small white hollow button">View Case Study</span>
-				</p>
-			</div>
-		</a>
+			<?php while ( $case_studies_query->have_posts() ) : $case_studies_query->the_post(); ?>
 
-		<a href="" class="case-grid-item">
-			<div class="case-grid-item-overlay" style="background-image: url('https://www.bernskioldmedia.com/wp-content/uploads/2014/02/surtsey-grid-1.jpg');"></div>
-			<div class="case-grid-item-content">
-				<div class="case-grid-item-logo">
-					<img src="http://placehold.it/200x50" alt="">
-				</div>
-				<p class="case-grid-item-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, atque aut autem deleniti dolorum explicabo.</p>
-				<p class="case-grid-item-action">
-					<span href="#" class="small white hollow button">View Case Study</span>
-				</p>
-			</div>
-		</a>
+				<?php get_template_part( 'content', 'case-grid' ); ?>
 
-		<a href="" class="case-grid-item">
-			<div class="case-grid-item-overlay" style="background-image: url('https://www.bernskioldmedia.com/wp-content/uploads/2014/02/surtsey-grid-1.jpg');"></div>
-			<div class="case-grid-item-content">
-				<div class="case-grid-item-logo">
-					<img src="http://placehold.it/200x50" alt="">
-				</div>
-				<p class="case-grid-item-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, atque aut autem deleniti dolorum explicabo.</p>
-				<p class="case-grid-item-action">
-					<span href="#" class="small white hollow button">View Case Study</span>
-				</p>
-			</div>
-		</a>
+			<?php endwhile; ?>
 
+		</div>
 	</div>
-</div>
+<?php endif;
+wp_reset_postdata(); ?>
+

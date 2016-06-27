@@ -1,0 +1,97 @@
+/**
+ * Case Archive
+ */
+.case-archive-list {}
+
+.case-archive-item {
+	@extend .row;
+	@extend .is-fullwidth;
+	@extend .align-center;
+
+	&:nth-child(odd) {
+		.case-archive-item-content {
+			order: 1;
+
+			@include breakpoint(small only) {
+				order: 2;
+			}
+		}
+
+		.case-archive-item-image {
+			order: 2;
+
+			@include breakpoint(small only) {
+				order: 1;
+			}
+		}
+	}
+
+	&:nth-child(even) {
+		.case-archive-item-content {
+			order: 2;
+		}
+
+		.case-archive-item-image {
+			order: 1;
+		}
+	}
+}
+
+.case-archive-item-content {
+	@extend .bg-primary;
+	@extend .column;
+	@extend .small-24;
+	@extend .medium-13;
+	@extend .large-10;
+	padding: 3.5em 2.5em;
+
+	@include breakpoint(small only) {
+		order: 2;
+	}
+
+	@include breakpoint(medium up) {
+		padding: 4em 1.5em;
+	}
+
+	@include breakpoint(large up) {
+		padding: 4em 3em;
+	}
+
+	@include breakpoint(xlarge up) {
+		padding: 4em 6em;
+	}
+}
+
+.case-archive-item-client-logo {
+	@extend .case-grid-item-logo;
+
+	img {
+		max-height: 6rem;
+		margin-bottom: 1.5em;
+		max-width: 15rem;
+	}
+}
+
+.case-archive-item-description {
+	font-size: $lead-font-size;
+}
+
+.case-archive-item-action {
+	@extend .case-grid-item-action;
+}
+
+.case-archive-item-services {
+	@extend .case-item-services;
+	margin-bottom: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+.case-archive-item-image {
+	@extend .small-24;
+	@extend .medium-11;
+	@extend .large-14;
+	@extend .is-background-image;
+	min-height: 25rem;
+}

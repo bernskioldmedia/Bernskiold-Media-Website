@@ -18,6 +18,7 @@ get_header(); ?>
 			$short_description = get_field( 'case_short_description' );
 			$related_services  = get_field( 'related_services' );
 			$client            = get_field( 'case_client' );
+			$case_gallery      = get_field( 'case_gallery' );
 
 			// Display the case image background.
 			if ( $case_image ) {
@@ -42,9 +43,7 @@ get_header(); ?>
 							<?php if ( $related_services ) : ?>
 								<ul class="case-item-services">
 									<?php foreach ( $related_services as $service ) : ?>
-										<li>
-											<a href="<?php echo esc_url_raw( get_permalink( $service ) ); ?>"><?php echo esc_html( $service->post_title ); ?></a>
-										</li>
+										<li><a href="<?php echo esc_url_raw( get_permalink( $service ) ); ?>"><?php echo esc_html( $service->post_title ); ?></a></li>
 									<?php endforeach; ?>
 								</ul>
 							<?php endif; ?>
@@ -82,43 +81,15 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<div class="case-item-gallery">
-					<a href="//placehold.it/640x360" class="case-item-gallery-item" style="background-image: url('//placehold.it/640x360')"></a>
-					<a href="//placehold.it/640x360" class="case-item-gallery-item" style="background-image: url('//placehold.it/640x360')"></a>
-					<a href="//placehold.it/640x360" class="case-item-gallery-item" style="background-image: url('//placehold.it/640x360')"></a>
-					<a href="//placehold.it/640x360" class="case-item-gallery-item" style="background-image: url('//placehold.it/640x360')"></a>
-				</div>
-
-				<div class="case-item-cta">
-					<div class="row">
-						<div class="case-item-cta-content">
-							<h2 class="section-title">Let's get started on your project!</h2>
-							<p class="section-subtitle">We'd love to talk about your project. Contact us directly, or leave a message below and we will get back to you as soon as possible.</p>
-							<div class="row medium-unstack">
-								<div class="case-item-cta-person">
-									<div class="row">
-										<div class="small-24 medium-10 large-11 columns">
-											<img src="https://www.bernskioldmedia.com/wp-content/uploads/2015/10/erik-bernskiold-square-300x300.jpg" alt="" class="image-rounded">
-										</div>
-										<div class="small-24 medium-14 large-13 columns">
-											<p>
-												<strong class="intro">Erik Bernskiold</strong><br>
-												Managing Director
-											</p>
-											<p>
-												<strong>Phone:</strong><br><a href="tel://+4631102011" class="no-link">+46 31 10 20 11</a><br>
-												<strong>E-mail:</strong><br><a href="mailto:erik@bernskioldmedia.com" class="no-link">erik@bernskioldmedia.com</a>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="case-item-cta-form">
-									Form
-								</div>
-							</div>
-						</div>
+				<?php if ( $case_gallery ) : ?>
+					<div class="case-item-gallery">
+						<?php foreach ( $case_gallery as $image ) : ?>
+							<a href="<?php echo esc_url( $image['url'] ); ?>" class="case-item-gallery-item" style="background-image: url('<?php echo esc_url( $image['sizes']['thumbnail'] ); ?>')"></a>
+						<?php endforeach; ?>
 					</div>
-				</div>
+				<?php endif; ?>
+
+				<?php get_template_part( 'partials/project-cta' ); ?>
 
 				<?php get_template_part( 'sections/case_studies' ); ?>
 

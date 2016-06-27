@@ -1,0 +1,29 @@
+/**
+ * Academy
+ */
+.academy-main {
+	@extend .column;
+	@extend .small-24;
+	@extend .medium-14;
+	@extend .large-16;
+}
+
+.academy-editors-picks {
+	@extend .column;
+	@extend .small-24;
+	@extend .medium-10;
+	@extend .large-8;
+
+	& > h2 {
+		@extend .h3;
+	}
+
+	.post-title {
+		@extend .h4;
+		margin-bottom: 0;
+	}
+
+	.post-thumbnail {
+		min-height: 10rem;
+	}
+}

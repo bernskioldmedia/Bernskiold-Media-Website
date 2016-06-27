@@ -83,6 +83,9 @@
 @import "components/section";
 @import "components/block";
 @import "components/case-studies-grid";
+@import "components/project-cta";
+@import "components/client-grid";
+@import "components/post";
 
 /**
  * Layouts
@@ -94,3 +97,6 @@
  */
 @import "templates/frontpage";
 @import "templates/case-study";
+@import "templates/case-archive";
+@import "templates/academy";
+@import "templates/services";

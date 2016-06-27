@@ -1,0 +1,29 @@
+/**
+ * Project CTA Block
+ */
+.project-cta {
+
+	.row {
+		padding: 4rem 0 2rem 0;
+		@extend .align-center;
+	}
+}
+
+.project-cta-content {
+	@extend .small-22;
+	@extend .medium-20;
+	@extend .large-18;
+
+	.section-title,
+	.section-subtitle {
+		text-align: center;
+	}
+}
+
+.project-cta-person {
+	@extend .column;
+}
+
+.project-cta-form {
+	@extend .column;
+}

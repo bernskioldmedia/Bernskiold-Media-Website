@@ -59,12 +59,28 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": 50,
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_576e9e56bfec7",
+            "label": "Is Selected?",
+            "name": "client_is_selected",
+            "type": "true_false",
+            "instructions": "Should this client be featured in the client grids?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
         },
         {
             "key": "field_576e783484958",
@@ -123,5 +139,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1466856412
+    "modified": 1466867322
 }

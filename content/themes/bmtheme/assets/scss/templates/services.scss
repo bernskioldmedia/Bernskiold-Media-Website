@@ -1,0 +1,90 @@
+/**
+ * Services
+ */
+.service-area-item {
+	@extend .row;
+	@extend .is-fullwidth;
+
+	&:nth-child(even) {
+		.service-area-image {
+			order: 2;
+
+			@include breakpoint(small only) {
+				order: 1;
+			}
+		}
+
+		.service-area-content {
+			order: 1;
+			background-color: $primary-color;
+
+			@include breakpoint(small only) {
+				order: 2;
+			}
+		}
+	}
+
+	&:nth-child(odd) {
+		.service-area-image {
+			order: 1;
+		}
+
+		.service-area-content {
+			order: 2;
+			background-color: $accent-color;
+		}
+	}
+}
+
+.service-area-content {
+	@extend .small-24;
+	@extend .medium-12;
+	@extend .large-11;
+	@extend .dark-background;
+	background: $primary-color;
+
+	padding: 4em;
+}
+
+.service-area-name {
+	@extend .h3;
+}
+
+.service-area-description {
+	font-size: 1.05rem;
+}
+
+.service-area-list {
+	@extend .row;
+	list-style: none;
+
+	li {
+		@extend .column;
+		font-size: 1.25rem;
+
+		&:after {
+			border-style: solid;
+			border-width: 0.1em 0.1em 0 0;
+			content: '';
+			display: inline-block;
+			height: 0.35em;
+			left: 0.1em;
+			transform: rotate(45deg);
+			position: relative;
+			top: 0;
+			vertical-align: middle;
+			width: 0.35em;
+		}
+	}
+
+	a {
+		@extend .underline-hover-link;
+	}
+}
+
+.service-area-image {
+	@extend .small-24;
+	@extend .medium-12;
+	@extend .large-13;
+	@extend .is-background-image;
+}

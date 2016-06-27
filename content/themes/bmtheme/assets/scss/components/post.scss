@@ -1,0 +1,60 @@
+/**
+ * Post
+ */
+.post-item {}
+
+.post-title {}
+
+.post-thumbnail {
+	@extend .is-background-image;
+	min-height: 30rem;
+	display: block;
+	margin-bottom: 1em;
+}
+
+/**
+ * Featured Academy Post
+ */
+.academy-featured-post {
+	padding: 0 4rem 0 4rem;
+	margin-bottom: 2rem;
+
+	.post-thumbnail {
+		min-height: 25rem;
+		margin-bottom: 2.5rem;
+		margin-left: -3rem;
+		margin-right: -3rem;
+	}
+
+	.post-title {
+		@extend .h3;
+	}
+
+	.post-excerpt {
+		@extend .intro;
+	}
+
+}
+
+/**
+ * Academy Index Grid
+ */
+.academy-index-grid {
+	@extend .row;
+	@extend .small-up-1;
+	@extend .medium-up-2;
+	@extend .large-up-3;
+}
+
+.academy-grid-item {
+	@extend .column;
+	margin-bottom: 2rem;
+
+	.post-thumbnail {
+		min-height: 8rem;
+
+		@include breakpoint(small only) {
+			min-height: 16rem;
+		}
+	}
+}

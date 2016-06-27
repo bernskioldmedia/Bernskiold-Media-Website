@@ -126,7 +126,8 @@
 	margin-bottom: 3rem;
 
 	img {
-		max-height: 10rem;
+		max-height: 7rem;
+		opacity: 0.6;
 	}
 }
 
@@ -147,31 +148,4 @@
 	@extend .column;
 	@extend .is-background-image;
 	min-height: 20rem;
-}
-
-.case-item-cta {
-
-	.row {
-		padding: 4rem 0 2rem 0;
-		@extend .align-center;
-	}
-}
-
-.case-item-cta-content {
-	@extend .small-22;
-	@extend .medium-20;
-	@extend .large-18;
-
-	.section-title,
-	.section-subtitle {
-		text-align: center;
-	}
-}
-
-.case-item-cta-person {
-	@extend .column;
-}
-
-.case-item-cta-form {
-	@extend .column;
 }
