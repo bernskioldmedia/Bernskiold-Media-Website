@@ -15,7 +15,7 @@ namespace BernskioldMedia\Theme;
 				<div class="project-cta-person">
 					<div class="row">
 						<div class="small-24 medium-10 large-11 columns">
-							<img src="https://www.bernskioldmedia.com/wp-content/uploads/2015/10/erik-bernskiold-square-300x300.jpg" alt="" class="image-rounded">
+							<img src="<?php echo wp_upload_dir()['url']; ?>/erik-bernskiold-square-500px-300x300.jpg" alt="" class="image-rounded">
 						</div>
 						<div class="small-24 medium-14 large-13 columns">
 							<p>
@@ -30,7 +30,7 @@ namespace BernskioldMedia\Theme;
 					</div>
 				</div>
 				<div class="project-cta-form">
-					Form
+					<?php echo do_shortcode( '[gravityform id="2" title="false" description="false" ajax="true"]' ); ?>
 				</div>
 			</div>
 		</div>

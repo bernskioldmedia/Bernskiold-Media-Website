@@ -1,0 +1,40 @@
+{
+    "key": "group_5790f9743b13b",
+    "title": "Service Details",
+    "fields": [
+        {
+            "key": "field_5790f98972bb9",
+            "label": "Linked Service?",
+            "name": "is_service_linked",
+            "type": "true_false",
+            "instructions": "If this is checked, the service will show up as a link on the services page, allowing the user to read more. If this isn't checked, the page will not be shown as a link and may only be seen by entering the URL manually.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show link to this service?",
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_services"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1469118909
+}

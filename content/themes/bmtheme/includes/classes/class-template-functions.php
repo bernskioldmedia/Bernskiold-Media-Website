@@ -46,7 +46,7 @@ class Template_Functions {
 		}
 
 		if ( $arrows ) {
-			$pagination .= $this->pagination_link( $paged - 1, 'arrow' . ( ( $paged <= 1 ) ? ' unavailable' : '' ), '&laquo;', esc_html__( 'Previous Page', 'bmtheme' ) );
+			$pagination .= $this->pagination_link( $paged - 1, 'arrow' . ( ( $paged <= 1 ) ? ' unavailable' : '' ), '&laquo;', esc_html__( 'Previous Page', 'polaris' ) );
 		}
 
 		if ( $ends && $paged > $pages + 1 ) {
@@ -73,11 +73,10 @@ class Template_Functions {
 		}
 
 		if ( $arrows ) {
-			$pagination .= $this->pagination_link( $paged + 1, 'arrow' . ( ( $paged >= $max_page ) ? ' unavailable' : '' ), '&raquo;', esc_html__( 'Next Page', 'bmtheme' ) );
+			$pagination .= $this->pagination_link( $paged + 1, 'arrow' . ( ( $paged >= $max_page ) ? ' unavailable' : '' ), '&raquo;', esc_html__( 'Next Page', 'polaris' ) );
 		}
 
-		$pagination = '<ul class="pagination">' . $pagination . '</ul>';
-		$pagination = '<div class="pagination-centered">' . $pagination . '</div>';
+		$pagination = '<ul class="pagination text-center">' . $pagination . '</ul>';
 
 		echo wp_kses_post( $pagination );
 	}
@@ -96,9 +95,9 @@ class Template_Functions {
 
 		$class   = empty( $class ) ? $class : " class=\"$class\"";
 		$content = ! empty( $content ) ? $content : $page;
-		$title   = ! empty( $title ) ? $title : sprintf( esc_html__( 'Page %s', 'bmtheme' ), $page );
+		$title   = ! empty( $title ) ? $title : sprintf( esc_html__( 'Page %s', 'polaris' ), $page );
 
-		return "<li$class><a id=\"$id\" href=\"$href\" title=\"$title\">$content</a></li>\n";
+		return "<li><a id=\"$id\" $class href=\"$href\" title=\"$title\">$content</a></li>\n";
 	}
 
 	/**

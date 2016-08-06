@@ -2,8 +2,8 @@
  * Services
  */
 .service-area-item {
-	@extend .row;
-	@extend .is-fullwidth;
+	@include flex-grid-row();
+	max-width: none;
 
 	&:nth-child(even) {
 		.service-area-image {
@@ -55,14 +55,17 @@
 }
 
 .service-area-list {
-	@extend .row;
+	@include flex-grid-row();
+	@extend .small-up-1;
+	@extend .medium-up-2;
 	list-style: none;
 
 	li {
 		@extend .column;
 		font-size: 1.25rem;
+		margin-bottom: 0.1em;
 
-		&:after {
+		a:after {
 			border-style: solid;
 			border-width: 0.1em 0.1em 0 0;
 			content: '';

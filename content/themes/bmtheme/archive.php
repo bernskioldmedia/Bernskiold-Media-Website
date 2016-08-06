@@ -8,36 +8,46 @@ get_header(); ?>
 
 <main class="main" role="main" id="content">
 
-	<?php if ( have_posts() ) : ?>
+	<div class="post-archive">
+		<div class="row align-justify">
+			<div class="post-archive-content">
 
-    	<h1 class="page-title archives-title">
-			<?php if ( is_day() ) : ?>
-				<?php printf( esc_html__( 'Daily Archives: %s', 'bmtheme' ),'<span>' . get_the_date() . '</span>' ); ?>
-			<?php elseif ( is_month() ) : ?>
-				<?php printf( esc_html__( 'Monthly Archives: %s', 'bmtheme' ), '<span>' . get_the_date( 'F Y' ) . '</span>' ); ?>
-			<?php elseif ( is_year() ) : ?>
-				<?php printf( esc_html__( 'Yearly Archives: %s', 'bmtheme' ), '<span>' . get_the_date( 'Y' ) . '</span>' ); ?>
-			<?php else : ?>
-				<?php esc_html_e( 'Blog Archives', 'bmtheme' ); ?>
-			<?php endif; ?>
-		</h1>
+				<?php if ( have_posts() ) : ?>
 
-    	<?php while ( have_posts() ) : the_post(); ?>
+					<h1 class="page-title archives-title">
+						<?php if ( is_day() ) : ?>
+							<?php printf( esc_html__( 'Daily Archives: %s', 'bmtheme' ), '<span>' . get_the_date() . '</span>' ); ?>
+						<?php elseif ( is_month() ) : ?>
+							<?php printf( esc_html__( 'Monthly Archives: %s', 'bmtheme' ), '<span>' . get_the_date( 'F Y' ) . '</span>' ); ?>
+						<?php elseif ( is_year() ) : ?>
+							<?php printf( esc_html__( 'Yearly Archives: %s', 'bmtheme' ), '<span>' . get_the_date( 'Y' ) . '</span>' ); ?>
+						<?php else : ?>
+							<?php esc_html_e( 'Article Archives', 'bmtheme' ); ?>
+						<?php endif; ?>
+					</h1>
 
-        	<?php get_template_part( 'content', get_post_format() ); ?>
+					<p class="page-subtitle"><?php esc_html_e( 'Read our articles about everything digital marketing, such as strategy, WordPress, web development, search engine optimization (SEO) and much more.', 'bmtheme' ); ?></p>
 
- 		<?php endwhile; ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php theme()->template->pagination(); ?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
 
-	<?php else : ?>
+					<?php endwhile; ?>
 
-		<h1><?php esc_html_e( 'Content Not Found', 'bmtheme' ); ?></h1>
-		<p class="intro"><?php esc_html_e( 'Unfortunately there is no content to display for this view.', 'bmtheme' ); ?></p>
+					<?php theme()->template->pagination(); ?>
 
-	<?php endif; ?>
+				<?php else : ?>
 
-	<?php get_sidebar(); ?>
+					<p><?php esc_html_e( 'Unfortunately there are now articles available for this query.', 'bmtheme' ); ?></p>
+
+				<?php endif; ?>
+
+			</div>
+
+			<?php get_sidebar(); ?>
+
+		</div>
+	</div>
 
 </main>
 

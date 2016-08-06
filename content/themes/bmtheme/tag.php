@@ -1,6 +1,6 @@
 <?php
 /**
- * Displays Tag Archives
+ * Template for the Category Archives
  **/
 namespace BernskioldMedia\Theme;
 
@@ -8,34 +8,41 @@ get_header(); ?>
 
 <main class="main" role="main" id="content">
 
-	<?php if ( have_posts() ) : ?>
+	<div class="post-archive">
+		<div class="row align-justify">
+			<div class="post-archive-content">
 
-		<h1 class="page-title tag-title">
-			<?php single_tag_title( '' ); ?>
-		</h1>
+				<?php if ( have_posts() ) : ?>
 
-		<?php
-			$tag_description = tag_description();
-			if ( ! empty( $tag_description ) )
-				echo apply_filters( 'tag_archive_meta', '<div class="page-description tag-description">' . $tag_description . '</div>' );
-		?>
+					<h1 class="page-title"><?php single_tag_title( '' ); ?></h1>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+					$tag_description = tag_description();
 
-			<?php get_template_part( 'content', get_post_format() ); ?>
+					if ( ! empty( $tag_description ) ) {
+						echo apply_filters( 'tag_archive_meta', '<p class="page-subtitle">' . $tag_description . '</p>' );
+					}
+					?>
 
-		<?php endwhile; ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php theme()->template->pagination(); ?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
 
-	<?php else : ?>
+					<?php endwhile; ?>
 
-		<h1><?php esc_html_e( 'Content Not Found', 'bmtheme' ); ?></h1>
-		<p class="intro"><?php esc_html_e( 'Unfortunately there is no content to display for this view.', 'bmtheme' ); ?></p>
+					<?php theme()->template->pagination(); ?>
 
-	<?php endif; ?>
+				<?php else : ?>
 
-	<?php get_sidebar(); ?>
+					<p><?php esc_html_e( 'Unfortunately there are now articles available for this query.', 'bmtheme' ); ?></p>
+
+				<?php endif; ?>
+
+			</div>
+
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
 
 </main>
 

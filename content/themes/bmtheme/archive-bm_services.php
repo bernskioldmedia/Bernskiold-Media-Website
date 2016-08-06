@@ -52,7 +52,11 @@ get_header(); ?>
 								<?php while ( $service_area_query->have_posts() ) : $service_area_query->the_post(); ?>
 
 									<li>
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+										<?php if ( get_field( 'is_service_linked' ) ) : ?>
+											<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+										<?php else : ?>
+											<?php the_title(); ?>
+										<?php endif; ?>
 									</li>
 
 								<?php endwhile; ?>

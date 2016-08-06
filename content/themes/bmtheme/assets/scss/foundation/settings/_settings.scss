@@ -147,10 +147,10 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $dark-gray;
+$blockquote-color: $body-font-color;
 $blockquote-padding: rem-calc(9 20 0 19);
-$blockquote-border: 1px solid $medium-gray;
-$cite-font-size: rem-calc(13);
+$blockquote-border: 0px solid $medium-gray;
+$cite-font-size: rem-calc(14);
 $cite-color: $dark-gray;
 $keystroke-font: $font-family-monospace;
 $keystroke-color: $black;
@@ -389,14 +389,14 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-size: 250px;
-$offcanvas-background: $light-gray;
+$offcanvas-background: $primary-color;
 $offcanvas-zindex: -1;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
 $maincontent-class: 'off-canvas-content';
-$maincontent-shadow: 0 0 10px rgba($black, 0.5);
+$maincontent-shadow: 0 0 0 rgba($black, 0.5);
 
 // 25. Orbit
 // ---------
@@ -486,7 +486,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 
 $table-background: $white;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
+$table-border: 0px solid smart-scale($table-background, $table-color-scale);
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
@@ -504,7 +504,7 @@ $show-header-for-stacked: false;
 $tab-margin: 0;
 $tab-background: $white;
 $tab-background-active: $light-gray;
-$tab-item-font-size: rem-calc(12);
+$tab-item-font-size: 1rem;
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;

@@ -40,6 +40,8 @@ gulp.task('js', function () {
 	return gulp.src([
 		'assets/js/src/plugins/iconic.min.js',
 		'assets/js/src/plugins/foundation/foundation.core.js',
+		'assets/js/src/plugins/foundation/foundation.tabs.js',
+		'assets/js/src/plugins/foundation/foundation.offcanvas.js',
 		'assets/js/src/plugins/foundation/foundation.util.*.js',
 		'assets/js/src/main.js'
 	])

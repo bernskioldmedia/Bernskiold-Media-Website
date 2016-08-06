@@ -2,39 +2,47 @@
 /**
  * Template for the Category Archives
  **/
+namespace BernskioldMedia\Theme;
 
 get_header(); ?>
 
 <main class="main" role="main" id="content">
 
-	<?php if ( have_posts() ) : ?>
+	<div class="post-archive">
+		<div class="row align-justify">
+			<div class="post-archive-content">
 
-		<h1 class="page-title category-title">
-			<?php single_cat_title( '' ); ?>
-		</h1>
+				<?php if ( have_posts() ) : ?>
 
-		<?php
-			$cat_description = category_description();
+					<h1 class="page-title"><?php single_cat_title( '' ); ?></h1>
 
-			if ( ! empty( $cat_description ) )
-				echo apply_filters( 'cat_archive_meta', '<div class="page-description category-description">' . $cat_description . '</div>' );
-		?>
+					<?php
+					$cat_description = category_description();
 
-    	<?php while ( have_posts() ) : the_post(); ?>
+					if ( ! empty( $cat_description ) ) {
+						echo apply_filters( 'cat_archive_meta', '<p class="page-subtitle">' . $cat_description . '</p>' );
+					}
+					?>
 
-			<?php get_template_part( 'content', get_post_format() ); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php endwhile; ?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
 
-		<?php theme()->template->pagination(); ?>
+					<?php endwhile; ?>
 
-	<?php else : ?>
+					<?php theme()->template->pagination(); ?>
 
-		<?php get_template_part( 'content', '404' ); // Streamline and get the 404 content from a unified file. ?>
+				<?php else : ?>
 
-	<?php endif; ?>
+					<p><?php esc_html_e( 'Unfortunately there are now articles available for this query.', 'bmtheme' ); ?></p>
 
-	<?php get_sidebar(); ?>
+				<?php endif; ?>
+
+			</div>
+
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
 
 </main>
 

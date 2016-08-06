@@ -7,7 +7,7 @@
 namespace BernskioldMedia\Theme;
 
 $case_studies_query_args = array(
-	'posts_per_page' => 6,
+	'posts_per_page' => 3,
 	'post_type'      => 'bm_case_studies',
 	'orderby'        => 'rand',
 );

@@ -55,6 +55,7 @@ body {
 	@include breakpoint(xlarge up) {
 		max-width: 95rem;
 		margin: 0 auto;
+		position: relative;
 	}
 }
 
@@ -136,8 +137,12 @@ body {
 .dark-background {
 	color: white;
 
-	a,h1,h2,h3,h4,h5,h6 {
+	a,h1,h2,h3,h4,h5,h6,label {
 		color: inherit;
+	}
+
+	input.button {
+		@extend .hollow;
 	}
 
 	.button.hollow {
@@ -164,4 +169,25 @@ body {
  */
 .image-rounded {
 	border-radius: 50%;
+}
+
+/**
+ * Blockquote
+ */
+blockquote {
+	border-left: 0;
+	margin: 0;
+	padding: 1rem 2rem 1rem 5rem;
+	font-size: 1.3rem;
+	font-style: italic;
+
+	&,p {
+		color: $body-font-color;
+	}
+
+	cite {
+		display: block;
+		font-size: 0.8125rem;
+		color: #555;
+	}
 }

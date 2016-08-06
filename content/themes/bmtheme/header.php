@@ -19,51 +19,11 @@ namespace BernskioldMedia\Theme;
 
 <?php do_action( 'bm_before_body' ); ?>
 
-<div id="page" class="hfeed site">
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+		<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bmtheme' ); ?></a>
-
-	<header class="site-header" role="banner">
-
-		<section class="top-bar">
-			<div class="row align-right">
-
-				<?php wp_nav_menu( array(
-					'theme_location'  => 'top-menu',
-					'container'       => 'nav',
-					'container_class' => 'columns shrink top-bar-item top-menu',
-					'container_id'    => 'js-top-menu',
-					'menu_class'      => 'inline-block-list',
-					'fallback_cb'     => '',
-					'depth'           => 1,
-				) ); ?>
-
-				<div class="columns shrink top-bar-item top-bar-search">
-					<a href="#">
-						<img src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/magnifying-glass.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/magnifying-glass.svg' ); ?>"  width="32" height="32" class="iconic iconic-sm" alt="Search">
-					</a>
-				</div>
-
-				<div class="columns shrink top-bar-item top-bar-cart">
-					<a href="<?php echo esc_url( wc_get_cart_url() ); ?>">
-						<span class="top-bar-cart-icon"><img src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/cart.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/cart.svg' ); ?>"  width="32" height="32" class="iconic iconic-sm" alt="Search"></span>
-						<span class="top-bar-cart-label">1</span>
-					</a>
-				</div>
-
-				<div class="columns shrink top-bar-item top-bar-languages">
-					<a href="#">
-						<?php esc_html_e( 'Language', 'bmtheme' ); ?>
-					</a>
-					<?php get_template_part( 'partials/language-switcher' ); ?>
-				</div>
-
-			</div>
-		</section>
-
-		<div class="row align-justify">
-
-			<div class="column shrink header-logo">
+			<div class="off-canvas-logo">
 				<a href="<?php echo esc_url_raw( home_url() ); ?> ">
 					<img src="<?php echo esc_url_raw( theme()->get_theme_images_uri() . '/logo.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_images_uri() . '/logo.svg' ); ?>" alt="<?php esc_html_e( 'Bernskiold Media', 'bmtheme' ); ?>" class="iconic" width="272" height="36">
 				</a>
@@ -72,8 +32,18 @@ namespace BernskioldMedia\Theme;
 			<?php wp_nav_menu( array(
 				'theme_location'  => 'primary-menu',
 				'container'       => 'nav',
-				'container_class' => 'column primary-menu',
+				'container_class' => 'off-canvas-menu',
 				'container_id'    => 'js-primary-menu',
+				'menu_class'      => '',
+				'fallback_cb'     => '',
+				'depth'           => 1,
+			) ); ?>
+
+			<?php wp_nav_menu( array(
+				'theme_location'  => 'top-menu',
+				'container'       => 'nav',
+				'container_class' => 'off-canvas-top-menu',
+				'container_id'    => 'js-top-menu',
 				'menu_class'      => 'inline-block-list',
 				'fallback_cb'     => '',
 				'depth'           => 1,
@@ -81,4 +51,69 @@ namespace BernskioldMedia\Theme;
 
 		</div>
 
-	</header>
+		<div id="page" class="hfeed site off-canvas-content" data-off-canvas-content>
+
+			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bmtheme' ); ?></a>
+
+			<header class="site-header" role="banner">
+
+				<section class="top-bar">
+					<div class="row align-right">
+
+						<?php wp_nav_menu( array(
+							'theme_location'  => 'top-menu',
+							'container'       => 'nav',
+							'container_class' => 'columns shrink top-bar-item top-menu',
+							'container_id'    => 'js-top-menu',
+							'menu_class'      => 'inline-block-list',
+							'fallback_cb'     => '',
+							'depth'           => 1,
+						) ); ?>
+
+						<div class="columns shrink top-bar-item top-bar-search">
+							<a href="<?php echo esc_url( home_url( 'search' ) ); ?>">
+								<img src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/magnifying-glass.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/magnifying-glass.svg' ); ?>" width="32" height="32" class="iconic iconic-sm" alt="Search">
+							</a>
+						</div>
+
+						<div class="columns shrink top-bar-item top-bar-cart">
+							<a href="<?php echo esc_url( wc_get_cart_url() ); ?>">
+								<span class="top-bar-cart-icon"><img src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/cart.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_icons_uri() . '/cart.svg' ); ?>" width="32" height="32" class="iconic iconic-sm" alt="Search"></span>
+							</a>
+						</div>
+
+						<div class="columns shrink top-bar-item top-bar-languages">
+							<a href="#">
+								<?php esc_html_e( 'Language', 'bmtheme' ); ?>
+							</a>
+							<?php get_template_part( 'partials/language-switcher' ); ?>
+						</div>
+
+					</div>
+				</section>
+
+				<div class="row align-justify">
+
+					<div class="column shrink header-logo">
+						<a href="<?php echo esc_url_raw( home_url() ); ?> ">
+							<img src="<?php echo esc_url_raw( theme()->get_theme_images_uri() . '/logo.png' ); ?>" data-src="<?php echo esc_url_raw( theme()->get_theme_images_uri() . '/logo.svg' ); ?>" alt="<?php esc_html_e( 'Bernskiold Media', 'bmtheme' ); ?>" class="iconic" width="272" height="36">
+						</a>
+					</div>
+
+					<?php wp_nav_menu( array(
+						'theme_location'  => 'primary-menu',
+						'container'       => 'nav',
+						'container_class' => 'column primary-menu',
+						'container_id'    => 'js-primary-menu',
+						'menu_class'      => 'inline-block-list',
+						'fallback_cb'     => '',
+						'depth'           => 1,
+					) ); ?>
+
+					<div class="header-nav-trigger">
+						<a href="#" data-toggle="offCanvas"><?php esc_html_e( 'Menu', 'bmtheme' ); ?></a>
+					</div>
+
+				</div>
+
+			</header>

@@ -73,7 +73,7 @@ class CPT_Events {
 			'label'               => __( 'Events', 'bm-events' ),
 			'description'         => __( 'Holds events for the website.', 'bm-events' ),
 			'labels'              => $labels,
-			'supports'            => array( 'title' ),
+			'supports'            => array( 'title', 'thumbnail' ),
 			'hierarchical'        => false,
 			'public'              => true,
 			'show_ui'             => true,

@@ -36,6 +36,13 @@
                 "operator": "!=",
                 "value": "templates\/frontpage.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_services"
+            }
         ]
     ],
     "menu_order": 5,
@@ -46,5 +53,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Displays a field for the user to insert a page subtitle.",
-    "modified": 1466849890
+    "modified": 1468154569
 }

@@ -1,0 +1,143 @@
+{
+    "key": "group_57a376c8eeac8",
+    "title": "Client Details",
+    "fields": [
+        {
+            "key": "field_57a376c93c9f8",
+            "label": "Light Logo",
+            "name": "client_logo_light",
+            "type": "image",
+            "instructions": "Upload a transparent PNG version of the client's logo for use on dark backgrounds.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "png"
+        },
+        {
+            "key": "field_57a376c93cabd",
+            "label": "Dark Logo",
+            "name": "client_logo_dark",
+            "type": "image",
+            "instructions": "Upload a transparent PNG version of the client's logo for use on light backgrounds.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57a376c93cb70",
+            "label": "Website URL",
+            "name": "client_url",
+            "type": "url",
+            "instructions": "Enter the URL to the client's website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57a376c93cc46",
+            "label": "Is Selected?",
+            "name": "client_is_selected",
+            "type": "true_false",
+            "instructions": "Should this client be featured in the client grids?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_57a376c93cd0d",
+            "label": "Short Description",
+            "name": "client_short_description",
+            "type": "textarea",
+            "instructions": "Write a short description about the client and what they do.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57a376c93cdc4",
+            "label": "Description",
+            "name": "client_description",
+            "type": "wysiwyg",
+            "instructions": "Write a long description about what the client does.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_clients"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1470330568
+}

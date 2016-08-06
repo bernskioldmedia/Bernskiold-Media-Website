@@ -214,8 +214,9 @@ class Theme {
 		if ( ! function_exists( 'register_navigation_menus' ) ) {
 
 			$locations = array(
-				'primary-menu' => esc_html__( 'Main Menu', 'bmtheme' ),
-				'top-menu'     => esc_html__( 'Top Menu', 'bmtheme' ),
+				'primary-menu'     => esc_html__( 'Main Menu', 'bmtheme' ),
+				'top-menu'         => esc_html__( 'Top Menu', 'bmtheme' ),
+				'blog-topics-menu' => esc_html__( 'Blog Topics Menu', 'bmtheme' ),
 			);
 
 			register_nav_menus( $locations );
@@ -278,7 +279,7 @@ class Theme {
 
 	public function change_admin_footer_text() {
 
-		$text = sprintf( esc_html__( '%s Website Admin Panel. Website developed by <a href="https://www.bernskioldmedia.com/en/">Bernskiold Media</a>.', 'bmtheme' ), bloginfo( 'name' ) );
+		$text = sprintf( __( '%s Website Admin Panel. Website developed by <a href="https://www.bernskioldmedia.com/en/">Bernskiold Media</a>.', 'bmtheme' ), bloginfo( 'name' ) );
 
 		echo wp_kses_post( $text );
 

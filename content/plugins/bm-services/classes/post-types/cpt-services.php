@@ -73,7 +73,7 @@ class CPT_Services {
 			'label'               => __( 'Services', 'bm-services' ),
 			'description'         => __( 'Holds services for the website.', 'bm-services' ),
 			'labels'              => $labels,
-			'supports'            => array( 'title' ),
+			'supports'            => array( 'title', 'thumbnail' ),
 			'hierarchical'        => false,
 			'public'              => true,
 			'show_ui'             => true,

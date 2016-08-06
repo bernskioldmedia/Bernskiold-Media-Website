@@ -1,0 +1,42 @@
+{
+    "key": "group_57a5e411c3f96",
+    "title": "Event Dates",
+    "fields": [
+
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_events"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "bm_event_type:courses"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_events"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "bm_event_type:lectures"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1470489697
+}

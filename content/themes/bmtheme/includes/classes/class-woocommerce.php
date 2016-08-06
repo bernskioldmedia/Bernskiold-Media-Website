@@ -31,6 +31,23 @@ class WooCommerce {
 		// Remove Sidebar on WooCommerce.
 		remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
+		// Remove Product DEscription Heading
+		add_filter( 'woocommerce_product_description_heading', function() {
+			return '';
+		} );
+
+		// Add .row to product summary/images
+		add_action( 'woocommerce_before_single_product_summary', function() {
+			echo '<div class="row">';
+		}, 5 );
+
+		add_action( 'woocommerce_after_single_product_summary', function() {
+			echo '</div>';
+		}, 5 );
+
+		// Add Custom Content to Tab
+		add_filter( 'woocommerce_product_tabs', array( $this, 'custom_description_tab' ), 98 );
+
 	}
 
 	/**
@@ -82,7 +99,9 @@ class WooCommerce {
 	public function theme_wrapper_start() {
 		?>
 
-		<main class="main" role="main" id="content">
+		<main class="main" role="main">
+
+		<?php theme()->template->the_page_title_block( __( 'Products', 'bmtheme' ), __( 'Outside of our agency work, we release various products that we make available either for purchase or for free. You\'ll find them all collected here.', 'bmtheme' ) ); ?>
 
 		<section class="section woocommerce-wrapper">
 		<div class="row">
@@ -102,5 +121,26 @@ class WooCommerce {
 		</section>
 		</main>
 		<?php
+	}
+
+	function custom_description_tab( $tabs ) {
+
+		$tabs['description']['callback'] = array( $this, 'woo_custom_description_tab_content' );
+
+		return $tabs;
+	}
+
+	function woo_custom_description_tab_content() {
+
+		global $post;
+
+		if ( have_rows( 'sections', $post ) ) {
+			theme()->template->load_flex_page();
+		} else {
+			echo '<div class="no-page-builder-panel">';
+			the_content();
+			echo '</div>';
+		}
+
 	}
 }

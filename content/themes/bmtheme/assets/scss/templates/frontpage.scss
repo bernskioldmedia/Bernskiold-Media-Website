@@ -24,6 +24,7 @@
 	@extend .small-24;
 	@extend .medium-20;
 	@extend .large-18;
+	@extend .column;
 
 	@include flex-align-self(middle);
 }
@@ -34,11 +35,19 @@
 	line-height: 1.2;
 	margin-bottom: 0.2em;
 	color: lighten(#d8dfe8, 10%);
+
+	@include breakpoint(small only) {
+		font-size: 2.5rem;
+	}
 }
 
 .hero-subtitle {
 	font-size: 1.5rem;
 	margin-bottom: 1.5em;
+
+	@include breakpoint(small only) {
+		font-size: 1.25rem;
+	}
 }
 
 .hero-actions {

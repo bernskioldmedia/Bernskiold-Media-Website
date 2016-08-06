@@ -3,8 +3,8 @@
  */
 .client-grid {
 	padding: 3rem 0 3rem 0;
-	@extend .row;
-	@extend .small-up-3;
+	@include flex-grid-row();
+	@extend .small-up-2;
 	@extend .medium-up-4;
 	@extend .large-up-5;
 	@extend .align-center;
@@ -14,10 +14,17 @@
 .client-grid-item {
 	@extend .column;
 	@extend .align-self-middle;
+	margin-bottom: 1rem;
+	text-align: center;
 
 	a {
 		display: block;
 		opacity: 0.35;
+		transition: 0.2s opacity ease-in-out;
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 
 	img {

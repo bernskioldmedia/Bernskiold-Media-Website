@@ -1,13 +1,22 @@
 /**
  * Page Section Modules
  */
-.section {}
+.section {
+
+	&.has-spacing {
+		padding: 3rem 0 3rem 0;
+	}
+}
 
 /**
  * Page Title Block
  */
 .page-title-block {
 	padding: 6rem 0 4rem 0;
+
+	@include breakpoint(small only) {
+		padding: 3rem 0 2rem 0;
+	}
 
 	&.is-dark {
 		background-color: $primary-color;
@@ -23,15 +32,24 @@
 	@extend .small-24;
 	@extend .medium-20;
 	@extend .large-18;
+	@extend .columns;
 }
 
 .page-title {
 	font-weight: 500;
 	font-size: 4rem;
+
+	@include breakpoint(small only) {
+		font-size: 2.5rem;
+	}
 }
 
 .page-subtitle {
 	font-size: $lead-font-size * 1.2;
+
+	@include breakpoint(small only) {
+		font-size: $lead-font-size;
+	}
 }
 
 /**
@@ -56,10 +74,19 @@
 	@extend .large-18;
 }
 
-.section-title {}
+.section-title {
+
+	@include breakpoint(small only) {
+		font-size: 2rem;
+	}
+}
 
 .section-subtitle {
 	color: #777;
 	font-size: $lead-font-size;
 	margin-bottom: 0;
+
+	@include breakpoint(small only) {
+		font-size: 1.1rem;
+	}
 }

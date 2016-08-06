@@ -18,7 +18,7 @@ $client_logo       = get_field( 'client_logo_light', $case_client );
 
 		<?php if ( $client_logo ) : ?>
 			<div class="case-grid-item-logo">
-				<img src="<?php echo esc_url_raw( $client_logo['url'] ); ?>" alt="<?php echo esc_attr( $client->post_title ); ?>">
+				<img src="<?php echo esc_url_raw( $client_logo['url'] ); ?>" alt="<?php echo esc_attr( $case_client->post_title ); ?>">
 			</div>
 		<?php endif; ?>
 

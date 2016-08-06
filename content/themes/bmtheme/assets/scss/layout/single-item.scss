@@ -1,0 +1,146 @@
+/**
+ * Single Item
+ */
+.single-item-header {
+	background-color: $primary-color;
+	color: white;
+	position: relative;
+
+	@include breakpoint(small only) {
+		text-align: center;
+	}
+
+	.row {
+		padding: 18rem 0 12rem 0;
+
+		@include breakpoint(small only) {
+			padding: 10rem 0 5rem 0;
+		}
+	}
+}
+
+.single-item-header-overlay {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@extend .is-background-image;
+	opacity: 0.2;
+}
+
+.single-item-header-content {
+	position: relative;
+	z-index: 1;
+	@extend .column;
+
+	@include breakpoint(medium up) {
+		padding-right: 20%;
+		padding-left: 5%;
+	}
+
+	.page-title {
+		color: white;
+		margin-bottom: 0;
+		font-weight: bold;
+
+		@include breakpoint(small only) {
+			font-size: 2.4rem;
+			margin-bottom: 0.2em;
+		}
+
+		@include breakpoint(large up) {
+			font-size: 4rem;
+		}
+	}
+
+	.page-subtitle {
+		color: rgba(255,255,255,0.85);
+
+		@include breakpoint(small only) {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.single-item-type {
+	@extend .inline-block-list;
+	@extend .separated-list;
+
+	li {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 0.2em;
+		margin-left: 0.1em;
+		color: rgba(255, 255, 255, 0.8);
+
+		&:after {
+			content: ', ';
+		}
+	}
+}
+
+.single-item-body {
+	@extend .small-24;
+	@extend .medium-14;
+	@extend .large-16;
+	@extend .column;
+	padding: 1.5rem;
+
+	@include breakpoint(medium only) {
+		padding: 3rem 2rem;
+	}
+
+	@include breakpoint(large only) {
+		padding: 3rem 5rem;
+	}
+
+	@include breakpoint(xlarge up) {
+		padding: 5rem 9rem 4rem 9rem;
+	}
+
+	@extend .body-text;
+
+	& > p:first-child:first-letter {
+		font-size: 5rem;
+		font-weight: bold;
+		float: left;
+		line-height: 0.5;
+		margin-right: 0.5rem;
+		padding-top: 0.8rem
+	}
+}
+
+.single-item-infobox {
+	@extend .small-24;
+	@extend .medium-10;
+	@extend .large-8;
+	@extend .column;
+
+	padding: 3.5rem 1rem;
+	background: lighten($secondary-color, 2%);
+
+	@include breakpoint(large only) {
+		padding: 3.5rem 2rem;
+	}
+
+	@include breakpoint(xlarge up) {
+		padding: 5rem;
+	}
+
+	dl {}
+
+	dt {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 0.9rem;
+		margin-bottom: 0.2em;
+	}
+
+	dd {
+		margin-bottom: 1.5em;
+		font-size: 1.25rem;
+	}
+}

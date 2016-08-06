@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: BM: Clients\n"
+"POT-Creation-Date: 2016-08-04 19:21+0200\n"
+"PO-Revision-Date: 2016-08-04 19:22+0200\n"
+"Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: bm-clients.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"Language: sv_SE\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: classes/post-types/cpt-clients.php:38
+msgctxt "Post Type General Name"
+msgid "Clients"
+msgstr "Kunder"
+
+#: classes/post-types/cpt-clients.php:39
+msgctxt "Post Type Singular Name"
+msgid "Client"
+msgstr "Kund"
+
+#: classes/post-types/cpt-clients.php:40 classes/post-types/cpt-clients.php:41
+#: classes/post-types/cpt-clients.php:69
+msgid "Clients"
+msgstr "Kunder"
+
+#: classes/post-types/cpt-clients.php:42
+msgid "Client Archives"
+msgstr "Kundarkiv"
+
+#: classes/post-types/cpt-clients.php:43
+msgid "Parent Client:"
+msgstr "Överordnad kund:"
+
+#: classes/post-types/cpt-clients.php:44
+msgid "All Clients"
+msgstr "Alla kunder"
+
+#: classes/post-types/cpt-clients.php:45
+msgid "Add New Client"
+msgstr "Lägg till ny kund"
+
+#: classes/post-types/cpt-clients.php:46
+msgid "Add New"
+msgstr "Lägg till ny"
+
+#: classes/post-types/cpt-clients.php:47
+msgid "New Client"
+msgstr "Ny kund"
+
+#: classes/post-types/cpt-clients.php:48
+msgid "Edit Client"
+msgstr "Redigera kund"
+
+#: classes/post-types/cpt-clients.php:49
+msgid "Update Client"
+msgstr "Updatera kund"
+
+#: classes/post-types/cpt-clients.php:50
+msgid "View Client"
+msgstr "Visa kund"
+
+#: classes/post-types/cpt-clients.php:51
+msgid "Search Clients"
+msgstr "Sök kunder"
+
+#: classes/post-types/cpt-clients.php:52
+msgid "Not found"
+msgstr "Ej funnen"
+
+#: classes/post-types/cpt-clients.php:53
+msgid "Not found in Trash"
+msgstr "Ej funnen i papperkorgen"
+
+#: classes/post-types/cpt-clients.php:54
+msgid "Insert into client"
+msgstr "Infoga till kunden"
+
+#: classes/post-types/cpt-clients.php:55
+msgid "Uploaded to this client"
+msgstr "Uppladdat till denna kund"
+
+#: classes/post-types/cpt-clients.php:56
+msgid "Clients list"
+msgstr "Kundlista"
+
+#: classes/post-types/cpt-clients.php:57
+msgid "Clients list navigation"
+msgstr "Kundlist-navigation"
+
+#: classes/post-types/cpt-clients.php:58
+msgid "Filter clients list"
+msgstr "Filterera kundlistan"
+
+#. Plugin Name of the plugin/theme
+msgid "BM: Clients"
+msgstr "BM: Kunder"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.bernskioldmedia.com"
+msgstr "http://www.bernskioldmedia.se"
+
+#. Description of the plugin/theme
+msgid "A bespoke WordPress plugin to handle the clients functionality."
+msgstr "En skräddarsydd WordPress plugin för att hantera kundfunktionaliteten."
+
+#. Author of the plugin/theme
+msgid "Bernskiold Media"
+msgstr "Bernskiold Media"

@@ -1,0 +1,493 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: BMTheme\n"
+"POT-Creation-Date: 2016-08-04 22:22+0200\n"
+"PO-Revision-Date: 2016-08-06 16:31+0200\n"
+"Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"Language: sv_SE\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:13
+msgid "Content Cannot Be Found"
+msgstr "Innehållet kunde inte hittas"
+
+#: 404.php:17
+msgid ""
+"Unfortunately the content you were looking for could not be found. Please "
+"check that the URL is correct or do a search using the form below."
+msgstr ""
+"Tyvärr kunde inte det innehåll du letade efter hittas. Vänligen kontrollera "
+"att URLen är korrekt, eller gör en sökning genom formuläret nedan."
+
+#: archive-bm_case_studies.php:13
+msgid "Case Studies"
+msgstr "Kundcase"
+
+#: archive-bm_case_studies.php:13
+msgid ""
+"Wondering what we have done? You've come to the right place. Here we have "
+"collected some of the work that we have done."
+msgstr ""
+"Undrar du vad vi har gjort? Då har du hittat rätt. Här har vi samlat ett "
+"urval av det arbete vi gjort för kunder."
+
+#: archive-bm_case_studies.php:53
+msgid "Read Case Study"
+msgstr "Läs kundcase"
+
+#: archive-bm_clients.php:13
+msgid "Clients"
+msgstr "Kunder"
+
+#: archive-bm_clients.php:13
+msgid ""
+"Wondering who we have worked for before? Here is a list of most of the "
+"clients we are working with, or have worked with in the past."
+msgstr ""
+"Funderar du över vilka vi arbetat med tidigare? Här är en lista över många "
+"av de kunder vi arbetar med nu, eller har arbetat med tidigare."
+
+#: archive-bm_events.php:19
+msgid "Events"
+msgstr "Event"
+
+#: archive-bm_events.php:19
+msgid ""
+"We have lectures, courses and webinars for you throughout the year. All on "
+"topics about the digital world, teaching you the latest."
+msgstr ""
+"Vi har föreläsningar, kurser och webinars för dig under året. Allt kretsande "
+"kring den digital världen för att lära dig det senaste."
+
+#: archive-bm_events.php:134
+msgid "Read More & Book"
+msgstr "Läs mer & boka"
+
+#: archive-bm_events.php:147
+#, php-format
+msgid "Unfortunately we do not have any %s to show you right now."
+msgstr "Tyvärr har vi ingen %s att visa dig just nu."
+
+#: archive-bm_services.php:13
+msgid "Services"
+msgstr "Tjänster"
+
+#: archive-bm_services.php:13
+msgid ""
+"Your business and the web could do wonderful things together. We provide the "
+"solutions to grow your business securely using the digital and web tools."
+msgstr ""
+"Ditt företag och webben kan göra underbara saker tillsammans. Vi "
+"tillhandahåller lösningar för att växa ditt företag säkert med digitalt och "
+"webbverktyg."
+
+#: archive.php:19
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Dagsarkiv: %s"
+
+#: archive.php:21
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Månadsarkiv: %s"
+
+#: archive.php:23
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Årsarkiv: %s"
+
+#: archive.php:25
+msgid "Article Archives"
+msgstr "Artikelarkiv"
+
+#: archive.php:29 index.php:18
+msgid ""
+"Read our articles about everything digital marketing, such as strategy, "
+"WordPress, web development, search engine optimization (SEO) and much more."
+msgstr ""
+"Läs våra artiklar om allt digital marknadsföring, som strategi, WordPress, "
+"webbutveckling, sökmotoroptimering (SEO) och mycket mer."
+
+#: archive.php:41 category.php:37 tag.php:37
+msgid "Unfortunately there are now articles available for this query."
+msgstr "Tyvärr finns nu artiklar för den här sökfrågan."
+
+#: content-case-grid.php:27
+msgid "View Case Study"
+msgstr "Visa kundcase"
+
+#: content.php:24
+msgid "Continue Reading"
+msgstr "Läs vidare"
+
+#: footer.php:23
+msgid ""
+"<strong>Bernskiold Media</strong> is a boutique full service digital agency "
+"based in Sweden with offices in Stockholm and Gothenburg."
+msgstr ""
+"<strong>Bernskiold Media</strong> är en global fullservice digitalbyrå "
+"baserad i Sverige med kontor i Stockholm och Göteborg."
+
+#: footer.php:24
+msgid "Read More"
+msgstr "Läs mer"
+
+#: footer.php:29
+msgid "Receive Insights, News and Tips for Free"
+msgstr "Få insikter, nyheter och tips helt gratis"
+
+#: footer.php:32
+msgid "Your email address"
+msgstr "Din e-postadress"
+
+#: footer.php:35
+msgid "Subscribe"
+msgstr "Prenumerera"
+
+#: footer.php:45
+msgid "Contact Us"
+msgstr "Kontakta oss"
+
+#: footer.php:46
+msgid ""
+"Stop by our offices to say hi, give us a call or send us a message and we'll "
+"talk."
+msgstr ""
+"Kom förbi våra kontor och säg hej, slå oss en signal eller skicka oss ett "
+"meddelande så pratar vi."
+
+#: footer.php:49
+msgid "Gothenburg Office"
+msgstr "Göteborg"
+
+#: footer.php:51
+msgid "Gothenburg"
+msgstr "Göteborg"
+
+#: footer.php:54
+msgid "Stockholm Office"
+msgstr "Stockholm"
+
+#: footer.php:59
+msgid "E-mail:"
+msgstr "E-post:"
+
+#: footer.php:61 partials/project-cta.php:26
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: footer.php:62
+msgid "+46 31 10 20 10"
+msgstr "031 - 10 20 10"
+
+#. Author of the plugin/theme
+#: header.php:28 header.php:99
+msgid "Bernskiold Media"
+msgstr "Bernskiold Media"
+
+#: header.php:56
+msgid "Skip to content"
+msgstr "Gå till innehåll"
+
+#: header.php:87
+msgid "Language"
+msgstr "Språk"
+
+#: header.php:114
+msgid "Menu"
+msgstr "Meny"
+
+#. Theme Name of the plugin/theme
+#: includes/class-theme.php:111
+msgid "BMTheme"
+msgstr "BM-tema"
+
+#: includes/class-theme.php:217
+msgid "Main Menu"
+msgstr "Huvudmeny"
+
+#: includes/class-theme.php:218
+msgid "Top Menu"
+msgstr "Toppmeny"
+
+#: includes/class-theme.php:219
+msgid "Blog Topics Menu"
+msgstr "Bloggämnesmeny"
+
+#: includes/class-theme.php:282
+#, php-format
+msgid ""
+"%s Website Admin Panel. Website developed by <a href=\"https://www."
+"bernskioldmedia.com/en/\">Bernskiold Media</a>."
+msgstr ""
+"%s administrationspanel. Webbplatsen utvecklad av <a href=\"https://www."
+"bernskioldmedia.com/sv/\">Bernskiold Media</a>."
+
+#: includes/classes/class-template-functions.php:49
+msgid "Previous Page"
+msgstr "Föregående sida"
+
+#: includes/classes/class-template-functions.php:76
+msgid "Next Page"
+msgstr "Nästa sida"
+
+#: includes/classes/class-template-functions.php:98
+#, php-format
+msgid "Page %s"
+msgstr "Sida %s"
+
+#: includes/classes/class-woocommerce.php:104
+msgid "Products"
+msgstr "Produkter"
+
+#: includes/classes/class-woocommerce.php:104
+msgid ""
+"Outside of our agency work, we release various products that we make "
+"available either for purchase or for free. You'll find them all collected "
+"here."
+msgstr ""
+"Utöver vårt byråarbete släpper vi även olika produkter som vi tillgängliggör "
+"antingen mot betalning eller helt gratis. Du hittar dem alla samlade här."
+
+#: includes/sidebars.php:10
+msgid "Sidebar"
+msgstr "Sidofält"
+
+#: includes/sidebars.php:20
+msgid "Single Article Sidebar"
+msgstr "Sidofält för enskilda inlägg"
+
+#: index.php:17
+msgid "Articles"
+msgstr "Artiklar"
+
+#: partials/client-grid.php:34
+msgid "Our Clients"
+msgstr "Våra kunder"
+
+#: partials/client-grid.php:35
+msgid ""
+"Here is a list of many of the clients that are working with, or have worked "
+"with over the years."
+msgstr ""
+"Här är en lista över många av de kunder som vi arbetar med eller har arbetat "
+"med under åren."
+
+#: partials/project-cta.php:12
+msgid "Let's get started on your project!"
+msgstr "Låt oss komma igång med ditt projekt!"
+
+#: partials/project-cta.php:13
+msgid ""
+"We'd love to talk about your project. Contact us directly, or leave a "
+"message below and we will get back to you as soon as possible."
+msgstr ""
+"Vi pratar gärna med dig om ditt projekt. Kontakta oss direkt, eller lämna "
+"ett meddelande nedan så återkommer vi till dig så snart som möjligt."
+
+#: partials/project-cta.php:22
+msgid "Erik Bernskiold"
+msgstr "Erik Bernskiöld"
+
+#: partials/project-cta.php:23
+msgid "Managing Director"
+msgstr "Managing Director"
+
+#: partials/project-cta.php:26
+msgid "+46 31 10 20 11"
+msgstr "031 - 10 20 11"
+
+#: partials/project-cta.php:27
+msgid "erik@bernskioldmedia.com"
+msgstr "erik@bernskioldmedia.com"
+
+#: search.php:28
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Sökresultat för: %s"
+
+#: search.php:46
+msgid "No Reults Found"
+msgstr "Inga resultat funna"
+
+#: search.php:48
+msgid ""
+"Unfortunately we could not find any results for your search query. Please "
+"try again with another query."
+msgstr ""
+"Tyvärr kunde vi inte hitta några träffar för din sökfråga. Prova gärna igen "
+"med en annan fråga."
+
+#: search.php:60
+msgid "Please type in your search query above to search."
+msgstr "Skriv in i sökningen ovan för att söka."
+
+#: searchform.php:20
+msgid "What are you looking for?"
+msgstr "Vad letar du efter?"
+
+#: searchform.php:23
+msgid "Search"
+msgstr "Sök"
+
+#: sidebar-single.php:9 sidebar.php:9 templates/academy.php:87
+msgid "Editor's Picks"
+msgstr "Utvalda artiklar"
+
+#: sidebar-single.php:10 sidebar.php:10 templates/academy.php:88
+msgid "These are articles that our editors have picked from the archives."
+msgstr "Dessa är artiklar som våra redaktörer har plockat från arkiven."
+
+#: single-bm_case_studies.php:70
+msgid "Launch Date"
+msgstr "Lanseringsdatum"
+
+#: single-bm_case_studies.php:72
+msgid "Client"
+msgstr "Kund"
+
+#: single-bm_case_studies.php:74
+#, php-format
+msgid "Who are %s?"
+msgstr "Vem är %s?"
+
+#: single-bm_case_studies.php:79
+msgid "Visit Project"
+msgstr "Besök projektet"
+
+#: single-bm_events.php:70 single-bm_events.php:168
+msgid "Register Now"
+msgstr "Registrera dig nu"
+
+#: single-bm_events.php:78
+#, php-format
+msgid "About %s"
+msgstr "Om %s"
+
+#: single-bm_events.php:103 single-bm_events.php:106
+msgid "Price"
+msgstr "Pris"
+
+#: single-bm_events.php:109
+msgid "Length"
+msgstr "Längd"
+
+#: single-bm_events.php:117
+msgid "Dates"
+msgstr "Datum"
+
+#: single-bm_events.php:131
+msgid "Fully Booked"
+msgstr "Fullbokad"
+
+#: single-bm_events.php:134
+#, php-format
+msgid "Only %s Seats Left"
+msgstr "Endast %s platser kvar"
+
+#: single-bm_events.php:150
+msgctxt "from event date format"
+msgid "F j"
+msgstr "j F"
+
+#: single-bm_events.php:153
+msgctxt "to event date format"
+msgid "F j, Y"
+msgstr "j F Y"
+
+#: single.php:25
+msgid "F j, Y"
+msgstr "j F Y"
+
+#: templates/academy.php:7
+msgctxt "academy page template name"
+msgid "Academy"
+msgstr "Akademi"
+
+#: templates/academy.php:11
+msgid "Academy"
+msgstr "Akademi"
+
+#: templates/academy.php:11
+msgid ""
+"Learning is not just important but fun. In the academy we publish content "
+"for you to learn new insights and help you improve: From articles to e-books "
+"and courses."
+msgstr ""
+"Lärande är inte bara viktigt utan roligt. I akademin publicerar vi innehåll "
+"så att du kan ta del av nya insikter och få ny kunskap. Från artiklar till e-"
+"böcker och kurser."
+
+#: templates/academy.php:40
+msgid "Continue Reading &rarr;"
+msgstr "Fortsätt läsa &rarr;"
+
+#: templates/academy.php:79
+msgid "To the articles archive"
+msgstr "Till artikelarkivet"
+
+#: templates/academy.php:125
+msgid "All Our Topics"
+msgstr "Alla våra ämnen"
+
+#: templates/academy.php:126
+msgid ""
+"The academy features insights into a diverse range of sub-topics within our "
+"major headlines. Find your favorite topic below."
+msgstr ""
+"Akademin samlar insikter inom en mängd olika underämnen. Hitta ditt "
+"favoritområde att läsa om nedan."
+
+#: templates/frontpage.php:7
+msgctxt "frontpage page template name"
+msgid "Frontpage"
+msgstr "Framsida"
+
+#: templates/frontpage.php:18
+msgid "Your Global Full-Service Boutique Digital Agency"
+msgstr "Din globala full-service digitalbyrå"
+
+#: templates/frontpage.php:19
+msgid ""
+"We develop strategies, digital marketing solutions and create beautiful web "
+"solutions to grow your business. The combination of areas means we can be "
+"your one-stop-shop for all things digital."
+msgstr ""
+"Vi utvecklar strategier, digitala marknadsföringslösningar och webblösningar "
+"för att växa ditt företag. Kombinationen av områden betyder att vi kan vara "
+"din enda kontakt för allt digitalt."
+
+#: templates/frontpage.php:22
+msgid "Learn What We Do"
+msgstr "Mer om vad vi gör"
+
+#: templates/frontpage.php:25
+msgid "See Our Cases"
+msgstr "Se våra kundcase"
+
+#: templates/fullwidth.php:7
+msgctxt "fullwidth page template name"
+msgid "Fullwidth"
+msgstr "Fullbredd"
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.bernskioldmedia.com/"
+msgstr "http://www.bernskioldmedia.se"
+
+#. Description of the plugin/theme
+msgid "BMTheme is a bespoke WordPress theme for Bernskiold Media."
+msgstr "BMTheme är ett skräddarsytt WordPress-tema för Bernskiold Media."

@@ -690,6 +690,794 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 }(jQuery);
 'use strict';
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+!function ($) {
+
+  /**
+   * Tabs module.
+   * @module foundation.tabs
+   * @requires foundation.util.keyboard
+   * @requires foundation.util.timerAndImageLoader if tabs contain images
+   */
+
+  var Tabs = function () {
+    /**
+     * Creates a new instance of tabs.
+     * @class
+     * @fires Tabs#init
+     * @param {jQuery} element - jQuery object to make into tabs.
+     * @param {Object} options - Overrides to the default plugin settings.
+     */
+
+    function Tabs(element, options) {
+      _classCallCheck(this, Tabs);
+
+      this.$element = element;
+      this.options = $.extend({}, Tabs.defaults, this.$element.data(), options);
+
+      this._init();
+      Foundation.registerPlugin(this, 'Tabs');
+      Foundation.Keyboard.register('Tabs', {
+        'ENTER': 'open',
+        'SPACE': 'open',
+        'ARROW_RIGHT': 'next',
+        'ARROW_UP': 'previous',
+        'ARROW_DOWN': 'next',
+        'ARROW_LEFT': 'previous'
+        // 'TAB': 'next',
+        // 'SHIFT_TAB': 'previous'
+      });
+    }
+
+    /**
+     * Initializes the tabs by showing and focusing (if autoFocus=true) the preset active tab.
+     * @private
+     */
+
+
+    _createClass(Tabs, [{
+      key: '_init',
+      value: function _init() {
+        var _this = this;
+
+        this.$tabTitles = this.$element.find('.' + this.options.linkClass);
+        this.$tabContent = $('[data-tabs-content="' + this.$element[0].id + '"]');
+
+        this.$tabTitles.each(function () {
+          var $elem = $(this),
+              $link = $elem.find('a'),
+              isActive = $elem.hasClass('is-active'),
+              hash = $link[0].hash.slice(1),
+              linkId = $link[0].id ? $link[0].id : hash + '-label',
+              $tabContent = $('#' + hash);
+
+          $elem.attr({ 'role': 'presentation' });
+
+          $link.attr({
+            'role': 'tab',
+            'aria-controls': hash,
+            'aria-selected': isActive,
+            'id': linkId
+          });
+
+          $tabContent.attr({
+            'role': 'tabpanel',
+            'aria-hidden': !isActive,
+            'aria-labelledby': linkId
+          });
+
+          if (isActive && _this.options.autoFocus) {
+            $link.focus();
+          }
+        });
+
+        if (this.options.matchHeight) {
+          var $images = this.$tabContent.find('img');
+
+          if ($images.length) {
+            Foundation.onImagesLoaded($images, this._setHeight.bind(this));
+          } else {
+            this._setHeight();
+          }
+        }
+
+        this._events();
+      }
+
+      /**
+       * Adds event handlers for items within the tabs.
+       * @private
+       */
+
+    }, {
+      key: '_events',
+      value: function _events() {
+        this._addKeyHandler();
+        this._addClickHandler();
+        this._setHeightMqHandler = null;
+
+        if (this.options.matchHeight) {
+          this._setHeightMqHandler = this._setHeight.bind(this);
+
+          $(window).on('changed.zf.mediaquery', this._setHeightMqHandler);
+        }
+      }
+
+      /**
+       * Adds click handlers for items within the tabs.
+       * @private
+       */
+
+    }, {
+      key: '_addClickHandler',
+      value: function _addClickHandler() {
+        var _this = this;
+
+        this.$element.off('click.zf.tabs').on('click.zf.tabs', '.' + this.options.linkClass, function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if ($(this).hasClass('is-active')) {
+            return;
+          }
+          _this._handleTabChange($(this));
+        });
+      }
+
+      /**
+       * Adds keyboard event handlers for items within the tabs.
+       * @private
+       */
+
+    }, {
+      key: '_addKeyHandler',
+      value: function _addKeyHandler() {
+        var _this = this;
+        var $firstTab = _this.$element.find('li:first-of-type');
+        var $lastTab = _this.$element.find('li:last-of-type');
+
+        this.$tabTitles.off('keydown.zf.tabs').on('keydown.zf.tabs', function (e) {
+          if (e.which === 9) return;
+
+          var $element = $(this),
+              $elements = $element.parent('ul').children('li'),
+              $prevElement,
+              $nextElement;
+
+          $elements.each(function (i) {
+            if ($(this).is($element)) {
+              if (_this.options.wrapOnKeys) {
+                $prevElement = i === 0 ? $elements.last() : $elements.eq(i - 1);
+                $nextElement = i === $elements.length - 1 ? $elements.first() : $elements.eq(i + 1);
+              } else {
+                $prevElement = $elements.eq(Math.max(0, i - 1));
+                $nextElement = $elements.eq(Math.min(i + 1, $elements.length - 1));
+              }
+              return;
+            }
+          });
+
+          // handle keyboard event with keyboard util
+          Foundation.Keyboard.handleKey(e, 'Tabs', {
+            open: function open() {
+              $element.find('[role="tab"]').focus();
+              _this._handleTabChange($element);
+            },
+            previous: function previous() {
+              $prevElement.find('[role="tab"]').focus();
+              _this._handleTabChange($prevElement);
+            },
+            next: function next() {
+              $nextElement.find('[role="tab"]').focus();
+              _this._handleTabChange($nextElement);
+            },
+            handled: function handled() {
+              e.stopPropagation();
+              e.preventDefault();
+            }
+          });
+        });
+      }
+
+      /**
+       * Opens the tab `$targetContent` defined by `$target`.
+       * @param {jQuery} $target - Tab to open.
+       * @fires Tabs#change
+       * @function
+       */
+
+    }, {
+      key: '_handleTabChange',
+      value: function _handleTabChange($target) {
+        var $tabLink = $target.find('[role="tab"]'),
+            hash = $tabLink[0].hash,
+            $targetContent = this.$tabContent.find(hash),
+            $oldTab = this.$element.find('.' + this.options.linkClass + '.is-active').removeClass('is-active').find('[role="tab"]').attr({ 'aria-selected': 'false' });
+
+        $('#' + $oldTab.attr('aria-controls')).removeClass('is-active').attr({ 'aria-hidden': 'true' });
+
+        $target.addClass('is-active');
+
+        $tabLink.attr({ 'aria-selected': 'true' });
+
+        $targetContent.addClass('is-active').attr({ 'aria-hidden': 'false' });
+
+        /**
+         * Fires when the plugin has successfully changed tabs.
+         * @event Tabs#change
+         */
+        this.$element.trigger('change.zf.tabs', [$target]);
+      }
+
+      /**
+       * Public method for selecting a content pane to display.
+       * @param {jQuery | String} elem - jQuery object or string of the id of the pane to display.
+       * @function
+       */
+
+    }, {
+      key: 'selectTab',
+      value: function selectTab(elem) {
+        var idStr;
+
+        if ((typeof elem === 'undefined' ? 'undefined' : _typeof(elem)) === 'object') {
+          idStr = elem[0].id;
+        } else {
+          idStr = elem;
+        }
+
+        if (idStr.indexOf('#') < 0) {
+          idStr = '#' + idStr;
+        }
+
+        var $target = this.$tabTitles.find('[href="' + idStr + '"]').parent('.' + this.options.linkClass);
+
+        this._handleTabChange($target);
+      }
+    }, {
+      key: '_setHeight',
+
+      /**
+       * Sets the height of each panel to the height of the tallest panel.
+       * If enabled in options, gets called on media query change.
+       * If loading content via external source, can be called directly or with _reflow.
+       * @function
+       * @private
+       */
+      value: function _setHeight() {
+        var max = 0;
+        this.$tabContent.find('.' + this.options.panelClass).css('height', '').each(function () {
+          var panel = $(this),
+              isActive = panel.hasClass('is-active');
+
+          if (!isActive) {
+            panel.css({ 'visibility': 'hidden', 'display': 'block' });
+          }
+
+          var temp = this.getBoundingClientRect().height;
+
+          if (!isActive) {
+            panel.css({
+              'visibility': '',
+              'display': ''
+            });
+          }
+
+          max = temp > max ? temp : max;
+        }).css('height', max + 'px');
+      }
+
+      /**
+       * Destroys an instance of an tabs.
+       * @fires Tabs#destroyed
+       */
+
+    }, {
+      key: 'destroy',
+      value: function destroy() {
+        this.$element.find('.' + this.options.linkClass).off('.zf.tabs').hide().end().find('.' + this.options.panelClass).hide();
+
+        if (this.options.matchHeight) {
+          if (this._setHeightMqHandler != null) {
+            $(window).off('changed.zf.mediaquery', this._setHeightMqHandler);
+          }
+        }
+
+        Foundation.unregisterPlugin(this);
+      }
+    }]);
+
+    return Tabs;
+  }();
+
+  Tabs.defaults = {
+    /**
+     * Allows the window to scroll to content of active pane on load if set to true.
+     * @option
+     * @example false
+     */
+    autoFocus: false,
+
+    /**
+     * Allows keyboard input to 'wrap' around the tab links.
+     * @option
+     * @example true
+     */
+    wrapOnKeys: true,
+
+    /**
+     * Allows the tab content panes to match heights if set to true.
+     * @option
+     * @example false
+     */
+    matchHeight: false,
+
+    /**
+     * Class applied to `li`'s in tab link list.
+     * @option
+     * @example 'tabs-title'
+     */
+    linkClass: 'tabs-title',
+
+    /**
+     * Class applied to the content containers.
+     * @option
+     * @example 'tabs-panel'
+     */
+    panelClass: 'tabs-panel'
+  };
+
+  function checkClass($elem) {
+    return $elem.hasClass('is-active');
+  }
+
+  // Window exports
+  Foundation.plugin(Tabs, 'Tabs');
+}(jQuery);
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+!function ($) {
+
+  /**
+   * OffCanvas module.
+   * @module foundation.offcanvas
+   * @requires foundation.util.mediaQuery
+   * @requires foundation.util.triggers
+   * @requires foundation.util.motion
+   */
+
+  var OffCanvas = function () {
+    /**
+     * Creates a new instance of an off-canvas wrapper.
+     * @class
+     * @fires OffCanvas#init
+     * @param {Object} element - jQuery object to initialize.
+     * @param {Object} options - Overrides to the default plugin settings.
+     */
+
+    function OffCanvas(element, options) {
+      _classCallCheck(this, OffCanvas);
+
+      this.$element = element;
+      this.options = $.extend({}, OffCanvas.defaults, this.$element.data(), options);
+      this.$lastTrigger = $();
+      this.$triggers = $();
+
+      this._init();
+      this._events();
+
+      Foundation.registerPlugin(this, 'OffCanvas');
+    }
+
+    /**
+     * Initializes the off-canvas wrapper by adding the exit overlay (if needed).
+     * @function
+     * @private
+     */
+
+
+    _createClass(OffCanvas, [{
+      key: '_init',
+      value: function _init() {
+        var id = this.$element.attr('id');
+
+        this.$element.attr('aria-hidden', 'true');
+
+        // Find triggers that affect this element and add aria-expanded to them
+        this.$triggers = $(document).find('[data-open="' + id + '"], [data-close="' + id + '"], [data-toggle="' + id + '"]').attr('aria-expanded', 'false').attr('aria-controls', id);
+
+        // Add a close trigger over the body if necessary
+        if (this.options.closeOnClick) {
+          if ($('.js-off-canvas-exit').length) {
+            this.$exiter = $('.js-off-canvas-exit');
+          } else {
+            var exiter = document.createElement('div');
+            exiter.setAttribute('class', 'js-off-canvas-exit');
+            $('[data-off-canvas-content]').append(exiter);
+
+            this.$exiter = $(exiter);
+          }
+        }
+
+        this.options.isRevealed = this.options.isRevealed || new RegExp(this.options.revealClass, 'g').test(this.$element[0].className);
+
+        if (this.options.isRevealed) {
+          this.options.revealOn = this.options.revealOn || this.$element[0].className.match(/(reveal-for-medium|reveal-for-large)/g)[0].split('-')[2];
+          this._setMQChecker();
+        }
+        if (!this.options.transitionTime) {
+          this.options.transitionTime = parseFloat(window.getComputedStyle($('[data-off-canvas-wrapper]')[0]).transitionDuration) * 1000;
+        }
+      }
+
+      /**
+       * Adds event handlers to the off-canvas wrapper and the exit overlay.
+       * @function
+       * @private
+       */
+
+    }, {
+      key: '_events',
+      value: function _events() {
+        this.$element.off('.zf.trigger .zf.offcanvas').on({
+          'open.zf.trigger': this.open.bind(this),
+          'close.zf.trigger': this.close.bind(this),
+          'toggle.zf.trigger': this.toggle.bind(this),
+          'keydown.zf.offcanvas': this._handleKeyboard.bind(this)
+        });
+
+        if (this.options.closeOnClick && this.$exiter.length) {
+          this.$exiter.on({ 'click.zf.offcanvas': this.close.bind(this) });
+        }
+      }
+
+      /**
+       * Applies event listener for elements that will reveal at certain breakpoints.
+       * @private
+       */
+
+    }, {
+      key: '_setMQChecker',
+      value: function _setMQChecker() {
+        var _this = this;
+
+        $(window).on('changed.zf.mediaquery', function () {
+          if (Foundation.MediaQuery.atLeast(_this.options.revealOn)) {
+            _this.reveal(true);
+          } else {
+            _this.reveal(false);
+          }
+        }).one('load.zf.offcanvas', function () {
+          if (Foundation.MediaQuery.atLeast(_this.options.revealOn)) {
+            _this.reveal(true);
+          }
+        });
+      }
+
+      /**
+       * Handles the revealing/hiding the off-canvas at breakpoints, not the same as open.
+       * @param {Boolean} isRevealed - true if element should be revealed.
+       * @function
+       */
+
+    }, {
+      key: 'reveal',
+      value: function reveal(isRevealed) {
+        var $closer = this.$element.find('[data-close]');
+        if (isRevealed) {
+          this.close();
+          this.isRevealed = true;
+          // if (!this.options.forceTop) {
+          //   var scrollPos = parseInt(window.pageYOffset);
+          //   this.$element[0].style.transform = 'translate(0,' + scrollPos + 'px)';
+          // }
+          // if (this.options.isSticky) { this._stick(); }
+          this.$element.off('open.zf.trigger toggle.zf.trigger');
+          if ($closer.length) {
+            $closer.hide();
+          }
+        } else {
+          this.isRevealed = false;
+          // if (this.options.isSticky || !this.options.forceTop) {
+          //   this.$element[0].style.transform = '';
+          //   $(window).off('scroll.zf.offcanvas');
+          // }
+          this.$element.on({
+            'open.zf.trigger': this.open.bind(this),
+            'toggle.zf.trigger': this.toggle.bind(this)
+          });
+          if ($closer.length) {
+            $closer.show();
+          }
+        }
+      }
+
+      /**
+       * Opens the off-canvas menu.
+       * @function
+       * @param {Object} event - Event object passed from listener.
+       * @param {jQuery} trigger - element that triggered the off-canvas to open.
+       * @fires OffCanvas#opened
+       */
+
+    }, {
+      key: 'open',
+      value: function open(event, trigger) {
+        if (this.$element.hasClass('is-open') || this.isRevealed) {
+          return;
+        }
+        var _this = this,
+            $body = $(document.body);
+
+        if (this.options.forceTop) {
+          $('body').scrollTop(0);
+        }
+        // window.pageYOffset = 0;
+
+        // if (!this.options.forceTop) {
+        //   var scrollPos = parseInt(window.pageYOffset);
+        //   this.$element[0].style.transform = 'translate(0,' + scrollPos + 'px)';
+        //   if (this.$exiter.length) {
+        //     this.$exiter[0].style.transform = 'translate(0,' + scrollPos + 'px)';
+        //   }
+        // }
+        /**
+         * Fires when the off-canvas menu opens.
+         * @event OffCanvas#opened
+         */
+        Foundation.Move(this.options.transitionTime, this.$element, function () {
+          $('[data-off-canvas-wrapper]').addClass('is-off-canvas-open is-open-' + _this.options.position);
+
+          _this.$element.addClass('is-open');
+
+          // if (_this.options.isSticky) {
+          //   _this._stick();
+          // }
+        });
+
+        this.$triggers.attr('aria-expanded', 'true');
+        this.$element.attr('aria-hidden', 'false').trigger('opened.zf.offcanvas');
+
+        if (this.options.closeOnClick) {
+          this.$exiter.addClass('is-visible');
+        }
+
+        if (trigger) {
+          this.$lastTrigger = trigger;
+        }
+
+        if (this.options.autoFocus) {
+          this.$element.one(Foundation.transitionend(this.$element), function () {
+            _this.$element.find('a, button').eq(0).focus();
+          });
+        }
+
+        if (this.options.trapFocus) {
+          $('[data-off-canvas-content]').attr('tabindex', '-1');
+          this._trapFocus();
+        }
+      }
+
+      /**
+       * Traps focus within the offcanvas on open.
+       * @private
+       */
+
+    }, {
+      key: '_trapFocus',
+      value: function _trapFocus() {
+        var focusable = Foundation.Keyboard.findFocusable(this.$element),
+            first = focusable.eq(0),
+            last = focusable.eq(-1);
+
+        focusable.off('.zf.offcanvas').on('keydown.zf.offcanvas', function (e) {
+          if (e.which === 9 || e.keycode === 9) {
+            if (e.target === last[0] && !e.shiftKey) {
+              e.preventDefault();
+              first.focus();
+            }
+            if (e.target === first[0] && e.shiftKey) {
+              e.preventDefault();
+              last.focus();
+            }
+          }
+        });
+      }
+
+      /**
+       * Allows the offcanvas to appear sticky utilizing translate properties.
+       * @private
+       */
+      // OffCanvas.prototype._stick = function() {
+      //   var elStyle = this.$element[0].style;
+      //
+      //   if (this.options.closeOnClick) {
+      //     var exitStyle = this.$exiter[0].style;
+      //   }
+      //
+      //   $(window).on('scroll.zf.offcanvas', function(e) {
+      //     console.log(e);
+      //     var pageY = window.pageYOffset;
+      //     elStyle.transform = 'translate(0,' + pageY + 'px)';
+      //     if (exitStyle !== undefined) { exitStyle.transform = 'translate(0,' + pageY + 'px)'; }
+      //   });
+      //   // this.$element.trigger('stuck.zf.offcanvas');
+      // };
+      /**
+       * Closes the off-canvas menu.
+       * @function
+       * @param {Function} cb - optional cb to fire after closure.
+       * @fires OffCanvas#closed
+       */
+
+    }, {
+      key: 'close',
+      value: function close(cb) {
+        if (!this.$element.hasClass('is-open') || this.isRevealed) {
+          return;
+        }
+
+        var _this = this;
+
+        //  Foundation.Move(this.options.transitionTime, this.$element, function() {
+        $('[data-off-canvas-wrapper]').removeClass('is-off-canvas-open is-open-' + _this.options.position);
+        _this.$element.removeClass('is-open');
+        // Foundation._reflow();
+        // });
+        this.$element.attr('aria-hidden', 'true')
+        /**
+         * Fires when the off-canvas menu opens.
+         * @event OffCanvas#closed
+         */
+        .trigger('closed.zf.offcanvas');
+        // if (_this.options.isSticky || !_this.options.forceTop) {
+        //   setTimeout(function() {
+        //     _this.$element[0].style.transform = '';
+        //     $(window).off('scroll.zf.offcanvas');
+        //   }, this.options.transitionTime);
+        // }
+        if (this.options.closeOnClick) {
+          this.$exiter.removeClass('is-visible');
+        }
+
+        this.$triggers.attr('aria-expanded', 'false');
+        if (this.options.trapFocus) {
+          $('[data-off-canvas-content]').removeAttr('tabindex');
+        }
+      }
+
+      /**
+       * Toggles the off-canvas menu open or closed.
+       * @function
+       * @param {Object} event - Event object passed from listener.
+       * @param {jQuery} trigger - element that triggered the off-canvas to open.
+       */
+
+    }, {
+      key: 'toggle',
+      value: function toggle(event, trigger) {
+        if (this.$element.hasClass('is-open')) {
+          this.close(event, trigger);
+        } else {
+          this.open(event, trigger);
+        }
+      }
+
+      /**
+       * Handles keyboard input when detected. When the escape key is pressed, the off-canvas menu closes, and focus is restored to the element that opened the menu.
+       * @function
+       * @private
+       */
+
+    }, {
+      key: '_handleKeyboard',
+      value: function _handleKeyboard(event) {
+        if (event.which !== 27) return;
+
+        event.stopPropagation();
+        event.preventDefault();
+        this.close();
+        this.$lastTrigger.focus();
+      }
+
+      /**
+       * Destroys the offcanvas plugin.
+       * @function
+       */
+
+    }, {
+      key: 'destroy',
+      value: function destroy() {
+        this.close();
+        this.$element.off('.zf.trigger .zf.offcanvas');
+        this.$exiter.off('.zf.offcanvas');
+
+        Foundation.unregisterPlugin(this);
+      }
+    }]);
+
+    return OffCanvas;
+  }();
+
+  OffCanvas.defaults = {
+    /**
+     * Allow the user to click outside of the menu to close it.
+     * @option
+     * @example true
+     */
+    closeOnClick: true,
+
+    /**
+     * Amount of time in ms the open and close transition requires. If none selected, pulls from body style.
+     * @option
+     * @example 500
+     */
+    transitionTime: 0,
+
+    /**
+     * Direction the offcanvas opens from. Determines class applied to body.
+     * @option
+     * @example left
+     */
+    position: 'left',
+
+    /**
+     * Force the page to scroll to top on open.
+     * @option
+     * @example true
+     */
+    forceTop: true,
+
+    /**
+     * Allow the offcanvas to remain open for certain breakpoints.
+     * @option
+     * @example false
+     */
+    isRevealed: false,
+
+    /**
+     * Breakpoint at which to reveal. JS will use a RegExp to target standard classes, if changing classnames, pass your class with the `revealClass` option.
+     * @option
+     * @example reveal-for-large
+     */
+    revealOn: null,
+
+    /**
+     * Force focus to the offcanvas on open. If true, will focus the opening trigger on close.
+     * @option
+     * @example true
+     */
+    autoFocus: true,
+
+    /**
+     * Class used to force an offcanvas to remain open. Foundation defaults for this are `reveal-for-large` & `reveal-for-medium`.
+     * @option
+     * TODO improve the regex testing for this.
+     * @example reveal-for-large
+     */
+    revealClass: 'reveal-for-',
+
+    /**
+     * Triggers optional focus trapping when opening an offcanvas. Sets tabindex of [data-off-canvas-content] to -1 for accessibility purposes.
+     * @option
+     * @example true
+     */
+    trapFocus: false
+  };
+
+  // Window exports
+  Foundation.plugin(OffCanvas, 'OffCanvas');
+}(jQuery);
+'use strict';
+
 !function ($) {
 
   Foundation.Box = {
@@ -2074,19 +2862,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 //     }
 //   }
 // }
-'use strict';
+"use strict";
 
 // Load Foundation
 jQuery(document).foundation();
-
-// Open External Links in New Window
-jQuery('a').each(function () {
-    var a = new RegExp('/' + window.location.host + '/');
-    if (!a.test(this.href)) {
-        jQuery(this).click(function (event) {
-            event.preventDefault();
-            event.stopPropagation();
-            window.open(this.href, '_blank');
-        });
-    }
-});

@@ -1,0 +1,29 @@
+/**
+ * Sidebar
+ */
+.sidebar {
+
+	ul {
+		list-style: none;
+		margin: 0;
+
+		li {
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+.sidebar-block {
+	border-bottom: 4px solid $border-color;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
+.sidebar-block-title {
+	@extend .h3;
+	margin-bottom: 1em;
+}

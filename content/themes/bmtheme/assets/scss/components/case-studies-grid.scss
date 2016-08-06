@@ -2,7 +2,7 @@
  * Case Studies Grid
  */
 .case-grid {
-	margin-top: 2rem;
+	// margin-top: 2rem;
 
 	.row {
 		max-width: none;
@@ -20,6 +20,12 @@
 	@extend .large-8;
 	transition: 0.2s all;
 	padding: 0;
+
+	@include breakpoint(medium only) {
+		&:last-child {
+			@include flex-grid-column(24);
+		}
+	}
 
 	&:hover {
 		color: white;

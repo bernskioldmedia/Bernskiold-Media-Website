@@ -798,12 +798,51 @@
                     "max": ""
                 },
                 {
+                    "key": "5793dfa497fd9",
+                    "name": "clients",
+                    "label": "Clients",
+                    "display": "block",
+                    "sub_fields": [
+
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
                     "key": "576e91b1a5e0c",
                     "name": "project_cta",
                     "label": "Start Project CTA",
                     "display": "block",
                     "sub_fields": [
 
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "57a36e517f8a5",
+                    "name": "text_section",
+                    "label": "Text Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57a36e557f8a6",
+                            "label": "Body Content",
+                            "name": "text_section_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": "",
+                            "conditional_logic": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
                     ],
                     "min": "",
                     "max": ""
@@ -825,6 +864,20 @@
                 "operator": "==",
                 "value": "templates\/frontpage.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_services"
+            }
         ]
     ],
     "menu_order": 0,
@@ -838,5 +891,5 @@
     ],
     "active": 1,
     "description": "Create and define page sections for content pages.",
-    "modified": 1466864063
+    "modified": 1470328433
 }

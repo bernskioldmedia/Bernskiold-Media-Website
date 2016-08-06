@@ -1,0 +1,68 @@
+{
+    "key": "group_57a376c080543",
+    "title": "Active Status",
+    "fields": [
+        {
+            "key": "field_57a376c114e6d",
+            "label": "Is Item Active?",
+            "name": "is_item_active",
+            "type": "true_false",
+            "instructions": "If the item isn't active, it will not be shown in the listings but still exist by its URL.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Is this active item?",
+            "default_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_case_studies"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_clients"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_events"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_services"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_testimonials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1470330560
+}

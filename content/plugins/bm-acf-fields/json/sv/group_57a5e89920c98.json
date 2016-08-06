@@ -1,0 +1,45 @@
+{
+    "key": "group_57a5e89920c98",
+    "title": "Online Course Information",
+    "fields": [
+        {
+            "key": "field_57a5e89949ae6",
+            "label": "Course Link",
+            "name": "event_course_link",
+            "type": "url",
+            "instructions": "Enter the link to this course over on the courses website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "bm_events"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "bm_event_type:online-courses"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1470490777
+}

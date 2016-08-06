@@ -2,10 +2,15 @@
  * Project CTA Block
  */
 .project-cta {
+	border-top: 1px solid $border-color;
 
 	.row {
 		padding: 4rem 0 2rem 0;
 		@extend .align-center;
+
+		@include breakpoint(small only) {
+			padding-top: 2rem;
+		}
 	}
 }
 
@@ -21,9 +26,29 @@
 }
 
 .project-cta-person {
-	@extend .column;
+	@include flex-grid-column();
+
+	@include breakpoint(small only) {
+		@include flex-grid-column(24);
+		text-align: center;
+
+		img {
+			max-width: 7rem;
+			margin-bottom: 1rem;
+		}
+	}
 }
 
 .project-cta-form {
-	@extend .column;
+	@include flex-grid-column();
+
+	@include breakpoint(small only) {
+		@include flex-grid-column(24);
+		padding-top: 1rem;
+
+		.gform_body .gfield {
+			width: 100% !important;
+			float: none;
+		}
+	}
 }

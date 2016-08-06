@@ -1,0 +1,138 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: BM: Case Studies\n"
+"POT-Creation-Date: 2016-08-04 19:19+0200\n"
+"PO-Revision-Date: 2016-08-04 19:19+0200\n"
+"Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: bm-case-studies.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: classes/post-types/cpt-case-studies.php:38
+msgctxt "Post Type General Name"
+msgid "Case Studies"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:39
+msgctxt "Post Type Singular Name"
+msgid "Case Study"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:40
+#: classes/post-types/cpt-case-studies.php:41
+#: classes/post-types/cpt-case-studies.php:73
+msgid "Case Studies"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:42
+msgid "Case Study Archives"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:43
+msgid "Parent Case Study:"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:44
+msgid "All Case Studies"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:45
+msgid "Add New Case Study"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:46
+msgid "Add New"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:47
+msgid "New Case Study"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:48
+msgid "Edit Case Study"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:49
+msgid "Update Case Study"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:50
+msgid "View Case Study"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:51
+msgid "Search Case Studies"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:52
+msgid "Not found"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:53
+msgid "Not found in Trash"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:54
+msgid "Featured Image"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:55
+msgid "Set featured image"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:56
+msgid "Remove featured image"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:57
+msgid "Use as featured image"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:58
+msgid "Insert into case study"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:59
+msgid "Uploaded to this case study"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:60
+msgid "Case Studies list"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:61
+msgid "Case Studies list navigation"
+msgstr ""
+
+#: classes/post-types/cpt-case-studies.php:62
+msgid "Filter case studies list"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "BM: Case Studies"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.bernskioldmedia.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A bespoke WordPress plugin to handle the case studies functionality."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Bernskiold Media"
+msgstr ""

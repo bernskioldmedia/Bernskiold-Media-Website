@@ -15,14 +15,14 @@ get_header(); ?>
 		<section class="hero">
 			<div class="row">
 				<div class="hero-content">
-					<h1 class="hero-title">Your Global Full-Service Digital Agency</h1>
-					<p class="hero-subtitle">We develop strategies, digital marketing solutions and create beautiful web solutions to grow your business. The combination of areas means we can be your one-stop-shop for all things digital.</p>
+					<h1 class="hero-title"><?php esc_html_e( 'Your Global Full-Service Boutique Digital Agency', 'bmtheme' ); ?></h1>
+					<p class="hero-subtitle"><?php esc_html_e( 'We develop strategies, digital marketing solutions and create beautiful web solutions to grow your business. The combination of areas means we can be your one-stop-shop for all things digital.', 'bmtheme' ); ?></p>
 					<ul class="hero-actions">
 						<li>
-							<a href="#" class="button hollow white">Learn What We Do</a>
+							<a href="<?php echo esc_url( home_url( 'services' ) ); ?>" class="button hollow white"><?php esc_html_e( 'Learn What We Do', 'bmtheme' ); ?></a>
 						</li>
 						<li>
-							<a href="#" class="button hollow white">See Our Cases</a>
+							<a href="<?php echo esc_url( home_url( 'case-studies' ) ); ?>" class="button hollow white"><?php esc_html_e( 'See Our Cases', 'bmtheme' ); ?></a>
 						</li>
 					</ul>
 				</div>

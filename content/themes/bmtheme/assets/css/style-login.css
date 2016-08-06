@@ -1,0 +1,120 @@
+html {
+	background: #2C3E50;
+	overflow: hidden;
+}
+
+body.login {
+	background: transparent;
+	padding-top: 8%;
+	overflow: hidden;
+}
+
+body.login div#login {
+	background: white;
+	padding: 2rem;
+	max-width: 95%;
+	margin: 0 auto;
+}
+body.login div#login h1 {}
+body.login div#login h1 a {
+	background-image: url( ../images/logo.svg );
+	background-size: 90%;
+	width: 100%;
+	height: 40px;
+}
+
+body.login div#login form#loginform {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {
+	font-size: 18px;
+	line-height: 1.7;
+	margin-bottom: 0.3rem;
+}
+body.login div#login form#loginform input {
+	outline: none;
+}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.forgetmenot label {
+	font-size: 14px;
+}
+
+body.login div#login form#loginform p.submit {}
+
+body.login div#login form#loginform p.submit input#wp-submit,
+body.login div#login .button {
+	background: transparent;
+	color: #E74C3C;
+	font-size: 16px;
+	font-weight: bold;
+	border: 2px solid #E74C3C;
+	outline: none;
+	box-shadow: none;
+	padding: 0.2rem 1.4rem 0.4rem;
+	height: auto;
+	text-shadow: none;
+	transition: 0.2s all;
+	letter-spacing: 0.5px;
+}
+
+	body.login div#login form#loginform p.submit input#wp-submit:hover,
+	body.login div#login form#loginform p.submit input#wp-submit:focus,
+	body.login div#login .button:hover,
+	body.login div#login .button:focus {
+		background: #E74C3C;
+		color: white;
+	}
+
+body.login div#login p#nav {
+	margin: 0 -3.4rem;
+}
+
+body.login div#login p#nav a {
+	display: block;
+	font-size: 16px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 0.4rem 0;
+	text-align: center;
+	transition: background 0.2s;
+}
+
+	body.login div#login p#nav a:hover {
+		background: #eee;
+	}
+
+body.login div#login p#backtoblog {
+	display: none;
+}
+
+	body.login div#login p#backtoblog a {}
+
+.login-registration-link {
+	background: white;
+	max-width: 320px;
+	margin: 0 auto;
+	padding: 0 2rem 1rem 2rem;
+}
+
+body.login form#lostpasswordform {
+	margin: 1rem 0 2rem 0;
+	padding: 0;
+	box-shadow: none;
+	background: transparent;
+}
+
+body.login p.message {
+	border: none;
+	margin: 0 -2rem 2rem -2rem;
+	background: #f5f5f5;
+	box-shadow: none;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}

@@ -69,6 +69,7 @@ get_header(); ?>
 							<?php endif; ?>
 
 							<h5 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+							<p><?php echo esc_html( theme()->template->get_excerpt( 12 ) ); ?></p>
 						</article>
 
 					<?php endwhile; ?>

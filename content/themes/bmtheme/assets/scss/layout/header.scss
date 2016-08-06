@@ -3,6 +3,11 @@
  */
 .site-header {
 	padding-bottom: 1.2rem;
+	padding-top: 1.2rem;
+
+	@include breakpoint(large up) {
+		padding-top: 0;
+	}
 
 	a {
 		color: inherit;
@@ -10,8 +15,13 @@
 }
 
 .top-bar {
+	display: none;
 	padding-top: 0.7rem;
 	margin-bottom: 1rem;
+
+	@include breakpoint(large up) {
+		display: block;
+	}
 
 	.iconic * {
 		stroke: white;
@@ -141,10 +151,19 @@
 	height: rem-calc(36);
 	overflow: hidden;
 
+	@include breakpoint(small only) {
+		padding-left: 1rem;
+		padding-top: 0.2rem;
+	}
+
 	svg,
 	img {
 		max-width: 17rem;
 		width: auto;
+
+		@include breakpoint(small only) {
+			max-width: 14rem;
+		}
 	}
 }
 
@@ -173,6 +192,11 @@
 	font-family: $header-font-family;
 	font-size: 1.3rem;
 	padding-top: 0.8rem;
+	display: none;
+
+	@include breakpoint(large up) {
+		display: block;
+	}
 
 	li {
 		margin-right: 1.5rem;
@@ -185,10 +209,27 @@
 	a {
 		display: inline-block;
 		border-bottom: 3px solid transparent;
+	}
 
-		&:hover {
-			border-bottom-color: $primary-color;
-		}
+	li.current-menu-item a,
+	a:hover {
+		border-bottom-color: $primary-color;
+	}
+}
+
+.header-nav-trigger {
+	text-align: center;
+	margin-right: 2rem;
+
+	@include breakpoint(large up) {
+		display: none;
+	}
+
+	a {
+		display: inline-block;
+		border: 1px solid lighten($primary-color, 10%);
+		font-size: 1.1rem;
+		padding: 0.2em 1em;
 	}
 }
 
@@ -196,7 +237,9 @@
  * Frontpage
  */
 .page-template-frontpage,
-.single-bm_case_studies {
+.single-bm_case_studies,
+.single-bm_events,
+.single-bm_services {
 
 	.site-header {
 		position: absolute;
@@ -215,8 +258,76 @@
 		padding-top: 8rem;
 	}
 
-	.primary-menu a:hover {
+	.primary-menu a:hover,
+	.primary-menu li.current-menu-item a {
 		border-bottom-color: white;
 	}
 
+}
+
+/**
+ * OffCanvas
+ */
+.off-canvas-wrapper {
+	background: $primary-color;
+}
+
+.off-canvas-wrapper-inner {
+	@include breakpoint(xlarge up) {
+		background: $secondary-color;
+	}
+}
+
+.off-canvas {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.off-canvas-logo {
+	margin: 2rem 0 2rem 0;
+
+	.iconic * {
+		fill: white;
+	}
+}
+
+.off-canvas-menu {
+	text-align: center;
+
+	ul {
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		font-size: 1.4rem;
+		margin: 1rem 0 1rem 0;
+	}
+
+	a {
+		color: white;
+
+		&:hover {
+			color: white;
+			text-decoration: underline;
+		}
+	}
+}
+
+.off-canvas-top-menu {
+	text-align: center;
+	margin-top: 2rem;
+
+	a {
+		color: white;
+
+		&:hover {
+			color: white;
+			text-decoration: underline;
+		}
+	}
+
+	li {
+		margin: 0 0.25em;
+	}
 }

@@ -4,8 +4,8 @@
 .case-archive-list {}
 
 .case-archive-item {
-	@extend .row;
-	@extend .is-fullwidth;
+	@include flex-grid-row();
+	max-width: none;
 	@extend .align-center;
 
 	&:nth-child(odd) {
