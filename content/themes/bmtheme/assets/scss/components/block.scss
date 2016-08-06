@@ -2,7 +2,10 @@
  * Block Grid
  */
 .block-grid {
-	@include flex-grid-row();
+
+	.block-grid-inner {
+		@include flex-grid-row();
+	}
 
 	&.is-equal-height {
 
@@ -11,7 +14,7 @@
 		}
 	}
 
-	&.is-fullwidth {
+	&.is-fullwidth .block-grid-inner {
 		max-width: none;
 
 		.block {

@@ -101,7 +101,10 @@ class WooCommerce {
 
 		<main class="main" role="main">
 
-		<?php theme()->template->the_page_title_block( __( 'Products', 'bmtheme' ), __( 'Outside of our agency work, we release various products that we make available either for purchase or for free. You\'ll find them all collected here.', 'bmtheme' ) ); ?>
+		<?php
+		if ( ! is_product() ) {
+			theme()->template->the_page_title_block( __( 'Products', 'bmtheme' ), __( 'Outside of our agency work, we release various products that we make available either for purchase or for free. You\'ll find them all collected here.', 'bmtheme' ) );
+		} ?>
 
 		<section class="section woocommerce-wrapper">
 		<div class="row">

@@ -112,11 +112,19 @@ body.woocommerce section.woocommerce-wrapper .product .price {
 
 		div.product > .row {
 			@include flex-grid-row();
+			@extend .align-justify;
 		}
 
 	}
 
-	#content section.woocommerce-wrapper div.images,
+	#content section.woocommerce-wrapper div.images {
+		float: none;
+		width: auto;
+		@extend .small-24;
+		@extend .medium-11;
+		@extend .columns;
+	}
+
 	#content section.woocommerce-wrapper div.summary {
 		float: none;
 		width: auto;
