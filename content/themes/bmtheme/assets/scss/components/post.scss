@@ -64,6 +64,13 @@
  */
 .single-post-body {
 	@extend .single-item-body;
+
+	blockquote {
+
+		p {
+			font-size: 1.8rem;
+		}
+	}
 }
 
 .single-post-sidebar {
