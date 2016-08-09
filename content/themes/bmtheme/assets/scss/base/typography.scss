@@ -14,6 +14,10 @@ p {
 
 .body-text {
 
+	h2,h3,h4 {
+		font-weight: bold;
+	}
+
 	h2 {
 		@extend .h3;
 	}
@@ -24,7 +28,6 @@ p {
 
 	h4 {
 		@extend .h5;
-		font-weight: bold;
 	}
 
 	& > p:first-child {
