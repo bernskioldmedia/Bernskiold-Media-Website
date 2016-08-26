@@ -1,7 +1,7 @@
 <?php
 $client_query_args = array(
 	'post_type'     => 'bm_clients',
-	'post_per_page' => 15,
+	'post_per_page' => 25,
 	'no_found_rows' => true,
 	'orderby'       => 'rand',
 	'meta_query'    => array(
