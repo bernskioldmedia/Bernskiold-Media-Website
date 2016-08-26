@@ -1,8 +1,9 @@
 <?php
 $client_query_args = array(
 	'post_type'     => 'bm_clients',
-	'post_per_page' => 8,
+	'post_per_page' => 15,
 	'no_found_rows' => true,
+	'orderby'       => 'rand',
 	'meta_query'    => array(
 		'relation' => 'AND',
 		array(
@@ -22,6 +23,10 @@ $client_query_args = array(
 		),
 	),
 );
+
+if ( is_post_type_archive( 'bm_case_studies' ) ) {
+	$client_query_args['posts_per_page'] = 50;
+}
 
 $client_query = new \WP_Query( $client_query_args );
 ?>
