@@ -32,6 +32,7 @@
 		font-size: 0.9rem;
 		font-weight: bold;
 		transition: 0.2s color;
+		display: inline-block;
 
 		&:hover {
 			color: rgba(255,255,255,1);
