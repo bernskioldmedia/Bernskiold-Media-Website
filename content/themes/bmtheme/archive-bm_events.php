@@ -7,6 +7,7 @@ namespace BernskioldMedia\Theme;
 $event_types = get_terms( array(
 	'taxonomy'   => 'bm_event_type',
 	'hide_empty' => false,
+	'orderby'    => 'slug',
 ) );
 
 $il = 0;
