@@ -22,7 +22,7 @@ get_header(); ?>
 			$event_person_bio   = get_field( 'event_person_bio' );
 			$event_types        = get_the_terms( $post->ID, 'bm_event_type' );
 			$event_product      = get_field( 'event_product' );
-			$event_course_link = get_field( 'event_course_link' );
+			$event_course_link  = get_field( 'event_course_link' );
 
 			if ( $event_product ) {
 				$_product    = wc_get_product( $event_product->ID );
@@ -72,6 +72,12 @@ get_header(); ?>
 								<a href="<?php the_permalink( $event_product ) ?>" class="large hollow button"><?php esc_html_e( 'Register Now', 'bmtheme' ); ?></a>
 							</p>
 
+						<?php elseif ( $event_course_link ) : ?>
+
+							<p>
+								<a href="<?php echo esc_url_raw( $event_course_link ) ?>" class="large hollow button"><?php esc_html_e( 'Go to Course', 'bmtheme' ); ?></a>
+							</p>
+
 						<?php endif; ?>
 
 						<?php if ( $event_person_bio ) : ?>
@@ -115,7 +121,7 @@ get_header(); ?>
 							/**
 							 * Price Display
 							 */
-							if ( '0' === $event_price ) : ?>
+							if ( '0' == $event_price ) : ?>
 								<dt><?php esc_html_e( 'Price', 'bmtheme' ); ?></dt>
 								<dd><?php esc_html_e_( 'Free!', 'bmtheme' ); ?></dd>
 							<?php elseif ( $event_price ) : ?>
