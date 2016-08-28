@@ -123,7 +123,7 @@ get_header(); ?>
 							 */
 							if ( '0' == $event_price ) : ?>
 								<dt><?php esc_html_e( 'Price', 'bmtheme' ); ?></dt>
-								<dd><?php esc_html_e_( 'Free!', 'bmtheme' ); ?></dd>
+								<dd><?php esc_html_e( 'Free!', 'bmtheme' ); ?></dd>
 							<?php elseif ( $event_price ) : ?>
 								<dt><?php esc_html_e( 'Price', 'bmtheme' ); ?></dt>
 								<dd class="event-price">
