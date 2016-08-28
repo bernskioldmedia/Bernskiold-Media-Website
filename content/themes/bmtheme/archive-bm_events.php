@@ -126,7 +126,7 @@ get_header(); ?>
 											</p>
 
 											<?php if ( $event_price === '0' ) : ?>
-												<p class="events-list-item-price"><?php esc_html_e_( 'Free!', 'bmtheme' ); ?></p>
+												<p class="events-list-item-price"><?php esc_html_e( 'Free!', 'bmtheme' ); ?></p>
 											<?php elseif ( $event_price ) : ?>
 												<p class="events-list-item-price">
 													<?php if ( $_product ) {
