@@ -132,7 +132,7 @@ get_header(); ?>
 													<?php if ( $_product ) {
 														echo $event_price;
 													} else {
-														printf( __( '% USD', 'bmtheme' ), $event_price );
+														printf( __( '%s USD', 'bmtheme' ), $event_price );
 													} ?>
 												</p>
 											<?php endif; ?>
