@@ -17,7 +17,7 @@ get_header(); ?>
 
 <main class="main" role="main" id="content">
 
-	<?php theme()->template->the_page_title_block( __( 'Events', 'bmtheme' ), __( 'We have lectures, courses and webinars for you throughout the year. All on topics about the digital world, teaching you the latest.' ) ); ?>
+	<?php theme()->template->the_page_title_block( __( 'Events', 'bmtheme' ), __( 'We have lectures, courses and webinars for you throughout the year. All on topics about the digital world, teaching you the latest.', 'bmtheme' ) ); ?>
 
 	<div class="row">
 
