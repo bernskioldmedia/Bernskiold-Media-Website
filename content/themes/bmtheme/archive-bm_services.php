@@ -27,7 +27,7 @@ get_header(); ?>
 				<section class="service-area-item">
 					<div class="service-area-content">
 						<h3 class="service-area-name"><?php echo esc_html( $area->name ); ?></h3>
-						<p class="service-area-description"><?php echo esc_html( $area->description ); ?></p>
+						<p class="service-area-description"><?php echo $area->description; ?></p>
 
 						<?php
 						$service_area_query_args = array(
