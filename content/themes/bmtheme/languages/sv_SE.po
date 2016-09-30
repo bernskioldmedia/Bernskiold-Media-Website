@@ -1,22 +1,22 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: BMTheme\n"
-"POT-Creation-Date: 2016-08-04 22:22+0200\n"
-"PO-Revision-Date: 2016-08-06 16:31+0200\n"
+"POT-Creation-Date: 2016-09-30 18:39+0200\n"
+"PO-Revision-Date: 2016-09-30 18:39+0200\n"
+"Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
-"Language: sv_SE\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -60,11 +60,11 @@ msgstr ""
 "Funderar du över vilka vi arbetat med tidigare? Här är en lista över många "
 "av de kunder vi arbetar med nu, eller har arbetat med tidigare."
 
-#: archive-bm_events.php:19
+#: archive-bm_events.php:20
 msgid "Events"
 msgstr "Event"
 
-#: archive-bm_events.php:19
+#: archive-bm_events.php:20
 msgid ""
 "We have lectures, courses and webinars for you throughout the year. All on "
 "topics about the digital world, teaching you the latest."
@@ -72,11 +72,20 @@ msgstr ""
 "Vi har föreläsningar, kurser och webinars för dig under året. Allt kretsande "
 "kring den digital världen för att lära dig det senaste."
 
-#: archive-bm_events.php:134
+#: archive-bm_events.php:130 single-bm_events.php:126
+msgid "Free!"
+msgstr "Gratis!"
+
+#: archive-bm_events.php:136 single-bm_events.php:133
+#, php-format
+msgid "%s USD"
+msgstr "%s kr"
+
+#: archive-bm_events.php:142
 msgid "Read More & Book"
 msgstr "Läs mer & boka"
 
-#: archive-bm_events.php:147
+#: archive-bm_events.php:155
 #, php-format
 msgid "Unfortunately we do not have any %s to show you right now."
 msgstr "Tyvärr har vi ingen %s att visa dig just nu."
@@ -249,11 +258,11 @@ msgstr "Nästa sida"
 msgid "Page %s"
 msgstr "Sida %s"
 
-#: includes/classes/class-woocommerce.php:104
+#: includes/classes/class-woocommerce.php:106
 msgid "Products"
 msgstr "Produkter"
 
-#: includes/classes/class-woocommerce.php:104
+#: includes/classes/class-woocommerce.php:106
 msgid ""
 "Outside of our agency work, we release various products that we make "
 "available either for purchase or for free. You'll find them all collected "
@@ -274,11 +283,11 @@ msgstr "Sidofält för enskilda inlägg"
 msgid "Articles"
 msgstr "Artiklar"
 
-#: partials/client-grid.php:34
+#: partials/client-grid.php:39
 msgid "Our Clients"
 msgstr "Våra kunder"
 
-#: partials/client-grid.php:35
+#: partials/client-grid.php:40
 msgid ""
 "Here is a list of many of the clients that are working with, or have worked "
 "with over the years."
@@ -368,42 +377,46 @@ msgstr "Vem är %s?"
 msgid "Visit Project"
 msgstr "Besök projektet"
 
-#: single-bm_events.php:70 single-bm_events.php:168
+#: single-bm_events.php:72 single-bm_events.php:205
 msgid "Register Now"
 msgstr "Registrera dig nu"
 
-#: single-bm_events.php:78
+#: single-bm_events.php:78 single-bm_events.php:211
+msgid "Go to Course"
+msgstr "Gå till kursen"
+
+#: single-bm_events.php:87
 #, php-format
 msgid "About %s"
 msgstr "Om %s"
 
-#: single-bm_events.php:103 single-bm_events.php:106
+#: single-bm_events.php:125 single-bm_events.php:128
 msgid "Price"
 msgstr "Pris"
 
-#: single-bm_events.php:109
+#: single-bm_events.php:138
 msgid "Length"
 msgstr "Längd"
 
-#: single-bm_events.php:117
+#: single-bm_events.php:149
 msgid "Dates"
 msgstr "Datum"
 
-#: single-bm_events.php:131
+#: single-bm_events.php:163
 msgid "Fully Booked"
 msgstr "Fullbokad"
 
-#: single-bm_events.php:134
+#: single-bm_events.php:166
 #, php-format
 msgid "Only %s Seats Left"
 msgstr "Endast %s platser kvar"
 
-#: single-bm_events.php:150
+#: single-bm_events.php:185
 msgctxt "from event date format"
 msgid "F j"
 msgstr "j F"
 
-#: single-bm_events.php:153
+#: single-bm_events.php:190
 msgctxt "to event date format"
 msgid "F j, Y"
 msgstr "j F Y"
@@ -471,8 +484,16 @@ msgstr ""
 "din enda kontakt för allt digitalt."
 
 #: templates/frontpage.php:22
+msgid "services"
+msgstr "tjanster"
+
+#: templates/frontpage.php:22
 msgid "Learn What We Do"
 msgstr "Mer om vad vi gör"
+
+#: templates/frontpage.php:25
+msgid "case-studies"
+msgstr "kundcase"
 
 #: templates/frontpage.php:25
 msgid "See Our Cases"

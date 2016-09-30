@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : ?>
 
-		<?php theme()->template->the_page_title_block( __( 'Services', 'bmtheme' ), __( 'Your business and the web could do wonderful things together. We provide the solutions to grow your business securely using the digital and web tools.' ) ); ?>
+		<?php theme()->template->the_page_title_block( __( 'Services', 'bmtheme' ), __( 'Your business and the web could do wonderful things together. We provide the solutions to grow your business securely using the digital and web tools.', 'bmtheme' ) ); ?>
 
 		<?php
 		$areas = get_terms( array(

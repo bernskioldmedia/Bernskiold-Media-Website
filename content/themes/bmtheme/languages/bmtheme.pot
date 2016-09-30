@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: BMTheme\n"
-"POT-Creation-Date: 2016-08-04 22:22+0200\n"
+"POT-Creation-Date: 2016-09-30 18:39+0200\n"
 "PO-Revision-Date: 2016-08-04 22:22+0200\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -54,21 +54,30 @@ msgid ""
 "clients we are working with, or have worked with in the past."
 msgstr ""
 
-#: archive-bm_events.php:19
+#: archive-bm_events.php:20
 msgid "Events"
 msgstr ""
 
-#: archive-bm_events.php:19
+#: archive-bm_events.php:20
 msgid ""
 "We have lectures, courses and webinars for you throughout the year. All on "
 "topics about the digital world, teaching you the latest."
 msgstr ""
 
-#: archive-bm_events.php:134
+#: archive-bm_events.php:130 single-bm_events.php:126
+msgid "Free!"
+msgstr ""
+
+#: archive-bm_events.php:136 single-bm_events.php:133
+#, php-format
+msgid "%s USD"
+msgstr ""
+
+#: archive-bm_events.php:142
 msgid "Read More & Book"
 msgstr ""
 
-#: archive-bm_events.php:147
+#: archive-bm_events.php:155
 #, php-format
 msgid "Unfortunately we do not have any %s to show you right now."
 msgstr ""
@@ -230,11 +239,11 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: includes/classes/class-woocommerce.php:104
+#: includes/classes/class-woocommerce.php:106
 msgid "Products"
 msgstr ""
 
-#: includes/classes/class-woocommerce.php:104
+#: includes/classes/class-woocommerce.php:106
 msgid ""
 "Outside of our agency work, we release various products that we make "
 "available either for purchase or for free. You'll find them all collected "
@@ -253,11 +262,11 @@ msgstr ""
 msgid "Articles"
 msgstr ""
 
-#: partials/client-grid.php:34
+#: partials/client-grid.php:39
 msgid "Our Clients"
 msgstr ""
 
-#: partials/client-grid.php:35
+#: partials/client-grid.php:40
 msgid ""
 "Here is a list of many of the clients that are working with, or have worked "
 "with over the years."
@@ -341,42 +350,46 @@ msgstr ""
 msgid "Visit Project"
 msgstr ""
 
-#: single-bm_events.php:70 single-bm_events.php:168
+#: single-bm_events.php:72 single-bm_events.php:205
 msgid "Register Now"
 msgstr ""
 
-#: single-bm_events.php:78
+#: single-bm_events.php:78 single-bm_events.php:211
+msgid "Go to Course"
+msgstr ""
+
+#: single-bm_events.php:87
 #, php-format
 msgid "About %s"
 msgstr ""
 
-#: single-bm_events.php:103 single-bm_events.php:106
+#: single-bm_events.php:125 single-bm_events.php:128
 msgid "Price"
 msgstr ""
 
-#: single-bm_events.php:109
+#: single-bm_events.php:138
 msgid "Length"
 msgstr ""
 
-#: single-bm_events.php:117
+#: single-bm_events.php:149
 msgid "Dates"
 msgstr ""
 
-#: single-bm_events.php:131
+#: single-bm_events.php:163
 msgid "Fully Booked"
 msgstr ""
 
-#: single-bm_events.php:134
+#: single-bm_events.php:166
 #, php-format
 msgid "Only %s Seats Left"
 msgstr ""
 
-#: single-bm_events.php:150
+#: single-bm_events.php:185
 msgctxt "from event date format"
 msgid "F j"
 msgstr ""
 
-#: single-bm_events.php:153
+#: single-bm_events.php:190
 msgctxt "to event date format"
 msgid "F j, Y"
 msgstr ""
@@ -436,7 +449,15 @@ msgid ""
 msgstr ""
 
 #: templates/frontpage.php:22
+msgid "services"
+msgstr ""
+
+#: templates/frontpage.php:22
 msgid "Learn What We Do"
+msgstr ""
+
+#: templates/frontpage.php:25
+msgid "case-studies"
 msgstr ""
 
 #: templates/frontpage.php:25

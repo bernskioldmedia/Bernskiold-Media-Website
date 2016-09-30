@@ -19,10 +19,10 @@ get_header(); ?>
 					<p class="hero-subtitle"><?php esc_html_e( 'We develop strategies, digital marketing solutions and create beautiful web solutions to grow your business. The combination of areas means we can be your one-stop-shop for all things digital.', 'bmtheme' ); ?></p>
 					<ul class="hero-actions">
 						<li>
-							<a href="<?php echo esc_url( home_url( 'services' ) ); ?>" class="button hollow white"><?php esc_html_e( 'Learn What We Do', 'bmtheme' ); ?></a>
+							<a href="<?php echo esc_url( home_url( __( 'services', 'bmtheme' ) ) ); ?>" class="button hollow white"><?php esc_html_e( 'Learn What We Do', 'bmtheme' ); ?></a>
 						</li>
 						<li>
-							<a href="<?php echo esc_url( home_url( 'case-studies' ) ); ?>" class="button hollow white"><?php esc_html_e( 'See Our Cases', 'bmtheme' ); ?></a>
+							<a href="<?php echo esc_url( home_url( __( 'case-studies', 'bmtheme' ) ) ); ?>" class="button hollow white"><?php esc_html_e( 'See Our Cases', 'bmtheme' ); ?></a>
 						</li>
 					</ul>
 				</div>
