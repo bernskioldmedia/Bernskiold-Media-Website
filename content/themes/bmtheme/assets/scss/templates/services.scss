@@ -37,12 +37,8 @@
 }
 
 .service-area-content {
-	@include flex-grid-column(24);
-
-	@include breakpoint(medium up) {
-		@include flex-grid-column(12);
-	}
-
+	@extend .small-24;
+	@extend .medium-12;
 	@extend .dark-background;
 	background: $primary-color;
 
@@ -91,6 +87,5 @@
 .service-area-image {
 	@extend .small-24;
 	@extend .medium-12;
-	@extend .large-13;
 	@extend .is-background-image;
 }
