@@ -20,13 +20,13 @@ namespace BernskioldMedia\Theme;
 	</div>
 	<div class="row">
 		<div class="small-24 medium-12 columns">
-			<p class="footer-colophon"><?php _e( '<strong>Bernskiold Media</strong> is a boutique full service digital agency based in Sweden with offices in Stockholm and Gothenburg.', 'bmtheme' ); ?>
+			<p class="footer-colophon"><?php _e( '<strong>Bernskiold Media</strong> is a boutique full service digital agency and web agency based in Sweden with offices in Stockholm and Gothenburg.', 'bmtheme' ); ?>
 				<a href="<?php echo esc_url( home_url( 'about-us' ) ); ?>"><?php esc_html_e( 'Read More', 'bmtheme' ); ?></a>
 			</p>
 		</div>
 		<div class="small-24 medium-12 columns">
 			<form action="//bernskioldmedia.us1.list-manage.com/subscribe/post?u=692fa400bc84329b1d105c071&amp;id=3806350390" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<h3 class="h4"><?php esc_html_e( 'Receive Insights, News and Tips for Free', 'bernskioldmedia' ); ?></h3>
+				<h3 class="h4"><?php esc_html_e( 'Actionable Insights Monthly Right In Your Inbox', 'bernskioldmedia' ); ?></h3>
 				<div class="row">
 					<div class="small-14 medium-24 large-16 columns">
 						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="<?php esc_attr_e( 'Your email address', 'bernskioldmedia' ); ?>">

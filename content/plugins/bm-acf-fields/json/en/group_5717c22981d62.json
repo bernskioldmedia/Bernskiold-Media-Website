@@ -769,9 +769,7 @@
                     "name": "testimonials",
                     "label": "Testimonials",
                     "display": "block",
-                    "sub_fields": [
-
-                    ],
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -780,9 +778,7 @@
                     "name": "events",
                     "label": "Events",
                     "display": "block",
-                    "sub_fields": [
-
-                    ],
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -791,9 +787,7 @@
                     "name": "case_studies",
                     "label": "Case Studies",
                     "display": "block",
-                    "sub_fields": [
-
-                    ],
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -802,9 +796,7 @@
                     "name": "clients",
                     "label": "Clients",
                     "display": "block",
-                    "sub_fields": [
-
-                    ],
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -813,9 +805,7 @@
                     "name": "project_cta",
                     "label": "Start Project CTA",
                     "display": "block",
-                    "sub_fields": [
-
-                    ],
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -844,6 +834,15 @@
                             "media_upload": 1
                         }
                     ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "581cae3cebab0",
+                    "name": "latest_posts",
+                    "label": "Latest Posts",
+                    "display": "block",
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 }
@@ -890,5 +889,5 @@
     ],
     "active": 1,
     "description": "Create and define page sections for content pages.",
-    "modified": 1470497558
+    "modified": 1478274630
 }
