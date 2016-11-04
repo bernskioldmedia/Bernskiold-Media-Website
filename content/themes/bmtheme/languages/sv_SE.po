@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BMTheme\n"
-"POT-Creation-Date: 2016-09-30 18:39+0200\n"
-"PO-Revision-Date: 2016-09-30 18:39+0200\n"
+"POT-Creation-Date: 2016-11-04 17:11+0100\n"
+"PO-Revision-Date: 2016-11-04 17:12+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language: sv_SE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.10\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -145,18 +145,18 @@ msgstr "Läs vidare"
 #: footer.php:23
 msgid ""
 "<strong>Bernskiold Media</strong> is a boutique full service digital agency "
-"based in Sweden with offices in Stockholm and Gothenburg."
+"and web agency based in Sweden with offices in Stockholm and Gothenburg."
 msgstr ""
-"<strong>Bernskiold Media</strong> är en global fullservice digitalbyrå "
-"baserad i Sverige med kontor i Stockholm och Göteborg."
+"<strong>Bernskiold Media</strong> är en global fullservice digitalbyrå och "
+"webbyrå med kontor i Stockholm och Göteborg."
 
 #: footer.php:24
 msgid "Read More"
 msgstr "Läs mer"
 
 #: footer.php:29
-msgid "Receive Insights, News and Tips for Free"
-msgstr "Få insikter, nyheter och tips helt gratis"
+msgid "Actionable Insights Monthly Right In Your Inbox"
+msgstr "Värdefulla insikter varje månad till din inkorg"
 
 #: footer.php:32
 msgid "Your email address"
@@ -352,6 +352,22 @@ msgstr "Vad letar du efter?"
 msgid "Search"
 msgstr "Sök"
 
+#: sections/latest_posts.php:22
+msgid "Latest Academy Posts"
+msgstr "Senaste artiklar från akademin"
+
+#: sections/latest_posts.php:23
+msgid ""
+"Learn digital marketing, web, business and all related topics in our "
+"academy. Articles, videos, e-books and more for your benefit."
+msgstr ""
+"Läs om digital marknadsföring, webb, företagande och alla relaterade ämnen i "
+"vår akademi. Artiklar, videos, e-böcker och mycket mer för dig."
+
+#: sections/latest_posts.php:47 templates/academy.php:79
+msgid "To the articles archive"
+msgstr "Till artikelarkivet"
+
 #: sidebar-single.php:9 sidebar.php:9 templates/academy.php:87
 msgid "Editor's Picks"
 msgstr "Utvalda artiklar"
@@ -448,10 +464,6 @@ msgstr ""
 msgid "Continue Reading &rarr;"
 msgstr "Fortsätt läsa &rarr;"
 
-#: templates/academy.php:79
-msgid "To the articles archive"
-msgstr "Till artikelarkivet"
-
 #: templates/academy.php:125
 msgid "All Our Topics"
 msgstr "Alla våra ämnen"
@@ -512,3 +524,13 @@ msgstr "http://www.bernskioldmedia.se"
 #. Description of the plugin/theme
 msgid "BMTheme is a bespoke WordPress theme for Bernskiold Media."
 msgstr "BMTheme är ett skräddarsytt WordPress-tema för Bernskiold Media."
+
+#~ msgid ""
+#~ "<strong>Bernskiold Media</strong> is a boutique full service digital "
+#~ "agency based in Sweden with offices in Stockholm and Gothenburg."
+#~ msgstr ""
+#~ "<strong>Bernskiold Media</strong> är en global fullservice digitalbyrå "
+#~ "baserad i Sverige med kontor i Stockholm och Göteborg."
+
+#~ msgid "Receive Insights, News and Tips for Free"
+#~ msgstr "Få insikter, nyheter och tips helt gratis"
