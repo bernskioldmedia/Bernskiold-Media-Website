@@ -1,0 +1,213 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BM: Services\n"
+"POT-Creation-Date: 2016-11-19 15:06+0100\n"
+"PO-Revision-Date: 2016-11-19 15:08+0100\n"
+"Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.10\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: bm-services.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: classes/post-types/cpt-services.php:38
+msgctxt "Post Type General Name"
+msgid "Services"
+msgstr "Tjänster"
+
+#: classes/post-types/cpt-services.php:39
+msgctxt "Post Type Singular Name"
+msgid "Service"
+msgstr "Tjänst"
+
+#: classes/post-types/cpt-services.php:40
+#: classes/post-types/cpt-services.php:41
+#: classes/post-types/cpt-services.php:73
+msgid "Services"
+msgstr "Tjänster"
+
+#: classes/post-types/cpt-services.php:42
+msgid "Service Archives"
+msgstr "Tjänstearkiv"
+
+#: classes/post-types/cpt-services.php:43
+msgid "Parent Service:"
+msgstr "Överordnad tjänst:"
+
+#: classes/post-types/cpt-services.php:44
+msgid "All Services"
+msgstr "Alla tjänster"
+
+#: classes/post-types/cpt-services.php:45
+msgid "Add New Service"
+msgstr "Lägg till ny tjänst"
+
+#: classes/post-types/cpt-services.php:46
+msgid "Add New"
+msgstr "Lägg till ny"
+
+#: classes/post-types/cpt-services.php:47
+msgid "New Service"
+msgstr "Ny tjänst"
+
+#: classes/post-types/cpt-services.php:48
+msgid "Edit Service"
+msgstr "Redigera tjänst"
+
+#: classes/post-types/cpt-services.php:49
+msgid "Update Service"
+msgstr "Uppdatera tjänst"
+
+#: classes/post-types/cpt-services.php:50
+msgid "View Service"
+msgstr "Visa tjänst"
+
+#: classes/post-types/cpt-services.php:51
+msgid "Search Services"
+msgstr "Sök tjänster"
+
+#: classes/post-types/cpt-services.php:52
+msgid "Not found"
+msgstr "Ej funnen"
+
+#: classes/post-types/cpt-services.php:53
+msgid "Not found in Trash"
+msgstr "Ej funnen i papperkorgen"
+
+#: classes/post-types/cpt-services.php:54
+msgid "Service Image"
+msgstr "Tjänstebild"
+
+#: classes/post-types/cpt-services.php:55
+msgid "Set service image"
+msgstr "Välj tjänstebild"
+
+#: classes/post-types/cpt-services.php:56
+msgid "Remove service image"
+msgstr "Ta bort tjänstebild"
+
+#: classes/post-types/cpt-services.php:57
+msgid "Use as service image"
+msgstr "Använd som tjänstebild"
+
+#: classes/post-types/cpt-services.php:58
+msgid "Insert into service"
+msgstr "Infoga till tjänsten"
+
+#: classes/post-types/cpt-services.php:59
+msgid "Uploaded to this service"
+msgstr "Uppladdat till denna tjänst"
+
+#: classes/post-types/cpt-services.php:60
+msgid "Services list"
+msgstr "Tjänstelista"
+
+#: classes/post-types/cpt-services.php:61
+msgid "Services list navigation"
+msgstr "Tjänstelistnavigering"
+
+#: classes/post-types/cpt-services.php:62
+msgid "Filter services list"
+msgstr "Filtrera tjänstelistan"
+
+#: classes/post-types/cpt-services.php:74
+msgid "Holds services for the website."
+msgstr "Håller tjänster för webbplatsen."
+
+#: classes/taxonomies/tax-areas.php:38
+msgctxt "Taxonomy General Name"
+msgid "Areas"
+msgstr "Områden"
+
+#: classes/taxonomies/tax-areas.php:39
+msgctxt "Taxonomy Singular Name"
+msgid "Area"
+msgstr "Område"
+
+#: classes/taxonomies/tax-areas.php:40
+msgid "Areas"
+msgstr "Områden"
+
+#: classes/taxonomies/tax-areas.php:41
+msgid "All Areas"
+msgstr "Alla områden"
+
+#: classes/taxonomies/tax-areas.php:42
+msgid "Parent Area"
+msgstr "Överordnat område"
+
+#: classes/taxonomies/tax-areas.php:43
+msgid "Parent Area:"
+msgstr "Överordnat område:"
+
+#: classes/taxonomies/tax-areas.php:44
+msgid "New Area Name"
+msgstr "Lägg till nytt områdesnamn"
+
+#: classes/taxonomies/tax-areas.php:45
+msgid "Add New Area"
+msgstr "Lägg till nytt område"
+
+#: classes/taxonomies/tax-areas.php:46
+msgid "Edit Area"
+msgstr "Redigera område"
+
+#: classes/taxonomies/tax-areas.php:47
+msgid "Update Area"
+msgstr "Uppdatera område"
+
+#: classes/taxonomies/tax-areas.php:48
+msgid "View Area"
+msgstr "Visa område"
+
+#: classes/taxonomies/tax-areas.php:49
+msgid "Separate areas with commas"
+msgstr "Separata områden med kommatecken"
+
+#: classes/taxonomies/tax-areas.php:50
+msgid "Add or remove areas"
+msgstr "Lägg till eller ta bort områden"
+
+#: classes/taxonomies/tax-areas.php:51
+msgid "Choose from the most used"
+msgstr "Välj bland de mest använda"
+
+#: classes/taxonomies/tax-areas.php:52
+msgid "Popular Areas"
+msgstr "Populära områden"
+
+#: classes/taxonomies/tax-areas.php:53
+msgid "Search Areas"
+msgstr "Sök områden"
+
+#: classes/taxonomies/tax-areas.php:54
+msgid "Not Found"
+msgstr "Inga resultat"
+
+#. Plugin Name of the plugin/theme
+msgid "BM: Services"
+msgstr "BM: Tjänster"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.bernskioldmedia.com"
+msgstr "https://www.bernskioldmedia.com/sv/"
+
+#. Description of the plugin/theme
+msgid "A bespoke WordPress plugin to handle the services functionality."
+msgstr ""
+"En skräddarsydd WordPress plugin för att hantera tjänstefunktionaliteten."
+
+#. Author of the plugin/theme
+msgid "Bernskiold Media"
+msgstr "Bernskiold Media"
