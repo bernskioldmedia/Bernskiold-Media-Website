@@ -69,11 +69,21 @@
 		max-height: 6rem;
 		margin-bottom: 1.5em;
 		max-width: 15rem;
+
+		@include breakpoint(small only) {
+			max-height: 4rem;
+			max-width: 10rem;
+			margin-bottom: 0.5rem;
+		}
 	}
 }
 
 .case-archive-item-description {
 	font-size: $lead-font-size;
+
+	@include breakpoint(small only) {
+		font-size: 1rem;
+	}
 }
 
 .case-archive-item-action {
@@ -94,4 +104,9 @@
 	@extend .large-14;
 	@extend .is-background-image;
 	min-height: 25rem;
+
+	@include breakpoint(small only) {
+		height: 15rem;
+		min-height: 0;
+	}
 }

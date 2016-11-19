@@ -19,11 +19,24 @@
 	padding: 0 4rem 0 4rem;
 	margin-bottom: 2rem;
 
+	@include breakpoint(small only) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		background: $secondary-color;
+	}
+
 	.post-thumbnail {
 		min-height: 25rem;
 		margin-bottom: 2.5rem;
 		margin-left: -3rem;
 		margin-right: -3rem;
+
+		@include breakpoint(small only) {
+			margin-left: -1.5rem;
+			margin-right: -1.5rem;
+			min-height: 0;
+			height: 15rem;
+		}
 	}
 
 	.post-title {
@@ -89,6 +102,11 @@
 .post-item-image {
 	@extend .is-background-image;
 	min-height: 30rem;
+
+	@include breakpoint(small only) {
+		min-height: 0;
+		height: 20rem;
+	}
 }
 
 .post-item-header-content {
@@ -97,20 +115,20 @@
 
 	h1.page-title {
 		color: $header-color;
+
+		@include breakpoint(medium only) {
+			font-size: 2.5rem;
+		}
+
+		@include breakpoint(small only) {
+			font-size: 1.8rem;
+		}
 	}
 }
 
 .single-post-date {
 	margin-bottom: 1em;
 	font-size: 1.2rem;
-}
-
-.single-post-title {
-
-	@include breakpoint(medium only) {
-		font-size: 2.5rem;
-	}
-
 }
 
 .single-post-category {

@@ -100,6 +100,10 @@ namespace BernskioldMedia\Theme;
 						</a>
 					</div>
 
+					<div class="header-nav-trigger column">
+						<a href="#" data-toggle="offCanvas"><?php esc_html_e( 'Menu', 'bmtheme' ); ?></a>
+					</div>
+
 					<?php wp_nav_menu( array(
 						'theme_location'  => 'primary-menu',
 						'container'       => 'nav',
@@ -109,10 +113,6 @@ namespace BernskioldMedia\Theme;
 						'fallback_cb'     => '',
 						'depth'           => 1,
 					) ); ?>
-
-					<div class="header-nav-trigger">
-						<a href="#" data-toggle="offCanvas"><?php esc_html_e( 'Menu', 'bmtheme' ); ?></a>
-					</div>
 
 				</div>
 
