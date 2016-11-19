@@ -25,7 +25,7 @@ get_header(); ?>
 								<?php the_time( __( 'F j, Y', 'bmtheme' ) ); ?>
 							</div>
 
-							<h1 class="page-title"><?php the_title(); ?></h1>
+							<h1 class="page-title single-post-title"><?php the_title(); ?></h1>
 
 							<?php
 							$post_categories = get_the_terms( $post, 'category' );

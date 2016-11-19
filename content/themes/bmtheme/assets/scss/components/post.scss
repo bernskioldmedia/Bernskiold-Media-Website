@@ -105,6 +105,14 @@
 	font-size: 1.2rem;
 }
 
+.single-post-title {
+
+	@include breakpoint(medium only) {
+		font-size: 2.5rem;
+	}
+
+}
+
 .single-post-category {
 	@extend .inline-block-list;
 	@extend .separated-list;

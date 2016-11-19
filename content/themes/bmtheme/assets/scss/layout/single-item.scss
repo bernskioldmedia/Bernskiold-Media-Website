@@ -35,8 +35,13 @@
 	z-index: 1;
 	@extend .column;
 
-	@include breakpoint(medium up) {
+	@include breakpoint(large up) {
 		padding-right: 20%;
+		padding-left: 5%;
+	}
+
+	@include breakpoint(large up) {
+		padding-right: 5%;
 		padding-left: 5%;
 	}
 
