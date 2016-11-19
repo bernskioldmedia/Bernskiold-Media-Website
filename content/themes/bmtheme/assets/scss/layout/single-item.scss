@@ -88,21 +88,21 @@
 }
 
 .single-item-body {
-	@extend .small-24;
-	@extend .medium-14;
-	@extend .large-16;
-	@extend .column;
+	@include flex-grid-column(24);
 	padding: 1.5rem;
 
 	@include breakpoint(medium only) {
+		@include flex-grid-column(15);
 		padding: 3rem 2rem;
 	}
 
 	@include breakpoint(large only) {
+		@include flex-grid-column(16);
 		padding: 3rem 5rem;
 	}
 
 	@include breakpoint(xlarge up) {
+		@include flex-grid-column(16);
 		padding: 5rem 9rem 4rem 9rem;
 	}
 
@@ -119,15 +119,17 @@
 }
 
 .single-item-infobox {
-	@extend .small-24;
-	@extend .medium-10;
-	@extend .large-8;
-	@extend .column;
-
+	@include flex-grid-column(24);
 	padding: 3.5rem 1rem;
 	background: lighten($secondary-color, 2%);
 
-	@include breakpoint(large only) {
+	@include breakpoint(medium only) {
+		@include flex-grid-column(9);
+		padding: 3.5rem 1rem;
+	}
+
+	@include breakpoint(large up) {
+		@include flex-grid-column(8);
 		padding: 3.5rem 2rem;
 	}
 
