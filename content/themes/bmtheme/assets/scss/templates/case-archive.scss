@@ -41,8 +41,7 @@
 	@extend .bg-primary;
 	@extend .column;
 	@extend .small-24;
-	@extend .medium-13;
-	@extend .large-10;
+	@extend .medium-12;
 	padding: 3.5em 2.5em;
 
 	@include breakpoint(small only) {
@@ -100,8 +99,8 @@
 
 .case-archive-item-image {
 	@extend .small-24;
-	@extend .medium-11;
-	@extend .large-14;
+	@extend .medium-12;
+	@extend .column;
 	@extend .is-background-image;
 	min-height: 25rem;
 
