@@ -80,7 +80,25 @@
  * Single Post
  */
 .single-post-body {
-	@extend .single-item-body;
+	max-width: rem-calc(740px);
+	margin: 0 auto;
+
+	@extend .body-text;
+
+	& > p:first-child:first-letter {
+		font-size: 5rem;
+		font-weight: bold;
+		float: left;
+		line-height: 0.5;
+		margin-right: 0.5rem;
+		padding-top: 0.8rem
+	}
+
+	p {
+		@include breakpoint(large up) {
+			font-size: 1.1rem;
+		}
+	}
 
 	blockquote {
 
@@ -95,8 +113,13 @@
 	background: transparent !important;
 }
 
-.post-item-header {
-	padding: 3rem 0 0 0;
+.single-post .post-item-header {
+	padding: 3rem 0 3rem 0;
+	text-align: center;
+
+	.row {
+		max-width: rem-calc(960px);
+	}
 }
 
 .post-item-image {
@@ -115,6 +138,7 @@
 
 	h1.page-title {
 		color: $header-color;
+		font-size: 3.2rem;
 
 		@include breakpoint(medium only) {
 			font-size: 2.5rem;
@@ -133,7 +157,6 @@
 
 .single-post-category {
 	@extend .inline-block-list;
-	@extend .separated-list;
 	margin-top: 1.5em;
 
 	li {
@@ -144,10 +167,18 @@
 		&:after {
 			content: ', ';
 		}
+
+		&:last-child:after {
+			content: '';
+		}
 	}
 
 	a {
 		color: rgba(0, 0, 0, 0.8);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
