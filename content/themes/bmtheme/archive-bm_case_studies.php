@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : ?>
 
-		<?php theme()->template->the_page_title_block( __( 'Case Studies', 'bmtheme' ), __( 'Wondering what we have done? You\'ve come to the right place. Here we have collected some of the work that we have done.' ) ); ?>
+		<?php theme()->template->the_page_title_block( __( 'Case Studies', 'bmtheme' ), __( 'Wondering what we have done? You\'ve come to the right place. Here we have collected some of the work that we have done.', 'bmtheme' ) ); ?>
 
 		<div class="case-archive-list">
 
