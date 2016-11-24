@@ -82,6 +82,7 @@
 .single-post-body {
 	max-width: rem-calc(740px);
 	margin: 0 auto;
+	padding: 0 1rem;
 
 	@extend .body-text;
 
