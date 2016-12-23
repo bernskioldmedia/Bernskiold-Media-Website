@@ -23,7 +23,7 @@ namespace BernskioldMedia\Theme;
 								<?php esc_html_e( 'Managing Director', 'bmtheme' ); ?>
 							</p>
 							<p>
-								<strong><?php esc_html_e( 'Phone:', 'bmtheme' ); ?></strong><br><a href="tel://+4631102011" class="no-link"><?php esc_html_e( '+46 31 10 20 11', 'bmtheme' ); ?></a><br>
+								<strong><?php esc_html_e( 'Phone:', 'bmtheme' ); ?></strong><br><a href="tel://+46734281009" class="no-link"><?php esc_html_e( '+46 734 28 10 09', 'bmtheme' ); ?></a><br>
 								<strong>E-mail:</strong><br><a href="mailto:erik@bernskioldmedia.com" class="no-link"><?php esc_html_e( 'erik@bernskioldmedia.com', 'bmtheme' ); ?></a>
 							</p>
 						</div>
