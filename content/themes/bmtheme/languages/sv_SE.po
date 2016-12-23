@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BMTheme\n"
-"POT-Creation-Date: 2016-12-23 12:25+0100\n"
-"PO-Revision-Date: 2016-12-23 12:25+0100\n"
+"POT-Creation-Date: 2016-12-23 12:47+0100\n"
+"PO-Revision-Date: 2016-12-23 12:47+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language: sv_SE\n"
@@ -190,13 +190,17 @@ msgstr "Postadress"
 msgid "Phone"
 msgstr "Telefon"
 
-#: footer.php:54 footer.php:63
-msgid "+46 31 10 20 10"
-msgstr "031 - 10 20 10"
+#: footer.php:54
+msgid "+46 8 32 20 10"
+msgstr "08 - 32 20 10"
 
 #: footer.php:58 footer.php:61
 msgid "Gothenburg"
 msgstr "Göteborg"
+
+#: footer.php:63
+msgid "+46 31 10 20 10"
+msgstr "031 - 10 20 10"
 
 #: footer.php:67
 msgid "Company"
