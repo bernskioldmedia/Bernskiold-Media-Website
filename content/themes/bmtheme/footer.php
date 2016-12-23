@@ -51,7 +51,7 @@ namespace BernskioldMedia\Theme;
 				<span class="contact-value">Holländargatan 22<br>
 				113 59 Stockholm</span></p>
 			<p>
-				<span class="contact-heading"><?php esc_html_e( 'Phone', 'bmtheme' ); ?></span><span class="contact-value"><a href="tel://+4631102010"><?php esc_html_e( '+46 31 10 20 10', 'bmtheme' ); ?></a></span>
+				<span class="contact-heading"><?php esc_html_e( 'Phone', 'bmtheme' ); ?></span><span class="contact-value"><a href="tel://+468322010"><?php esc_html_e( '+46 8 32 20 10', 'bmtheme' ); ?></a></span>
 			</p>
 		</div>
 		<div class="small-12 medium-8 large-6 columns">
