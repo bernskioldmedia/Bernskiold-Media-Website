@@ -1,9 +1,23 @@
 /**
  * Services
  */
+.service-area-items {
+
+}
+
+.post-type-archive-bm_services .page-title-block {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.post-type-archive-bm-services .project-cta {
+	border-top: 0;
+}
+
 .service-area-item {
 	@include flex-grid-row();
 	max-width: none;
+	margin-bottom: 3rem;
 
 	&:nth-child(even) {
 		.service-area-image {
@@ -16,7 +30,6 @@
 
 		.service-area-content {
 			order: 1;
-			background-color: $primary-color;
 
 			@include breakpoint(small only) {
 				order: 2;
@@ -31,7 +44,6 @@
 
 		.service-area-content {
 			order: 2;
-			background-color: $accent-color;
 		}
 	}
 }
@@ -39,8 +51,7 @@
 .service-area-content {
 	@include flex-grid-column(24);
 	padding: 1.5rem;
-	@extend .dark-background;
-	background: $primary-color;
+	background: white;
 
 	@include breakpoint(medium only) {
 		@include flex-grid-column(14);
@@ -73,6 +84,7 @@
 		font-size: 1rem;
 		margin-bottom: 0.1em;
 		font-weight: bold;
+		padding-left: 0;
 
 		@include breakpoint(large up) {
 			font-size: 1.25rem;
@@ -102,6 +114,11 @@
 .service-area-image {
 	@extend .is-background-image;
 	@include flex-grid-column(24);
+
+	@include breakpoint(small only) {
+		min-height: 15rem;
+		max-height: 25vh;
+	}
 
 	@include breakpoint(medium only) {
 		@include flex-grid-column(10);

@@ -6,7 +6,7 @@ namespace BernskioldMedia\Theme;
 
 get_header(); ?>
 
-<main class="main" role="main" id="content">
+<main class="main bg-secondary border-top" role="main" id="content">
 
 	<?php if ( have_posts() ) : ?>
 
@@ -22,53 +22,59 @@ get_header(); ?>
 
 		if ( ! empty( $areas ) ) : ?>
 
-			<?php foreach ( $areas as $area ) : $area_image = get_field( 'area_image', $area ) ?>
+			<div class="service-area-items">
+				<div class="row">
 
-				<section class="service-area-item">
-					<div class="service-area-content">
-						<h3 class="service-area-name"><?php echo esc_html( $area->name ); ?></h3>
-						<p class="service-area-description"><?php echo $area->description; ?></p>
+					<?php foreach ( $areas as $area ) : $area_image = get_field( 'area_image', $area ) ?>
 
-						<?php
-						$service_area_query_args = array(
-							'post_type'      => 'bm_services',
-							'posts_per_page' => 50,
-							'tax_query'      => array(
-								array(
-									'taxonomy' => 'bm_areas',
-									'field'    => 'term_id',
-									'terms'    => $area->term_id,
-								),
-							),
-						);
+						<section class="service-area-item">
+							<div class="service-area-content">
+								<h3 class="service-area-name"><?php echo esc_html( $area->name ); ?></h3>
+								<p class="service-area-description"><?php echo $area->description; ?></p>
 
-						$service_area_query = new \WP_Query( $service_area_query_args );
-						?>
+								<?php
+								$service_area_query_args = array(
+									'post_type'      => 'bm_services',
+									'posts_per_page' => 50,
+									'tax_query'      => array(
+										array(
+											'taxonomy' => 'bm_areas',
+											'field'    => 'term_id',
+											'terms'    => $area->term_id,
+										),
+									),
+								);
 
-						<?php if ( $service_area_query->have_posts() ) : ?>
+								$service_area_query = new \WP_Query( $service_area_query_args );
+								?>
 
-							<ul class="service-area-list">
+								<?php if ( $service_area_query->have_posts() ) : ?>
 
-								<?php while ( $service_area_query->have_posts() ) : $service_area_query->the_post(); ?>
+									<ul class="service-area-list">
 
-									<li>
-										<?php if ( get_field( 'is_service_linked' ) ) : ?>
-											<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-										<?php else : ?>
-											<?php the_title(); ?>
-										<?php endif; ?>
-									</li>
+										<?php while ( $service_area_query->have_posts() ) : $service_area_query->the_post(); ?>
 
-								<?php endwhile; ?>
+											<li>
+												<?php if ( get_field( 'is_service_linked' ) ) : ?>
+													<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+												<?php else : ?>
+													<?php the_title(); ?>
+												<?php endif; ?>
+											</li>
 
-							</ul>
+										<?php endwhile; ?>
 
-						<?php endif; ?>
-					</div>
-					<div class="service-area-image" style="background-image: url('<?php echo esc_url_raw( $area_image['sizes']['medium'] ); ?>');"></div>
-				</section>
+									</ul>
 
-			<?php endforeach; ?>
+								<?php endif; ?>
+							</div>
+							<div class="service-area-image" style="background-image: url('<?php echo esc_url_raw( $area_image['sizes']['medium'] ); ?>');"></div>
+						</section>
+
+					<?php endforeach; ?>
+
+				</div>
+			</div>
 
 		<?php endif; ?>
 
