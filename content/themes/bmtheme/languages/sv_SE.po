@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BMTheme\n"
-"POT-Creation-Date: 2016-11-04 17:11+0100\n"
-"PO-Revision-Date: 2016-11-04 17:12+0100\n"
+"POT-Creation-Date: 2016-12-23 12:25+0100\n"
+"PO-Revision-Date: 2016-12-23 12:25+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language: sv_SE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.10\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -179,28 +179,28 @@ msgstr ""
 "meddelande så pratar vi."
 
 #: footer.php:49
-msgid "Gothenburg Office"
-msgstr "Göteborg"
+msgid "Stockholm (HQ)"
+msgstr "Stockholm (HQ)"
 
-#: footer.php:51
+#: footer.php:50 footer.php:59
+msgid "Postal Address"
+msgstr "Postadress"
+
+#: footer.php:54 footer.php:63
+msgid "Phone"
+msgstr "Telefon"
+
+#: footer.php:54 footer.php:63
+msgid "+46 31 10 20 10"
+msgstr "031 - 10 20 10"
+
+#: footer.php:58 footer.php:61
 msgid "Gothenburg"
 msgstr "Göteborg"
 
-#: footer.php:54
-msgid "Stockholm Office"
-msgstr "Stockholm"
-
-#: footer.php:59
-msgid "E-mail:"
-msgstr "E-post:"
-
-#: footer.php:61 partials/project-cta.php:26
-msgid "Phone:"
-msgstr "Telefon:"
-
-#: footer.php:62
-msgid "+46 31 10 20 10"
-msgstr "031 - 10 20 10"
+#: footer.php:67
+msgid "Company"
+msgstr "Företaget"
 
 #. Author of the plugin/theme
 #: header.php:28 header.php:99
@@ -215,7 +215,7 @@ msgstr "Gå till innehåll"
 msgid "Language"
 msgstr "Språk"
 
-#: header.php:114
+#: header.php:104
 msgid "Menu"
 msgstr "Meny"
 
@@ -236,7 +236,11 @@ msgstr "Toppmeny"
 msgid "Blog Topics Menu"
 msgstr "Bloggämnesmeny"
 
-#: includes/class-theme.php:282
+#: includes/class-theme.php:220
+msgid "Footer List Menu"
+msgstr "Meny för sidfoten"
+
+#: includes/class-theme.php:283
 #, php-format
 msgid ""
 "%s Website Admin Panel. Website developed by <a href=\"https://www."
@@ -316,6 +320,10 @@ msgid "Managing Director"
 msgstr "Managing Director"
 
 #: partials/project-cta.php:26
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: partials/project-cta.php:26
 msgid "+46 31 10 20 11"
 msgstr "031 - 10 20 11"
 
@@ -368,11 +376,11 @@ msgstr ""
 msgid "To the articles archive"
 msgstr "Till artikelarkivet"
 
-#: sidebar-single.php:9 sidebar.php:9 templates/academy.php:87
+#: sidebar-single.php:9 sidebar.php:9 single.php:98 templates/academy.php:87
 msgid "Editor's Picks"
 msgstr "Utvalda artiklar"
 
-#: sidebar-single.php:10 sidebar.php:10 templates/academy.php:88
+#: sidebar-single.php:10 sidebar.php:10 single.php:99 templates/academy.php:88
 msgid "These are articles that our editors have picked from the archives."
 msgstr "Dessa är artiklar som våra redaktörer har plockat från arkiven."
 
@@ -524,6 +532,15 @@ msgstr "http://www.bernskioldmedia.se"
 #. Description of the plugin/theme
 msgid "BMTheme is a bespoke WordPress theme for Bernskiold Media."
 msgstr "BMTheme är ett skräddarsytt WordPress-tema för Bernskiold Media."
+
+#~ msgid "Gothenburg Office"
+#~ msgstr "Göteborg"
+
+#~ msgid "Stockholm Office"
+#~ msgstr "Stockholm"
+
+#~ msgid "E-mail:"
+#~ msgstr "E-post:"
 
 #~ msgid ""
 #~ "<strong>Bernskiold Media</strong> is a boutique full service digital "

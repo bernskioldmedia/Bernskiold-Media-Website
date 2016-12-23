@@ -217,6 +217,7 @@ class Theme {
 				'primary-menu'     => esc_html__( 'Main Menu', 'bmtheme' ),
 				'top-menu'         => esc_html__( 'Top Menu', 'bmtheme' ),
 				'blog-topics-menu' => esc_html__( 'Blog Topics Menu', 'bmtheme' ),
+				'footer-list-menu' => esc_html__( 'Footer List Menu', 'bmtheme' ),
 			);
 
 			register_nav_menus( $locations );

@@ -41,25 +41,39 @@ namespace BernskioldMedia\Theme;
 		</div>
 	</div>
 	<div class="row">
-		<div class="small-24 medium-24 large-9 columns pb1">
+		<div class="small-24 medium-24 large-7 columns pb1">
 			<h3><?php esc_html_e( 'Contact Us', 'bmtheme' ); ?></h3>
 			<p class="intro"><?php esc_html_e( 'Stop by our offices to say hi, give us a call or send us a message and we\'ll talk.', 'bmtheme' ); ?></p>
 		</div>
-		<div class="small-12 medium-8 large-5 columns align-self-bottom">
-			<h4><?php esc_html_e( 'Gothenburg Office', 'bmtheme' ); ?></h4>
-			<p>Kungsgatan 4<br>
-				411 19 <?php esc_html_e( 'Gothenburg', 'bmtheme' ); ?></p>
+		<div class="small-12 medium-8 large-5 columns">
+			<h4><?php esc_html_e( 'Stockholm (HQ)', 'bmtheme' ); ?></h4>
+			<p><span class="contact-heading"><?php esc_html_e( 'Postal Address', 'bmtheme' ); ?></span>
+				<span class="contact-value">Holländargatan 22<br>
+				113 59 Stockholm</span></p>
+			<p>
+				<span class="contact-heading"><?php esc_html_e( 'Phone', 'bmtheme' ); ?></span><span class="contact-value"><a href="tel://+4631102010"><?php esc_html_e( '+46 31 10 20 10', 'bmtheme' ); ?></a></span>
+			</p>
 		</div>
-		<div class="small-12 medium-8 large-5 columns align-self-bottom">
-			<h4><?php esc_html_e( 'Stockholm Office', 'bmtheme' ); ?></h4>
-			<p>Holländargatan 22<br>
-				113 59 Stockholm</p>
+		<div class="small-12 medium-8 large-6 columns">
+			<h4><?php esc_html_e( 'Gothenburg', 'bmtheme' ); ?></h4>
+			<p><span class="contact-heading"><?php esc_html_e( 'Postal Address', 'bmtheme' ); ?></span>
+				<span class="contact-value">Kungsgatan 4<br>
+				411 19 <?php esc_html_e( 'Gothenburg', 'bmtheme' ); ?></span></p>
+			<p>
+				<span class="contact-heading"><?php esc_html_e( 'Phone', 'bmtheme' ); ?></span><span class="contact-value"><a href="tel://+4631102010"><?php esc_html_e( '+46 31 10 20 10', 'bmtheme' ); ?></a></span>
+			</p>
 		</div>
-		<div class="small-24 medium-8 large-5 columns align-self-bottom">
-			<p class="mb0"><strong><?php esc_html_e( 'E-mail:', 'bmtheme' ); ?></strong><br>
-				<a href="mailto:info@bernskioldmedia.com">info@bernskioldmedia.com</a></p>
-			<p><strong><?php esc_html_e( 'Phone:', 'bmtheme' ); ?></strong><br>
-				<a href="tel://+4631102010"><?php esc_html_e( '+46 31 10 20 10', 'bmtheme' ); ?></a></p>
+		<div class="small-24 medium-8 large-6 columns">
+			<h4><?php esc_html_e( 'Company', 'bmtheme' ); ?></h4>
+			<?php wp_nav_menu( array(
+				'theme_location'  => 'footer-list-menu',
+				'container'       => 'nav',
+				'container_class' => '',
+				'container_id'    => 'js-footer-list-menu',
+				'menu_class'      => '',
+				'fallback_cb'     => '',
+				'depth'           => 1,
+			) ); ?>
 		</div>
 	</div>
 </footer>

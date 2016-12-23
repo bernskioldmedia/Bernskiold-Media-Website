@@ -18,6 +18,24 @@
 			}
 		}
 	}
+
+	p {
+		margin: 0;
+	}
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	h4 {
+		font-size: 1rem;
+		font-weight: bold;
+		font-family: $body-font-family;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+		opacity: 0.8;
+	}
 }
 
 .footer-colophon {
@@ -68,4 +86,15 @@
 			}
 		}
 	}
+}
+
+span.contact-heading {
+	display: block;
+	font-size: 0.85rem;
+}
+
+span.contact-value {
+	display: block;
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
 }
