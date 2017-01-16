@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BMTheme\n"
-"POT-Creation-Date: 2016-12-23 12:47+0100\n"
-"PO-Revision-Date: 2016-12-23 12:47+0100\n"
+"POT-Creation-Date: 2017-01-16 22:15+0100\n"
+"PO-Revision-Date: 2017-01-16 22:15+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language: sv_SE\n"
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Free!"
 msgstr "Gratis!"
 
-#: archive-bm_events.php:136 single-bm_events.php:133
+#: archive-bm_events.php:136
 #, php-format
 msgid "%s USD"
 msgstr "%s kr"
@@ -207,19 +207,19 @@ msgid "Company"
 msgstr "Företaget"
 
 #. Author of the plugin/theme
-#: header.php:28 header.php:99
+#: header.php:30 header.php:101
 msgid "Bernskiold Media"
 msgstr "Bernskiold Media"
 
-#: header.php:56
+#: header.php:58
 msgid "Skip to content"
 msgstr "Gå till innehåll"
 
-#: header.php:87
+#: header.php:89
 msgid "Language"
 msgstr "Språk"
 
-#: header.php:104
+#: header.php:106
 msgid "Menu"
 msgstr "Meny"
 
@@ -328,8 +328,8 @@ msgid "Phone:"
 msgstr "Telefon:"
 
 #: partials/project-cta.php:26
-msgid "+46 31 10 20 11"
-msgstr "031 - 10 20 11"
+msgid "+46 734 28 10 09"
+msgstr "0734 - 28 10 09"
 
 #: partials/project-cta.php:27
 msgid "erik@bernskioldmedia.com"
@@ -421,6 +421,11 @@ msgstr "Om %s"
 #: single-bm_events.php:125 single-bm_events.php:128
 msgid "Price"
 msgstr "Pris"
+
+#: single-bm_events.php:133
+#, php-format
+msgid "%s USD (excl. VAT)"
+msgstr "%s kr (exkl. moms)"
 
 #: single-bm_events.php:138
 msgid "Length"
@@ -536,6 +541,9 @@ msgstr "http://www.bernskioldmedia.se"
 #. Description of the plugin/theme
 msgid "BMTheme is a bespoke WordPress theme for Bernskiold Media."
 msgstr "BMTheme är ett skräddarsytt WordPress-tema för Bernskiold Media."
+
+#~ msgid "+46 31 10 20 11"
+#~ msgstr "031 - 10 20 11"
 
 #~ msgid "Gothenburg Office"
 #~ msgstr "Göteborg"
