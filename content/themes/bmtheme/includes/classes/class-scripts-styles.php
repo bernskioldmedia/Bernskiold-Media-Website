@@ -29,8 +29,8 @@ class Theme_Scripts_Styles {
 		add_action( 'wp_head', array( $this, 'typekit' ) );
 
 		// GTM Tracking.
-		add_action( 'wp_head', array( $this, 'google_tag_manager_head' ) );
-		add_action( 'bm_before_body', array( $this, 'google_tag_manager_body' ) );
+		// add_action( 'wp_head', array( $this, 'google_tag_manager_head' ) );
+		// add_action( 'bm_before_body', array( $this, 'google_tag_manager_body' ) );
 
 	}
 

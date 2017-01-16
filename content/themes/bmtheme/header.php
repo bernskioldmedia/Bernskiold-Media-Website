@@ -17,6 +17,8 @@ namespace BernskioldMedia\Theme;
 
 <body <?php body_class(); ?>>
 
+<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
+
 <?php do_action( 'bm_before_body' ); ?>
 
 <div class="off-canvas-wrapper">
