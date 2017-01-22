@@ -16,11 +16,14 @@ get_header(); ?>
 			if ( has_term( array( 'courses', '1-kurser' ), 'bm_event_type' ) ) {
 				get_template_part( 'templates/events/courses' );
 			} elseif ( has_term( array( 'on-demand', 'on-demand-sv' ), 'bm_event_type' ) ) {
-				get_template_part( 'templates/events/on-demand' );
+				// get_template_part( 'templates/events/on-demand' );
+				get_template_part( 'templates/events/default' );
 			} elseif ( has_term( array( 'lectures', 'forelasningar' ), 'bm_event_type' ) ) {
-				get_template_part( 'templates/events/lectures' );
+				// get_template_part( 'templates/events/lectures' );
+				get_template_part( 'templates/events/default' );
 			} elseif ( has_term( array( 'online-courses', 'onlinekurser' ), 'bm_event_type' ) ) {
-				get_template_part( 'templates/events/online-courses' );
+				// get_template_part( 'templates/events/online-courses' );
+				get_template_part( 'templates/events/default' );
 			} else {
 				get_template_part( 'templates/events/default' );
 			}
