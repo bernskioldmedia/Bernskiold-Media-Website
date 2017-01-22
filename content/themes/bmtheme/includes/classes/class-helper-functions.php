@@ -106,7 +106,7 @@ class Theme_Helpers {
 				$reg_attendees = get_sub_field( 'event_reg_attendees', $post );
 
 				if ( $from_date == $to_date ) {
-					$date_text = sprintf( __( '%1$s: %2$s', 'bmtheme' ), $location, $from_date->format( __( 'F j', 'bmtheme' ) ) ) );
+					$date_text = sprintf( __( '%1$s: %2$s', 'bmtheme' ), $location, $from_date->format( __( 'F j', 'bmtheme' ) ) );
 				} else {
 					$date_text = sprintf( __( '%1$s: %2$s to %3$s', 'bmtheme' ), $location, $from_date->format( __( 'F j', 'bmtheme' ) ), $to_date->format( __( 'F j', 'bmtheme' ) ) );
 				}
