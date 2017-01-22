@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BMTheme\n"
-"POT-Creation-Date: 2017-01-16 22:15+0100\n"
-"PO-Revision-Date: 2017-01-16 22:15+0100\n"
+"POT-Creation-Date: 2017-01-22 16:57+0100\n"
+"PO-Revision-Date: 2017-01-22 16:59+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language: sv_SE\n"
@@ -72,7 +72,8 @@ msgstr ""
 "Vi har föreläsningar, kurser och webinars för dig under året. Allt kretsande "
 "kring den digital världen för att lära dig det senaste."
 
-#: archive-bm_events.php:130 single-bm_events.php:126
+#: archive-bm_events.php:130 templates/events/courses.php:148
+#: templates/events/default.php:119
 msgid "Free!"
 msgstr "Gratis!"
 
@@ -253,6 +254,15 @@ msgstr ""
 "%s administrationspanel. Webbplatsen utvecklad av <a href=\"https://www."
 "bernskioldmedia.com/sv/\">Bernskiold Media</a>."
 
+#: includes/classes/class-helper-functions.php:109
+#, php-format
+msgid "%1$s: %2$s to %3$s"
+msgstr "%1$s: %2$s till %3$s"
+
+#: includes/classes/class-helper-functions.php:109
+msgid "F j"
+msgstr "j F"
+
 #: includes/classes/class-template-functions.php:49
 msgid "Previous Page"
 msgstr "Föregående sida"
@@ -405,55 +415,6 @@ msgstr "Vem är %s?"
 msgid "Visit Project"
 msgstr "Besök projektet"
 
-#: single-bm_events.php:72 single-bm_events.php:205
-msgid "Register Now"
-msgstr "Registrera dig nu"
-
-#: single-bm_events.php:78 single-bm_events.php:211
-msgid "Go to Course"
-msgstr "Gå till kursen"
-
-#: single-bm_events.php:87
-#, php-format
-msgid "About %s"
-msgstr "Om %s"
-
-#: single-bm_events.php:125 single-bm_events.php:128
-msgid "Price"
-msgstr "Pris"
-
-#: single-bm_events.php:133
-#, php-format
-msgid "%s USD (excl. VAT)"
-msgstr "%s kr (exkl. moms)"
-
-#: single-bm_events.php:138
-msgid "Length"
-msgstr "Längd"
-
-#: single-bm_events.php:149
-msgid "Dates"
-msgstr "Datum"
-
-#: single-bm_events.php:163
-msgid "Fully Booked"
-msgstr "Fullbokad"
-
-#: single-bm_events.php:166
-#, php-format
-msgid "Only %s Seats Left"
-msgstr "Endast %s platser kvar"
-
-#: single-bm_events.php:185
-msgctxt "from event date format"
-msgid "F j"
-msgstr "j F"
-
-#: single-bm_events.php:190
-msgctxt "to event date format"
-msgid "F j, Y"
-msgstr "j F Y"
-
 #: single.php:25
 msgid "F j, Y"
 msgstr "j F Y"
@@ -492,6 +453,123 @@ msgid ""
 msgstr ""
 "Akademin samlar insikter inom en mängd olika underämnen. Hitta ditt "
 "favoritområde att läsa om nedan."
+
+#: templates/events/courses.php:68
+msgid "About the Course"
+msgstr "Om kursen"
+
+#: templates/events/courses.php:74
+msgid "Register For This Course"
+msgstr "Anmäl dig till kursen"
+
+#: templates/events/courses.php:88
+msgid "Group Discount for 3+ people"
+msgstr "Grupprabatt för 3+ personer"
+
+#: templates/events/courses.php:90
+#, php-format
+msgid ""
+"Do your colleagues also want to take this course? Cool! We offer a group "
+"discount of a full 20% for parties of more than 3 people."
+msgstr ""
+"Vill dina kollegor också gå den här kursen? Vi erbjuder en grupprabatt på "
+"hela 20% för grupper över 3 personer."
+
+#: templates/events/courses.php:104
+msgid "Bring a Friend - 10% Discount"
+msgstr "Ta med en vän - 10% rabatt"
+
+#: templates/events/courses.php:106
+#, php-format
+msgid ""
+"Don't want to go alone? Then bring a friend and you will both get a "
+"10% discount on the course."
+msgstr ""
+"Vill du inte gå ensam? Ta med dig en vän så får ni båda 10% rabatt när ni "
+"går kursen tillsammans."
+
+#: templates/events/courses.php:121 templates/events/courses.php:283
+msgid "Course Leader"
+msgstr "Kursansvarig"
+
+#: templates/events/courses.php:129
+msgid "Read More &raquo;"
+msgstr "Läs mer &raquo;"
+
+#: templates/events/courses.php:147 templates/events/courses.php:150
+#: templates/events/default.php:118 templates/events/default.php:121
+msgid "Price"
+msgstr "Pris"
+
+#: templates/events/courses.php:152 templates/events/default.php:126
+#, php-format
+msgid "%s USD (excl. VAT)"
+msgstr "%s kr (exkl. moms)"
+
+#: templates/events/courses.php:156 templates/events/default.php:131
+msgid "Length"
+msgstr "Längd"
+
+#: templates/events/courses.php:165 templates/events/default.php:142
+msgid "Dates"
+msgstr "Datum"
+
+#: templates/events/courses.php:178 templates/events/default.php:156
+msgid "Fully Booked"
+msgstr "Fullbokad"
+
+#: templates/events/courses.php:181 templates/events/default.php:159
+#, php-format
+msgid "Only %s Seats Left"
+msgstr "Endast %s platser kvar"
+
+#: templates/events/courses.php:200 templates/events/default.php:178
+msgctxt "from event date format"
+msgid "F j"
+msgstr "j F"
+
+#: templates/events/courses.php:205 templates/events/default.php:183
+msgctxt "to event date format"
+msgid "F j, Y"
+msgstr "j F Y"
+
+#: templates/events/courses.php:220 templates/events/default.php:65
+#: templates/events/default.php:198
+msgid "Register Now"
+msgstr "Registrera dig nu"
+
+#: templates/events/courses.php:232
+msgid "What will you be learning?"
+msgstr "Vad kommer du lära dig?"
+
+#: templates/events/courses.php:255
+msgid "Who's this course for?"
+msgstr "Vem är kursen till för?"
+
+#: templates/events/courses.php:263
+msgid "What do I need to know before?"
+msgstr "Vad behöver jag veta innan?"
+
+#: templates/events/courses.php:306
+msgid "Course Registration"
+msgstr "Anmälan till kursen"
+
+#: templates/events/courses.php:307
+msgid ""
+"Just select the date and fill in your details here below to register for "
+"this course right away. We look forward to seeing you!"
+msgstr ""
+"Välj bara datum och fyll i dina uppgifter här nedan för att registrera dig "
+"för denna kurs direkt. Vi ser fram emot att se dig!"
+
+#: templates/events/default.php:71 templates/events/default.php:204
+msgid "Go to Course"
+msgstr "Gå till kursen"
+
+#: templates/events/default.php:80
+#, php-format
+msgid "About %s"
+msgstr "Om %s"
 
 #: templates/frontpage.php:7
 msgctxt "frontpage page template name"
