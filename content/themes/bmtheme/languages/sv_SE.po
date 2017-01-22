@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BMTheme\n"
-"POT-Creation-Date: 2017-01-22 16:57+0100\n"
-"PO-Revision-Date: 2017-01-22 16:59+0100\n"
+"POT-Creation-Date: 2017-01-22 17:18+0100\n"
+"PO-Revision-Date: 2017-01-22 17:19+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language: sv_SE\n"
@@ -72,12 +72,12 @@ msgstr ""
 "Vi har föreläsningar, kurser och webinars för dig under året. Allt kretsande "
 "kring den digital världen för att lära dig det senaste."
 
-#: archive-bm_events.php:130 templates/events/courses.php:148
+#: archive-bm_events.php:130 templates/events/courses.php:143
 #: templates/events/default.php:119
 msgid "Free!"
 msgstr "Gratis!"
 
-#: archive-bm_events.php:136
+#: archive-bm_events.php:136 templates/events/courses.php:147
 #, php-format
 msgid "%s USD"
 msgstr "%s kr"
@@ -454,19 +454,19 @@ msgstr ""
 "Akademin samlar insikter inom en mängd olika underämnen. Hitta ditt "
 "favoritområde att läsa om nedan."
 
-#: templates/events/courses.php:68
+#: templates/events/courses.php:69
 msgid "About the Course"
 msgstr "Om kursen"
 
-#: templates/events/courses.php:74
+#: templates/events/courses.php:75
 msgid "Register For This Course"
 msgstr "Anmäl dig till kursen"
 
-#: templates/events/courses.php:88
+#: templates/events/courses.php:89
 msgid "Group Discount for 3+ people"
 msgstr "Grupprabatt för 3+ personer"
 
-#: templates/events/courses.php:90
+#: templates/events/courses.php:91
 #, php-format
 msgid ""
 "Do your colleagues also want to take this course? Cool! We offer a group "
@@ -475,11 +475,11 @@ msgstr ""
 "Vill dina kollegor också gå den här kursen? Vi erbjuder en grupprabatt på "
 "hela 20% för grupper över 3 personer."
 
-#: templates/events/courses.php:104
+#: templates/events/courses.php:105
 msgid "Bring a Friend - 10% Discount"
 msgstr "Ta med en vän - 10% rabatt"
 
-#: templates/events/courses.php:106
+#: templates/events/courses.php:107
 #, php-format
 msgid ""
 "Don't want to go alone? Then bring a friend and you will both get a "
@@ -488,73 +488,72 @@ msgstr ""
 "Vill du inte gå ensam? Ta med dig en vän så får ni båda 10% rabatt när ni "
 "går kursen tillsammans."
 
-#: templates/events/courses.php:121 templates/events/courses.php:283
+#: templates/events/courses.php:122 templates/events/courses.php:279
 msgid "Course Leader"
 msgstr "Kursansvarig"
 
-#: templates/events/courses.php:129
+#: templates/events/courses.php:130
 msgid "Read More &raquo;"
 msgstr "Läs mer &raquo;"
 
-#: templates/events/courses.php:147 templates/events/courses.php:150
+#: templates/events/courses.php:142 templates/events/courses.php:145
 #: templates/events/default.php:118 templates/events/default.php:121
 msgid "Price"
 msgstr "Pris"
 
-#: templates/events/courses.php:152 templates/events/default.php:126
-#, php-format
-msgid "%s USD (excl. VAT)"
-msgstr "%s kr (exkl. moms)"
+#: templates/events/courses.php:148
+msgid "excl. VAT"
+msgstr "exkl. moms"
 
-#: templates/events/courses.php:156 templates/events/default.php:131
+#: templates/events/courses.php:152 templates/events/default.php:131
 msgid "Length"
 msgstr "Längd"
 
-#: templates/events/courses.php:165 templates/events/default.php:142
+#: templates/events/courses.php:161 templates/events/default.php:142
 msgid "Dates"
 msgstr "Datum"
 
-#: templates/events/courses.php:178 templates/events/default.php:156
+#: templates/events/courses.php:174 templates/events/default.php:156
 msgid "Fully Booked"
 msgstr "Fullbokad"
 
-#: templates/events/courses.php:181 templates/events/default.php:159
+#: templates/events/courses.php:177 templates/events/default.php:159
 #, php-format
 msgid "Only %s Seats Left"
 msgstr "Endast %s platser kvar"
 
-#: templates/events/courses.php:200 templates/events/default.php:178
+#: templates/events/courses.php:196 templates/events/default.php:178
 msgctxt "from event date format"
 msgid "F j"
 msgstr "j F"
 
-#: templates/events/courses.php:205 templates/events/default.php:183
+#: templates/events/courses.php:201 templates/events/default.php:183
 msgctxt "to event date format"
 msgid "F j, Y"
 msgstr "j F Y"
 
-#: templates/events/courses.php:220 templates/events/default.php:65
+#: templates/events/courses.php:216 templates/events/default.php:65
 #: templates/events/default.php:198
 msgid "Register Now"
 msgstr "Registrera dig nu"
 
-#: templates/events/courses.php:232
+#: templates/events/courses.php:228
 msgid "What will you be learning?"
 msgstr "Vad kommer du lära dig?"
 
-#: templates/events/courses.php:255
+#: templates/events/courses.php:251
 msgid "Who's this course for?"
 msgstr "Vem är kursen till för?"
 
-#: templates/events/courses.php:263
+#: templates/events/courses.php:259
 msgid "What do I need to know before?"
 msgstr "Vad behöver jag veta innan?"
 
-#: templates/events/courses.php:306
+#: templates/events/courses.php:302
 msgid "Course Registration"
 msgstr "Anmälan till kursen"
 
-#: templates/events/courses.php:307
+#: templates/events/courses.php:303
 msgid ""
 "Just select the date and fill in your details here below to register for "
 "this course right away. We look forward to seeing you!"
@@ -570,6 +569,11 @@ msgstr "Gå till kursen"
 #, php-format
 msgid "About %s"
 msgstr "Om %s"
+
+#: templates/events/default.php:126
+#, php-format
+msgid "%s USD (excl. VAT)"
+msgstr "%s kr (exkl. moms)"
 
 #: templates/frontpage.php:7
 msgctxt "frontpage page template name"

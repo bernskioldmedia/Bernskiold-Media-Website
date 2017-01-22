@@ -21,6 +21,7 @@ $event_person_fname = $name_parts[1];
 $event_person_bio   = get_field( 'event_person_bio' );
 $event_types        = get_the_terms( $post->ID, 'bm_event_type' );
 $event_course_link  = get_field( 'event_course_link' );
+$event_price        = get_field( 'event_price' );
 
 // Display the case image background.
 if ( $event_image ) {
@@ -133,23 +134,18 @@ if ( $event_image ) {
 
 						<dl class="event-details">
 
-							<dt>Pris</dt>
-							<dd class="event-price">
-								5 000 SEK
-								<span>exkl. moms</span>
-							</dd>
-
 							<?php
 							/**
 							 * Price Display
 							 */
 							if ( '0' == $event_price ) : ?>
 								<dt><?php esc_html_e( 'Price', 'bmtheme' ); ?></dt>
-								<dd><?php esc_html_e( 'Free!', 'bmtheme' ); ?></dd>
+								<dd class="event-price"><?php esc_html_e( 'Free!', 'bmtheme' ); ?></dd>
 							<?php elseif ( $event_price ) : ?>
 								<dt><?php esc_html_e( 'Price', 'bmtheme' ); ?></dt>
 								<dd class="event-price">
-									<?php printf( __( '%s USD (excl. VAT)', 'bmtheme' ), $event_price ); ?>
+									<?php printf( __( '%s USD', 'bmtheme' ), $event_price ); ?>
+									<span><?php esc_html_e( 'excl. VAT', 'bmtheme' ); ?></span>
 								</dd>
 							<?php endif; ?>
 
@@ -308,7 +304,10 @@ if ( $event_image ) {
 
 					<hr class="is-big is-thick is-light">
 
-					<?php gravity_form( 9, false, false, false, array(), true ); ?>
+					<?php gravity_form( 9, false, false, false, array(
+						'course_name'  => get_the_title(),
+						'course_price' => get_field( 'event_price' ),
+					), true ); ?>
 
 				</div>
 
