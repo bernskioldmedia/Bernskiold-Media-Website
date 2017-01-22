@@ -46,10 +46,32 @@
 
 .event-person {
 	margin-bottom: 2rem;
+
+	&.course-leader {
+
+		.event-person-photo {
+			max-width: 3.5rem;
+		}
+
+		.event-person-name {
+			margin-left: 1.2rem;
+			font-size: 1.4rem;
+		}
+
+	}
+}
+
+.event-person-title {
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	opacity: 0.8;
+	margin-bottom: 1.3em;
 }
 
 .event-person-photo {
 	width: 30%;
+	max-width: 5rem;
 	display: inline-block;
 	vertical-align: middle;
 
@@ -61,7 +83,14 @@
 .event-person-name {
 	font-size: 1.5rem;
 	display: inline-block;
-	margin-left: 2rem;
+	margin-left: 1.5rem;
+	vertical-align: middle;
+
+	.read-more {
+		font-size: 0.9rem;
+		font-weight: bold;
+		display: block;
+	}
 }
 
 .event-price {
@@ -80,6 +109,17 @@
 	@extend .case-item-link;
 }
 
+.event-price {
+	font-weight: bold;
+	line-height: 1.2;
+
+	span {
+		font-weight: normal;
+		font-size: 0.85rem;
+		display: block;
+	}
+}
+
 .event-dates {
 	margin: 0;
 	list-style: none;
@@ -87,8 +127,8 @@
 
 .event-date {
 	font-size: 1.1rem;
-	margin-bottom: 0.7em;
 	position: relative;
+	margin-bottom: 0.3rem;
 
 	&.is-full {
 
@@ -107,9 +147,11 @@
 
 .event-status {
 	font-weight: bold;
+	text-transform: uppercase;
 	position: absolute;
 	top: 0;
 	right: 0;
+	font-size: 0.85rem;
 
 	&.is-full {
 		color: $alert-color;
@@ -121,7 +163,7 @@
 }
 
 .event-location {
-	font-weight: bold;
+	line-height: 1.2;
 }
 
 .event-from-date,
@@ -133,6 +175,28 @@
 
 	&:before {
 		content: '—';
+	}
+}
+
+.event-details {
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+	padding: 2rem 0 2rem 0;
+	overflow: hidden;
+
+	dt {
+		clear: both;
+		width: 30%;
+		float: left;
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+
+	dd {
+		width: 59%;
+		float: left;
+		font-size: 1.25rem;
+		margin-bottom: 0.7rem;
 	}
 }
 
@@ -250,4 +314,50 @@
 		@extend .hollow;
 		@extend .expanded;
 	}
+}
+
+/**
+ * Courses
+ */
+.course-highlight {
+	font-weight: bold;
+	font-size: 1.5rem;
+	// font-family: $header-font-family;
+	margin-bottom: 2.5rem;
+}
+
+.course-about,
+.course-learning {
+
+	&,p {
+		font-size: 1.1rem;
+	}
+}
+
+.course-about {
+	padding-bottom: 2rem;
+}
+
+.course-biography {
+
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+
+}
+
+.course-registration-cta {
+
+	p {
+		margin-bottom: 0;
+		padding-top: 1rem;
+	}
+
+	.button {
+		margin-bottom: 0;
+		background: $primary-color;
+		font-size: 1.35rem;
+		font-weight: bold;
+	}
+
 }

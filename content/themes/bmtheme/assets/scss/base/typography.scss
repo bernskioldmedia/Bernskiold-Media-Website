@@ -43,6 +43,10 @@ p {
 	margin-bottom: 0.45em;
 }
 
+.intro-sm {
+	font-size: 1.175rem;
+}
+
 // Font Heading
 .font-heading {
 	font-family: $header-font-family;
@@ -205,4 +209,15 @@ p {
 
 .testimonial.medium {
 	font-size: 1.2rem;
+}
+
+/**
+ * Colors
+ */
+.color-primary {
+	color: $primary-color;
+}
+
+.color-accent {
+	color: $accent-color;
 }

@@ -154,10 +154,14 @@
 .block {
 	position: relative;
 	@extend .column;
-	padding: 2.5rem 1.5rem;
+	padding: 2rem;
 
 	&.title-centered .block-title {
 		text-align: center;
+	}
+
+	&.is-spacious {
+		padding: 3.5rem;
 	}
 
 	&.is-image {
@@ -165,12 +169,31 @@
 		background-size: cover;
 		background-position: center center;
 	}
+
+	&.has-shadow {
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+	}
 }
 
 .block-icon {
 	margin: 0 auto 1em auto;
 	max-width: 9rem;
 	max-height: 9rem;
+
+	.fa {
+		font-size: 2rem;
+	}
+
+	&.is-big {
+		.fa {
+			font-size: 3rem;
+		}
+	}
+
+	&.is-left {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 .block-title {
@@ -184,7 +207,7 @@
 
 .block-content {
 
-	&:last-child {
+	p:last-child {
 		margin-bottom: 0;
 	}
 }
