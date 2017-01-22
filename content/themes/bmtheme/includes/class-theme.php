@@ -105,7 +105,7 @@ class Theme {
 	public function __construct() {
 
 		// Theme Version.
-		$this->theme_version = '1.0';
+		$this->theme_version = '1.0.1';
 
 		// Theme Name.
 		$this->theme_name = esc_html__( 'BMTheme', 'bmtheme' );
