@@ -93,6 +93,8 @@ class Theme_Helpers {
 
 		global $post;
 
+		return $form;
+
 		$course_dates = array();
 
 		if ( have_rows( 'event_dates', $post ) ) {
