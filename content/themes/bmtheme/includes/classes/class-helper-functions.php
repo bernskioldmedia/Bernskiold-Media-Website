@@ -93,12 +93,11 @@ class Theme_Helpers {
 
 		global $post;
 
-		return $form;
-
 		$course_dates = array();
 
 		if ( have_rows( 'event_dates', $post ) ) {
 			while ( have_rows( 'event_dates', $post ) ) {
+				the_row();
 
 				$from_date     = new \DateTime( get_sub_field( 'event_from_date', $post ) );
 				$to_date       = new \DateTime( get_sub_field( 'event_to_date', $post ) );
@@ -109,14 +108,14 @@ class Theme_Helpers {
 				$date_text = sprintf( __( '%1$s: %2$s to %3$s', 'bmtheme' ), $location, $from_date->format( __( 'F j', 'bmtheme' ) ), $to_date->format( __( 'F j', 'bmtheme' ) ) );
 
 				if ( $reg_attendees < $max_attendees ) {
-					$course_dates[ date( 'Y-m-d', $from_date ) ] = $date_text;
+					$course_dates[ $from_date->format( 'Y-m-d' ) ] = $date_text;
 				}
 			}
 		}
 
 		foreach ( $form['fields'] as &$field ) {
 
-			if ( $field->type != 'select' || strpos( $field->cssClass, 'course-registration-dates' ) === false ) {
+			if ( $field->inputName !== 'course_registration_dates' ) {
 				continue;
 			}
 
