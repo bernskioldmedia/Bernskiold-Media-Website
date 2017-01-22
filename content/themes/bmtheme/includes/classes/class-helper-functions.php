@@ -105,7 +105,11 @@ class Theme_Helpers {
 				$max_attendees = get_sub_field( 'event_max_attendees', $post );
 				$reg_attendees = get_sub_field( 'event_reg_attendees', $post );
 
-				$date_text = sprintf( __( '%1$s: %2$s to %3$s', 'bmtheme' ), $location, $from_date->format( __( 'F j', 'bmtheme' ) ), $to_date->format( __( 'F j', 'bmtheme' ) ) );
+				if ( $from_date == $to_date ) {
+					$date_text = sprintf( __( '%1$s: %2$s', 'bmtheme' ), $location, $from_date->format( __( 'F j', 'bmtheme' ) ) ) );
+				} else {
+					$date_text = sprintf( __( '%1$s: %2$s to %3$s', 'bmtheme' ), $location, $from_date->format( __( 'F j', 'bmtheme' ) ), $to_date->format( __( 'F j', 'bmtheme' ) ) );
+				}
 
 				if ( $reg_attendees < $max_attendees ) {
 					$course_dates[ $from_date->format( 'Y-m-d' ) ] = $date_text;
