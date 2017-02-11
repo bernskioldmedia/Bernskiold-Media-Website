@@ -1,7 +1,11 @@
 <?php
 /**
  * Displays Page
+ *
+ * Template Name: Flex Page
+ * Template Post Type: page, bm_case_studies
  **/
+
 namespace BernskioldMedia\Theme;
 
 get_header(); ?>
