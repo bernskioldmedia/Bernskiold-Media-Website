@@ -6,6 +6,18 @@
 	&.has-spacing {
 		padding: 3rem 0 3rem 0;
 	}
+
+	&.is-fullwdith-image {
+		background-size: cover;
+		min-height: 30rem;
+
+		figure {
+			visibility: hidden;
+			width: 0;
+			height: 0;
+		}
+	}
+
 }
 
 /**
