@@ -10,8 +10,10 @@
 	&.is-fullwidth-image {
 		background-size: cover;
 		min-height: 30rem;
+		position: relative;
 
 		figure {
+			position: absolute;
 			visibility: hidden;
 			width: 0;
 			height: 0;
