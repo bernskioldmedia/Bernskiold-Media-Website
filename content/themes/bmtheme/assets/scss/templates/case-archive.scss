@@ -4,9 +4,10 @@
 .case-archive-list {}
 
 .case-archive-item {
-	@include flex-grid-row();
+	@include flex-grid-row('nest');
 	max-width: none;
-	@extend .align-center;
+	background: white;
+	margin-bottom: 2rem;
 
 	&:nth-child(odd) {
 		.case-archive-item-content {
@@ -38,18 +39,17 @@
 }
 
 .case-archive-item-content {
-	@extend .bg-primary;
-	@extend .column;
-	@extend .small-24;
-	@extend .medium-12;
 	padding: 3.5em 2.5em;
+	@include flex-grid-column(24);
 
 	@include breakpoint(small only) {
 		order: 2;
+		text-align: center;
 	}
 
 	@include breakpoint(medium up) {
 		padding: 4em 1.5em;
+		@include flex-grid-column(12);
 	}
 
 	@include breakpoint(large up) {
@@ -98,14 +98,16 @@
 }
 
 .case-archive-item-image {
-	@extend .small-24;
-	@extend .medium-12;
-	@extend .column;
+	@include flex-grid-column(24);
 	@extend .is-background-image;
 	min-height: 25rem;
 
 	@include breakpoint(small only) {
 		height: 15rem;
 		min-height: 0;
+	}
+
+	@include breakpoint(medium up) {
+		@include flex-grid-column(12);
 	}
 }
