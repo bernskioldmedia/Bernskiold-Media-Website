@@ -6,7 +6,7 @@
  */
 namespace BernskioldMedia\Theme;
 ?>
-<div class="project-cta">
+<div class="project-cta bg-white">
 	<div class="row">
 		<div class="project-cta-content">
 			<h2 class="section-title"><?php esc_html_e( 'Let\'s get started on your project!', 'bmtheme' ); ?></h2>
